@@ -39,7 +39,7 @@ const Brands = () => {
       <p className="mt-6 text-gray-text font-bold text-[26px] leading-[32px] text-center mb-[72px]">
         With our secure and efficient platform,
         <br /> we provide seamless transactions that support businesses <br />
-        in scaling and thriving in today's global economy.
+        in scaling and thriving in today&apos;s global economy.
       </p>
       <div className="grid grid-cols-7 gap-8">
         {brands.map((brand, index) => (
