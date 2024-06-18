@@ -5,6 +5,9 @@ import Icon1 from "@/app/assets/icons/main/Icon1.svg";
 import Icon2 from "@/app/assets/icons/main/Icon2.svg";
 import Icon3 from "@/app/assets/icons/main/Icon3.svg";
 import Icon4 from "@/app/assets/icons/main/Icon4.svg";
+import Giftcard1 from "@/app/assets/images/main/gift-card1.png";
+import Giftcard2 from "@/app/assets/images/main/gift-card2.png";
+import Giftcard3 from "@/app/assets/images/main/gift-card3.png";
 import freelancers1 from "@/app/assets/images/main/freelancers1.png";
 import freelancers2 from "@/app/assets/images/main/freelancers2.png";
 import sales1 from "@/app/assets/images/main/sales1.png";
@@ -78,7 +81,17 @@ const Experience = () => {
               Learn More
             </button>
           </div>
-          <div className="mt-[64px] h-[320px] bg-black rounded-[36px]"></div>
+          <div className="wrapper flex items-center mt-[64px] bg-[#000] rounded-[36px]">
+            <div className="item item1">
+              <Image src={Giftcard1} alt="Gift card1" />
+            </div>
+            <div className="item item2">
+              <Image src={Giftcard2} alt="Gift card2" />
+            </div>
+            <div className="item item3">
+              <Image src={Giftcard3} alt="Gift card3" />
+            </div>
+          </div>
         </div>
         <div className="bg-[#E9F4FA] rounded-[32px] p-[28px]">
           <div className="p-[24px]">

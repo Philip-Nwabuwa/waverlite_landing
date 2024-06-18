@@ -45,7 +45,7 @@ const Brands = () => {
         {brands.map((brand, index) => (
           <div
             key={index}
-            className="py-3 bg-main flex justify-center rounded-[16px]"
+            className="bg-[#E9EAEA] py-3 bg-main flex justify-center rounded-[16px]"
           >
             <Image src={brand.src} alt={brand.alt} />
           </div>

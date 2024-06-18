@@ -30,3 +30,53 @@
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(18px);
 }
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 320px;
+}
+
+@keyframes scrollleft {
+  to {
+    transform: translateX(-120%);
+  }
+}
+
+@keyframes scrollForever {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.item {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  animation-name: scrollleft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: calc(30s / 3 * 2 * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 3 * 1 * -1);
+}
+
+.item3 {
+  animation-delay: 0s;
+}
+
+.itemUpdate {
+  white-space: nowrap;
+  display: inline-block;
+  animation: scrollForever 30s linear infinite;
+}

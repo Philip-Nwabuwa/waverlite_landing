@@ -70,7 +70,7 @@ const Footer = () => {
             </p>
             <div className="w-full flex gap-4">
               <input
-                className="w-full bg-[#696969] text-white py-2 px-4 rounded-lg"
+                className="w-full bg-[#696969] text-[#E9EAEA] py-2 px-4 rounded-lg"
                 placeholder="philipjoe@gmail.com"
               />
               <button className="py-2 px-6 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">

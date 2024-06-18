@@ -31,7 +31,7 @@ const Cta = () => {
               <Image src={GooglePlay} alt="Google Play" />
             </Link>
           </div>
-          <p className="text-white w-full max-w-[580px] text-[20px] font-bold leading-[28px]">
+          <p className="text-[#E9EAEA] w-full max-w-[580px] text-[20px] font-bold leading-[28px]">
             Scan the QR code below to download the Waverlite app directly to
             your device.
           </p>
