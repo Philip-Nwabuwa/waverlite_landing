@@ -1,0 +1,30 @@
+<svg width="1512" height="461" viewBox="0 0 1512 461" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.65">
+<line y1="68.29" x2="1512" y2="68.29" stroke="#BCBDBD"/>
+<line y1="164.29" x2="1512" y2="164.29" stroke="#BCBDBD"/>
+<line y1="260.29" x2="1512" y2="260.29" stroke="#BCBDBD"/>
+<line y1="356.29" x2="1512" y2="356.29" stroke="#BCBDBD"/>
+<line y1="452.29" x2="1512" y2="452.29" stroke="#BCBDBD"/>
+<line x1="131.5" y1="512.79" x2="131.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="227.5" y1="512.79" x2="227.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="323.5" y1="512.79" x2="323.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="419.5" y1="512.79" x2="419.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="515.5" y1="512.79" x2="515.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="611.5" y1="512.79" x2="611.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="707.5" y1="512.79" x2="707.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="803.5" y1="512.79" x2="803.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="899.501" y1="512.79" x2="899.501" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="995.501" y1="512.79" x2="995.501" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="1091.5" y1="512.79" x2="1091.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="1187.5" y1="512.79" x2="1187.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="1283.5" y1="512.79" x2="1283.5" y2="8.79004" stroke="#BCBDBD"/>
+<line x1="1379.5" y1="512.79" x2="1379.5" y2="8.79004" stroke="#BCBDBD"/>
+<rect width="1499" height="504" transform="translate(7 0.790039)" fill="url(#paint0_radial_541_13809)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_541_13809" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(749.5 252) rotate(90) scale(252 749.5)">
+<stop offset="0.58" stop-color="#FDFDFD" stop-opacity="0"/>
+<stop offset="1" stop-color="#FDFDFD"/>
+</radialGradient>
+</defs>
+</svg>

@@ -31,6 +31,34 @@
   backdrop-filter: blur(18px);
 }
 
+.pathClip {
+  background-image: url("../assets/images/money-transfer/Clip\ path\ group.svg");
+}
+
+.security {
+  background-image: url("../assets/images/money-transfer/security.png");
+  height: 1077px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.perfect {
+  background-image: url("../assets/images/money-transfer/perfect.png");
+  height: 1077px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gridWhy {
+  background-image: url("../assets/images/money-transfer/grid.svg");
+  height: 504px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;
