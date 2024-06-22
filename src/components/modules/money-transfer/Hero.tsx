@@ -24,7 +24,7 @@ const Hero = () => {
           </button>
         </Link>
       </div>
-      <Image priority unoptimized src={hero} alt={"Globe"} />
+      <Image priority src={hero} alt={"Globe"} />
     </section>
   );
 };

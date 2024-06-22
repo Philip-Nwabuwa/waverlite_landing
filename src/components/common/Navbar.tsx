@@ -29,13 +29,13 @@ const NavItems = [
     description: "Supporting text",
   },
   {
-    href: "/",
+    href: "/overdraft",
     imgSrc: MoneyAdd,
     title: "Overdraft",
     description: "Global money transfer",
   },
   {
-    href: "/",
+    href: "/gift-cards",
     imgSrc: Card,
     title: "Gift Cards",
     description: "Supporting text",
