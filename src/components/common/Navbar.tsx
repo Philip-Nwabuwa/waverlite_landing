@@ -65,7 +65,7 @@ const NavItems = [
     description: "Supporting text",
   },
   {
-    href: "/",
+    href: "/api",
     imgSrc: Code,
     title: "Waverlie APIs",
     description: "Supporting text",

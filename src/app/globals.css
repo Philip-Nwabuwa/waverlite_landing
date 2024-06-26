@@ -35,6 +35,13 @@
   background-image: url("../assets/images/money-transfer/Clip\ path\ group.svg");
 }
 
+.virtualCardBgLg {
+  background-image: url("../assets/images/virtual-cards/Card-lg-hero-Background.svg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .security {
   background-image: url("../assets/images/money-transfer/security.png");
   height: 1077px;
