@@ -43,7 +43,7 @@ const Setup = () => {
       <div>
         <div className="bg-[#e9f4fa80] grid grid-cols-2 gap-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div className="bg-[#272A2B] flex flex-col gap-[36px] justify-center items-center p-[28px] rounded-[64px]">
-            <div className="bg-[#323435] flex gap-6 px-[30px] py-2.5 rounded-[30px] border border-solid border-[#9c9d9d33]">
+            <div className="w-full bg-[#323435] flex gap-6 px-[30px] py-2.5 rounded-[30px] border border-solid border-[#9c9d9d33]">
               <div className="flex items-center gap-5">
                 <Image src={Reset} alt="" />
                 <div>

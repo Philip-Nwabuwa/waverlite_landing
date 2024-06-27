@@ -47,7 +47,7 @@ const NavItems = [
     description: "Supporting text",
   },
   {
-    href: "/",
+    href: "/sales-mode",
     imgSrc: Percent,
     title: "Sales Mode",
     description: "Supporting text",
