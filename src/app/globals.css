@@ -41,6 +41,12 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.apiBgLg {
+  background-image: url("../assets/images/api/Wave.svg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .security {
   background-image: url("../assets/images/money-transfer/security.png");

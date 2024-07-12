@@ -14,9 +14,9 @@ const Hero = () => {
             Simplifying Global Transactions
           </h1>
           <h2 className="text-[22px] text-[#525555] font-bold">
-            Whether you're traveling, sending money abroad, or managing global
-            business operations, our platform offers competitive rates and a
-            seamless experience.
+            Whether you&apos;re traveling, sending money abroad, or managing
+            global business operations, our platform offers competitive rates
+            and a seamless experience.
           </h2>
         </div>
         <div>

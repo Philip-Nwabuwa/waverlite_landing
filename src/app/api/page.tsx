@@ -1,7 +1,17 @@
+import Footer from "@/components/common/Footer";
+import Join from "@/components/common/Join";
+import About from "@/components/modules/api/About";
+import Hero from "@/components/modules/api/Hero";
 
-const ApiPage = () => {
+const page = () => {
   return (
-    <div>Api</div>
-  )
-}
-export default ApiPage
+    <main>
+      <Hero />
+      <About />
+      <Join />
+      <Footer />
+    </main>
+  );
+};
+
+export default page;
