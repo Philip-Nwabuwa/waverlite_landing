@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import fast from "@/assets/images/money-transfer/fast.svg";
-import earth1 from "@/assets/images/money-transfer/earth1.svg";
-import earth2 from "@/assets/images/money-transfer/earth2.svg";
-import avatars from "@/assets/images/money-transfer/avatars.svg";
+import earth1 from "@/assets/images/money-transfer/earth1.png";
+import earth2 from "@/assets/images/money-transfer/earth2.png";
+import avatars from "@/assets/images/money-transfer/avatars.png";
 
 const SendMoney = () => {
   return (

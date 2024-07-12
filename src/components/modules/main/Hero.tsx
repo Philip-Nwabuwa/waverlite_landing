@@ -4,7 +4,13 @@ import HeroImg from "@/assets/images/main/hero.png";
 const Hero = () => {
   return (
     <section>
-      <Image src={HeroImg} alt={""} className="w-full" />
+      <Image
+        placeholder="blur"
+        priority={true}
+        src={HeroImg}
+        alt={""}
+        className="w-full"
+      />
       <div className="container-xl grid grid-cols-2 gap-4 my-9">
         <div className="flex flex-col gap-6">
           <p className="text-primary font-bold">Instant & Secure</p>

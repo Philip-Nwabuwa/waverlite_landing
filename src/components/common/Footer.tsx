@@ -10,40 +10,48 @@ import IG from "@/assets/icons/logo/media/Instagram.png";
 import Linkedin from "@/assets/icons/logo/media/Linkedin.png";
 
 const icons = [
-  { src: X, alt: "X", href: "/" },
-  { src: Facebook, alt: "Facebook", href: "/" },
-  { src: IG, alt: "Instagram", href: "/" },
-  { src: Linkedin, alt: "Linkedin", href: "/" },
+  { src: X, alt: "X", href: "https://x.com/waverlite" },
+  {
+    src: Facebook,
+    alt: "Facebook",
+    href: "https://web.facebook.com/waverlite",
+  },
+  { src: IG, alt: "Instagram", href: "https://www.instagram.com/thewaverlite" },
+  {
+    src: Linkedin,
+    alt: "Linkedin",
+    href: "https://www.linkedin.com/showcase/waverlite",
+  },
 ];
 
 const ProductsList = [
-  { text: "Payment", href: "/" },
-  { text: "Money Transfer", href: "/" },
-  { text: "Overdraft", href: "/" },
-  { text: "Gift Cards", href: "/" },
-  { text: "Virtual Card", href: "/" },
-  { text: "Sales Mode", href: "/" },
-  { text: "Currency Exchange", href: "/" },
-  { text: "Locator", href: "/" },
+  { text: "Money Transfer", href: "/money-transfer" },
+  { text: "Scan to pay", href: "/scan-to-pay" },
+  { text: "Overdraft", href: "/overdraft" },
+  { text: "Gift Cards", href: "/gift-cards" },
+  { text: "Virtual Card", href: "/virtual-cards" },
+  { text: "Sales Mode", href: "/sales-mode" },
+  { text: "Currency Exchange", href: "/currency-exchange" },
+  { text: "Locator", href: "/locator" },
 ];
 
 const CompanyList = [
-  { text: "Our Story", href: "/" },
-  { text: "Careers", href: "/" },
+  { text: "Our Story", href: "/our-story" },
+  { text: "Freelancers", href: "/freelancers" },
+  { text: "Careers", href: "/career" },
 ];
 const DeveloperList = [
-  { text: "API Documentation", href: "/" },
-  { text: "Tech Support", href: "/" },
+  { text: "API Documentation", href: "/api" },
+  { text: "Tech Support", href: "#" },
 ];
 const LegalList = [
-  { text: "AML & KYC Policy", href: "/" },
-  { text: "Privacy Policy", href: "/" },
-  { text: "Terms of Service", href: "/" },
+  { text: "AML & KYC Policy", href: "kyc-policy" },
+  { text: "Privacy Policy", href: "/privacy-policy" },
+  { text: "Terms of Service", href: "/terms-of-service" },
 ];
 const HelpList = [
-  { text: "Contact", href: "/" },
-  { text: "Support", href: "/" },
-  { text: "FAQs", href: "/" },
+  { text: "Contact", href: "/contact" },
+  { text: "FAQs", href: "/faqs" },
 ];
 
 const Footer = () => {
@@ -79,7 +87,12 @@ const Footer = () => {
             </div>
             <p className="text-gray-text text-lg font-bold">
               By subscribing you agree to our{" "}
-              <span className="text-[#E9EAEA]">Privacy Policy</span>
+              <Link
+                href={"/privacy-policy"}
+                className="text-[#E9EAEA] underline hover:text-primary"
+              >
+                Privacy Policy
+              </Link>
             </p>
           </div>
         </div>
@@ -101,7 +114,7 @@ const Footer = () => {
               </div>
               <div className="flex gap-[24px]">
                 {icons.map((icon, index) => (
-                  <Link key={index} href={icon.href}>
+                  <Link target="_blank" key={index} href={icon.href}>
                     <Image src={icon.src} alt={icon.alt} />
                   </Link>
                 ))}
@@ -115,7 +128,7 @@ const Footer = () => {
             <ul>
               {ProductsList.map((item, index) => (
                 <li
-                  className="flex flex-col gap-3 font-semibold text-[#9C9D9D] leading-[32px]"
+                  className="flex flex-col gap-3 font-semibold text-[#9C9D9D] hover:text-primary hover:underline leading-[32px]"
                   key={index}
                 >
                   <Link href={item.href}>{item.text}</Link>
@@ -130,7 +143,7 @@ const Footer = () => {
             <ul>
               {CompanyList.map((item, index) => (
                 <li
-                  className="flex flex-col gap-3 font-semibold text-[#9C9D9D] leading-[32px]"
+                  className="flex flex-col gap-3 font-semibold text-[#9C9D9D] hover:text-primary hover:underline leading-[32px]"
                   key={index}
                 >
                   <Link href={item.href}>{item.text}</Link>
@@ -145,7 +158,7 @@ const Footer = () => {
             <ul>
               {DeveloperList.map((item, index) => (
                 <li
-                  className="flex flex-col gap-3 font-semibold text-[#9C9D9D] leading-[32px]"
+                  className="flex flex-col gap-3 font-semibold text-[#9C9D9D] hover:text-primary hover:underline leading-[32px]"
                   key={index}
                 >
                   <Link href={item.href}>{item.text}</Link>
@@ -158,7 +171,7 @@ const Footer = () => {
             <ul>
               {LegalList.map((item, index) => (
                 <li
-                  className="flex flex-col gap-3 font-semibold text-[#9C9D9D] leading-[32px]"
+                  className="flex flex-col gap-3 font-semibold text-[#9C9D9D] hover:text-primary hover:underline leading-[32px]"
                   key={index}
                 >
                   <Link href={item.href}>{item.text}</Link>
@@ -171,7 +184,7 @@ const Footer = () => {
             <ul>
               {HelpList.map((item, index) => (
                 <li
-                  className="flex flex-col gap-3 font-semibold text-[#9C9D9D] leading-[32px]"
+                  className="flex flex-col gap-3 font-semibold text-[#9C9D9D] hover:text-primary hover:underline leading-[32px]"
                   key={index}
                 >
                   <Link href={item.href}>{item.text}</Link>

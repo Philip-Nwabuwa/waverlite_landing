@@ -17,12 +17,6 @@ import ArrowDown from "@/assets/icons/arrow-down.svg";
 
 const NavItems = [
   {
-    href: "/",
-    imgSrc: MoneySend,
-    title: "Payments",
-    description: "Global money transfer",
-  },
-  {
     href: "/money-transfer",
     imgSrc: MoneySend,
     title: "Money Transfer",
@@ -41,7 +35,7 @@ const NavItems = [
     description: "Supporting text",
   },
   {
-    href: "/",
+    href: "/virtual-cards",
     imgSrc: Virtual,
     title: "Virtual Debit Cards",
     description: "Supporting text",
@@ -53,13 +47,13 @@ const NavItems = [
     description: "Supporting text",
   },
   {
-    href: "/",
+    href: "currency-exchange",
     imgSrc: MoneySend,
     title: "Currency Exchange",
     description: "Supporting text",
   },
   {
-    href: "/",
+    href: "/locator",
     imgSrc: Location,
     title: "Locator",
     description: "Supporting text",
@@ -138,8 +132,8 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <Link href={"/"} className="py-2 px-4">
-          Story
+        <Link href={"/our-story"} className="py-2 px-4">
+          Our Story
         </Link>
       </div>
       <div className="flex items-center gap-2 py-2 px-4">

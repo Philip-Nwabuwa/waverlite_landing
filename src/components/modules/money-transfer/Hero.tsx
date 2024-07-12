@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import hero from "@/assets/images/money-transfer/hero.svg";
+import hero from "@/assets/images/money-transfer/hero.png";
 
 const Hero = () => {
   return (

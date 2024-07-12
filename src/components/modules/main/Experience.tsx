@@ -10,7 +10,7 @@ import Giftcard2 from "@/assets/images/main/gift-card2.png";
 import Giftcard3 from "@/assets/images/main/gift-card3.png";
 import freelancers1 from "@/assets/images/main/freelancers1.png";
 import freelancers2 from "@/assets/images/main/freelancers2.png";
-import sales from "@/assets/images/main/SalesMode-main.svg";
+import sales from "@/assets/images/main/SalesMode_Slide.png";
 import map from "@/assets/images/main/map.png";
 
 const Experience = () => {

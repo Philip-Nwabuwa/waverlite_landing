@@ -7,7 +7,7 @@ const Why = () => {
   return (
     <section className="container-xl flex flex-col justify-center text-center">
       <div className="gridWhy">
-        <h3 className="text-[84px] font-bold leading-[94px] mb-[76px]">
+        <h3 className="text-[84px] font-bold leading-[94px] mb-[36px]">
           Why Waverlite?
         </h3>
         <div className="flex flex-col gap-6">

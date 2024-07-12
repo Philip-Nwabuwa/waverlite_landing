@@ -1,6 +1,6 @@
 const Updates = () => {
   return (
-    <div className="my-[184px] flex flex-col justify-center items-center">
+    <div className="my-[184px] lg:flex hidden flex-col justify-center items-center">
       <div
         className="wrapper w-full max-w-[1250px]"
         style={{
