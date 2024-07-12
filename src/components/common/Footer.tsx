@@ -100,7 +100,11 @@ const Footer = () => {
         <div className="grid grid-cols-12 gap-2">
           <div className="col-span-3 pr-4">
             <div className="flex flex-col gap-[48px] text-[#E9EAEA]">
-              <Link href="/" className="flex items-center gap-2">
+              <Link
+                aria-label="Waverlite logo"
+                href="/"
+                className="flex items-center gap-2"
+              >
                 <Image src={Logo1} alt={""} />
                 <Image src={Waverlite} alt={""} />
               </Link>

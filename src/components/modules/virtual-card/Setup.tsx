@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Globe from "@/assets/images/virtual-cards/Side-Globe.svg";
+import Globe from "@/assets/images/virtual-cards/Side-Globe.png";
 import Reset from "@/assets/images/virtual-cards/Reset.svg";
 import Setting from "@/assets/images/virtual-cards/setting-2.svg";
 import Switch from "@/assets/images/virtual-cards/switch.svg";

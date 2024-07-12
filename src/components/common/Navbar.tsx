@@ -92,7 +92,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar fixed container-xl max-w-[1440px] z-50">
-      <Link href="/" className="flex items-center justify-center gap-2">
+      <Link
+        aria-label="Waverlite logo"
+        href="/"
+        className="flex items-center justify-center gap-2"
+      >
         <Image src={Logo1} alt={""} />
         <Image src={Waverlite} alt={""} />
       </Link>
