@@ -1,68 +1,51 @@
+import { cn } from "@/lib/utils";
+import Marquee from "@/components/magicui/marquee";
+
+const reviews = [
+  {
+    body: "Site underconstruction! 🚧 Exciting updates coming soon! 🚀",
+  },
+  {
+    body: "Site underconstruction! 🚧 Exciting updates coming soon! 🚀",
+  },
+];
+
+const firstRow = reviews.slice(0, reviews.length / 2);
+
+const ReviewCard = ({ body }: { body: string }) => {
+  return (
+    <figure
+      className={cn(
+        "relative w-full cursor-pointer overflow-hidden py-4 px-10"
+      )}
+    >
+      <blockquote className="text-xl font-bold">{body}</blockquote>
+    </figure>
+  );
+};
+
 const Updates = () => {
   return (
-    <div className="my-[184px] lg:flex hidden flex-col justify-center items-center">
-      <div
-        className="wrapper w-full max-w-[1250px]"
-        style={{
-          height: "80px",
-          transform: "rotate(2deg)",
-          transformOrigin: "0 0",
-          background: "#68B3DD",
-          boxShadow: "-2px 0px 5px rgba(0, 0, 0, 0.34)",
-          alignItems: "center",
-          display: "flex",
-        }}
+    <div className="relative flex w-full max-w-[1440px] py-[184px] flex-col items-center justify-center overflow-hidden">
+      <Marquee
+        pauseOnHover
+        className="absolute top-1/2 -translate-y-1/2 bg-[#0B0B0B] text-white h-[80px] [--duration:20s] origin-center rotate-2 z-10"
       >
-        <div
-          className="itemUpdate"
-          style={{
-            color: "#E9EAEA",
-            fontSize: 20,
-            fontFamily: "Bricolage Grotesque",
-            fontWeight: "700",
-            lineHeight: 26.4,
-            letterSpacing: 0.2,
-            wordWrap: "break-word",
-          }}
-        >
-          Site under construction! 🚧 Exciting updates coming soon! 🚀 Site
-          under construction! 🚧 Exciting updates coming soon! 🚀 Site under
-          construction! 🚧 Exciting updates coming soon! 🚀 Site under
-          construction! 🚧 Exciting updates coming soon! 🚀 Site under
-          construction! 🚧 Exciting updates coming soon! 🚀
-        </div>
-      </div>
-      <div
-        className="wrapper w-full max-w-[1250px]"
-        style={{
-          height: "80px",
-          transform: "rotate(-3.5deg)",
-          transformOrigin: "-100px 0",
-          background: "#272A2B",
-          boxShadow: "-2px 0px 5px rgba(0, 0, 0, 0.34)",
-          alignItems: "center",
-          display: "flex",
-        }}
+        {firstRow.map((review, index) => (
+          <ReviewCard key={index} {...review} />
+        ))}
+      </Marquee>
+      <Marquee
+        pauseOnHover
+        className="absolute top-1/2 -translate-y-1/2 bg-[#68B3DD] h-[80px] [--duration:20s] -rotate-2"
       >
-        <div
-          className="itemUpdate"
-          style={{
-            color: "#E9EAEA",
-            fontSize: 20,
-            fontFamily: "Bricolage Grotesque",
-            fontWeight: "700",
-            lineHeight: 26.4,
-            letterSpacing: 0.2,
-            wordWrap: "break-word",
-          }}
-        >
-          Site under construction! 🚧 Exciting updates coming soon! 🚀 Site
-          under construction! 🚧 Exciting updates coming soon! 🚀 Site under
-          construction! 🚧 Exciting updates coming soon! 🚀 Site under
-          construction! 🚧 Exciting updates coming soon! 🚀 Site under
-          construction! 🚧 Exciting updates coming soon! 🚀
-        </div>
-      </div>
+        {firstRow.map((review, index) => (
+          <ReviewCard key={index} {...review} />
+        ))}
+      </Marquee>
+
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 "></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 "></div>
     </div>
   );
 };

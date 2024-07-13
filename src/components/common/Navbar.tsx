@@ -100,7 +100,7 @@ const Navbar = () => {
         <Image src={Logo1} alt={""} />
         <Image src={Waverlite} alt={""} />
       </Link>
-      <div className="flex items-center gap-1">
+      <div className="lg:flex hidden items-center gap-1">
         <div className="relative" ref={dropdownRef}>
           <div
             className="flex gap-2 items-center py-2 px-4 cursor-pointer"
@@ -140,7 +140,7 @@ const Navbar = () => {
           Our Story
         </Link>
       </div>
-      <div className="flex items-center gap-2 py-2 px-4">
+      <div className="lg:flex hidden items-center gap-2 py-2 px-4">
         <div className="flex gap-2 items-center py-2 px-4">
           Download App <Image src={ArrowDown} alt={""} />
         </div>
@@ -159,6 +159,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+      <div className="flex lg:hidden">X</div>
     </nav>
   );
 };
