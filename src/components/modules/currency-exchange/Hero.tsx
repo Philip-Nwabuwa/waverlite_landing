@@ -4,7 +4,7 @@ import hero from "@/assets/images/currency-exchange/hero.png";
 
 const Hero = () => {
   return (
-    <section className="container-xl mt-[200px] mb-[184px]">
+    <section className="container-xl mt-[200px]">
       <div className="grid grid-cols-2 gap-2">
         <div>
           <p className="text-gray-text font-bold text-[20px]">

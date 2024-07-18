@@ -1,3 +1,4 @@
+import Buzz from "@/components/common/Buzz";
 import Footer from "@/components/common/Footer";
 import Join from "@/components/common/Join";
 import Updates from "@/components/common/Updates";
@@ -9,6 +10,7 @@ const page = () => {
     <main>
       <Hero />
       <Setup />
+      <Buzz />
       <Join />
       <Updates />
       <Footer />

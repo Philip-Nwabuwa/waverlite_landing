@@ -7,7 +7,7 @@ import Hero from "../components/modules/main/Hero";
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex flex-col lg:gap-[184px] gap-[100px]">
       <Hero />
       <Updates />
       <Experience />

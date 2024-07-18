@@ -14,6 +14,7 @@ import Location from "@/assets/icons/location.svg";
 import Percent from "@/assets/icons/percent-circle.svg";
 import Waverlite from "@/assets/icons/logo/WaverliteBlack.svg";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
+import { SquareMenu, X } from "lucide-react";
 
 const NavItems = [
   {
@@ -146,20 +147,51 @@ const Navbar = () => {
         </div>
         <div className="bg-[#1B80BA] text-[#E9EAEA] flex items-center rounded-[10px]">
           <Link
-            href={"/"}
+            href={"https://app.waverlite.com/"}
             className="py-2 px-8 border-[0.5px] border-solid border-[#4ba4d6] border-opacity-50 rounded-s-[10px]"
           >
             Login
           </Link>
           <Link
-            href={"/"}
+            href={"https://app.waverlite.com/create-account"}
             className="py-2 px-8 border-[0.5px] border-solid border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
           >
             Register
           </Link>
         </div>
       </div>
-      <div className="flex lg:hidden">X</div>
+      <div className="flex lg:hidden cursor-pointer" onClick={toggleDropdown}>
+        {isOpen ? (
+          <X className="w-8 h-8" />
+        ) : (
+          <SquareMenu className="w-8 h-8" />
+        )}
+      </div>
+      {isOpen && (
+        <div
+          className={`flex flex-col lg:hidden container-xl absolute top-20 left-0 w-full bg-white text-black transform transition-transform duration-300 ${
+            isOpen ? "translate-y-0" : "-translate-y-full"
+          }`}
+        >
+          <div className="divide-y divide-gray-500/10">a</div>
+          <div className="flex items-center justify-center py-6">
+            <div className="bg-[#1B80BA] w-fit text-[#E9EAEA] flex items-center rounded-[10px]">
+              <Link
+                href={"https://app.waverlite.com/"}
+                className="py-2 px-8 border-[0.5px] border-solid border-[#4ba4d6] border-opacity-50 rounded-s-[10px]"
+              >
+                Login
+              </Link>
+              <Link
+                href={"https://app.waverlite.com/create-account"}
+                className="py-2 px-8 border-[0.5px] border-solid border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
+              >
+                Register
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

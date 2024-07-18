@@ -3,7 +3,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section className="container-xl virtualCardBgLg">
-      <div className="grid grid-cols-2 gap-6 pt-[200px] pb-[184px]">
+      <div className="grid grid-cols-2 gap-6 pt-[200px]">
         <div>
           <p className="text-gray-text font-bold text-[20px]">
             WAVERLITE DOLLAR CARD

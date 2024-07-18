@@ -8,7 +8,7 @@ import frame from "@/assets/images/giftCard/Frame-wave.svg";
 
 const Transfers = () => {
   return (
-    <section className="container-xl my-[184px] flex flex-col gap-[28px]">
+    <section className="container-xl flex flex-col gap-[28px]">
       <div className="flex flex-col gap-[28px]">
         <div className="pathClip bg-[#e9f4fa80] grid grid-cols-2 gap-[28px] p-[52px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div className="h-full lg:h-[680px] bg-[#1B80BA] flex justify-center items-end rounded-[12px] pl-6 pt-6">

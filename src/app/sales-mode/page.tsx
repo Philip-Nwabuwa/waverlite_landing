@@ -1,3 +1,4 @@
+import Buzz from "@/components/common/Buzz";
 import Footer from "@/components/common/Footer";
 import Updates from "@/components/common/Updates";
 import Customer from "@/components/modules/sales-mode/Customer";
@@ -10,6 +11,7 @@ const page = () => {
       <Hero />
       <Customer />
       <WhySales />
+      <Buzz />
       <Updates />
       <Footer />
     </main>

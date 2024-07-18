@@ -81,7 +81,7 @@ const Buzz = () => {
           Buzz from the <br /> Waverlite Community
         </h4>
       </div>
-      <div className="relative flex w-full max-w-[1440px] py-[184px] flex-col items-center justify-center overflow-hidden">
+      <div className="relative flex w-full max-w-[1440px] flex-col items-center justify-center overflow-hidden">
         <Marquee
           pauseOnHover
           className="absolute top-1/2 -translate-y-1/2 h-[300px] [--duration:20s]"

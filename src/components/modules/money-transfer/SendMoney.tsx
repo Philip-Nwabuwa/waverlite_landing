@@ -8,7 +8,7 @@ import avatars from "@/assets/images/money-transfer/avatars.png";
 
 const SendMoney = () => {
   return (
-    <section className="container-xl my-[184px]">
+    <section className="container-xl">
       <h2 className="text-[84px] font-bold leading-[94px] text-center mb-[76px]">
         Easily Send <br />
         Money Overseas

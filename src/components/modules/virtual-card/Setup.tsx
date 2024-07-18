@@ -8,7 +8,7 @@ import Switch from "@/assets/images/virtual-cards/switch.svg";
 
 const Setup = () => {
   return (
-    <section className="container-xl flex flex-col gap-[28px] mt-[184px]">
+    <section className="container-xl flex flex-col gap-[28px]">
       <div className="grid grid-cols-5 gap-[28px]">
         <div className="col-span-2 bg-[#E9F4FA] p-[60px] rounded-[64px]">
           <h3 className="text-[80px] font-bold mb-[24px] leading-[80px]">

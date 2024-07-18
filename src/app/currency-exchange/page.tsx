@@ -1,3 +1,4 @@
+import Buzz from "@/components/common/Buzz";
 import Footer from "@/components/common/Footer";
 import Join from "@/components/common/Join";
 import Hero from "@/components/modules/currency-exchange/Hero";
@@ -8,6 +9,7 @@ const page = () => {
     <main>
       <Hero />
       <Transfers />
+      <Buzz />
       <Join />
       <Footer />
     </main>

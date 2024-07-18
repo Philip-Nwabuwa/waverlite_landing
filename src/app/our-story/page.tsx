@@ -1,7 +1,13 @@
-import React from "react";
+import Footer from "@/components/common/Footer";
+import Hero from "@/components/modules/story/Hero";
 
 const page = () => {
-  return <div>page</div>;
+  return (
+    <main>
+      <Hero />
+      <Footer />
+    </main>
+  );
 };
 
 export default page;

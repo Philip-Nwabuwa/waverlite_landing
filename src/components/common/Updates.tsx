@@ -26,7 +26,7 @@ const ReviewCard = ({ body }: { body: string }) => {
 
 const Updates = () => {
   return (
-    <div className="relative flex w-full max-w-[1440px] py-[184px] flex-col items-center justify-center overflow-hidden">
+    <div className="relative hidden lg:flex w-full max-w-[1440px] py-[70px] flex-col items-center justify-center overflow-hidden">
       <Marquee
         pauseOnHover
         className="absolute top-1/2 -translate-y-1/2 bg-[#0B0B0B] text-white h-[80px] [--duration:20s] origin-center rotate-2 z-10"

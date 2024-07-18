@@ -1,4 +1,6 @@
+import Buzz from "@/components/common/Buzz";
 import Footer from "@/components/common/Footer";
+import Join from "@/components/common/Join";
 import Updates from "@/components/common/Updates";
 import Hero from "@/components/modules/money-transfer/Hero";
 import SendMoney from "@/components/modules/money-transfer/SendMoney";
@@ -10,6 +12,8 @@ const page = () => {
       <Hero />
       <SendMoney />
       <Why />
+      <Buzz />
+      <Join />
       <Updates />
       <Footer />
     </main>

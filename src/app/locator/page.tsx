@@ -1,3 +1,4 @@
+import Buzz from "@/components/common/Buzz";
 import Footer from "@/components/common/Footer";
 import Join from "@/components/common/Join";
 import About from "@/components/modules/locator/About";
@@ -8,6 +9,7 @@ const page = () => {
     <main>
       <Hero />
       <About />
+      <Buzz />
       <Join />
       <Footer />
     </main>

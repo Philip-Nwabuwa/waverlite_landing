@@ -8,7 +8,7 @@ import Switch from "@/assets/images/api/switch.svg";
 
 const About = () => {
   return (
-    <section className="container-xl my-[184px] flex flex-col gap-[28px]">
+    <section className="container-xl flex flex-col gap-[28px]">
       <div className="pathClip bg-[#e9f4fa80] grid grid-cols-2 gap-[28px] p-[52px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
         <div>
           <h3 className="text-[80px] font-bold leading-[80px] mb-6">
@@ -27,8 +27,8 @@ const About = () => {
           <Image src={lock} alt={"Send fast"} />
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-[28px]">
-        <div className="col-span-3 bg-[#E9F4FA] p-[60px] rounded-[64px]">
+      <div className="grid grid-cols-2 gap-[28px]">
+        <div className="bg-[#E9F4FA] p-[60px] rounded-[64px]">
           <h3 className="text-[80px] font-bold mb-[24px] leading-[80px]">
             Payouts, withdrawals, collections
           </h3>
@@ -43,7 +43,7 @@ const About = () => {
             </button>
           </Link>
         </div>
-        <div className="col-span-2 bg-[#272A2B] p-[60px] rounded-[64px]">
+        <div className="bg-[#272A2B] p-[60px] rounded-[64px]">
           <h3 className="text-[80px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
             Customer profiles
           </h3>

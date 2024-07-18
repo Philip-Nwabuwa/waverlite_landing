@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Join = () => {
   return (
-    <section className="container-xl mt-[184px] flex flex-col items-center justify-center gap-8">
+    <section className="container-xl flex flex-col items-center justify-center gap-8">
       <h4 className="text-[80px] text-center font-bold leading-[80px]">
         Join the Waverlite <br /> Community
       </h4>
