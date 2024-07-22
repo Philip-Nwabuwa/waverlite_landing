@@ -76,7 +76,7 @@ const Footer = () => {
             <p className="text-[22px] text-[#E9EAEA] font-semibold">
               Enter your email
             </p>
-            <div className="w-full flex gap-4">
+            <div className="w-full flex lg:gap-4 gap-2">
               <input
                 className="w-full bg-[#696969] text-[#E9EAEA] py-2 px-4 rounded-lg"
                 placeholder="joe@gmail.com"

@@ -7,7 +7,7 @@ import Support from "@/components/modules/overdraft/Support";
 
 const page = () => {
   return (
-    <main>
+    <main className="flex flex-col lg:gap-[184px] gap-[100px]">
       <Hero />
       <Support />
       <Buzz />

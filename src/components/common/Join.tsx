@@ -3,10 +3,10 @@ import Link from "next/link";
 const Join = () => {
   return (
     <section className="container-xl flex flex-col items-center justify-center gap-8">
-      <h4 className="text-[80px] text-center font-bold leading-[80px]">
+      <h4 className="lg:text-[80px] text-[40px] text-center font-bold lg:leading-[80px] leading-[50px]">
         Join the Waverlite <br /> Community
       </h4>
-      <p className="w-full max-w-[1032px] text-center text-[#6E7071] text-[26px] font-semibold leading-[32px]">
+      <p className="w-full max-w-[1032px] text-center text-[#6E7071] lg:text-[26px] text-lg font-semibold leading-[32px]">
         Travel the world confidently with Waverlite. Whether you&apos;re
         exploring new cities, working abroad, or simply enjoying a vacation,
         Waverlite ensures you can spend like a local without any hassle.

@@ -7,7 +7,7 @@ import PerfectGift from "@/components/modules/gift-card/PerfectGift";
 
 const page = () => {
   return (
-    <main>
+    <main className="flex flex-col lg:gap-[184px] gap-[100px]">
       <Hero />
       <PerfectGift />
       <Buzz />

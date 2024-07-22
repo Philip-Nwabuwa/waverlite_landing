@@ -9,33 +9,32 @@ import avatars from "@/assets/images/money-transfer/avatars.png";
 const SendMoney = () => {
   return (
     <section className="container-xl">
-      <h2 className="text-[84px] font-bold leading-[94px] text-center mb-[76px]">
+      <h2 className="lg:text-[84px] text-[40px] font-bold leading-[50px] lg:leading-[94px] text-center mb-[76px]">
         Easily Send <br />
         Money Overseas
       </h2>
       <div className="flex flex-col gap-[28px]">
-        <div className="pathClip bg-[#e9f4fa80] grid grid-cols-2 gap-[28px] p-[52px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
-          <div className="h-full lg:h-[680px] bg-[#1B80BA] flex justify-center items-end rounded-[12px] pl-6 pt-6">
+        <div className="pathClip bg-[#e9f4fa80] grid lg:grid-cols-2 gap-[28px] lg:p-[52px] p-6 border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+          <div className="h-full lg:h-[680px] order-last lg:order-first bg-[#1B80BA] flex justify-center items-end rounded-[12px] pl-6 pt-6">
             <Image src={fast} alt={"Send fast"} />
           </div>
           <div>
-            <h3 className="text-[80px] font-bold leading-[80px] mb-6">
+            <h3 className="lg:text-[80px] text-[40px] font-bold lg:leading-[80px] leading-[50px] mb-6">
               Instant Transfers
             </h3>
-            <p className="text-gray-text font-bold text-[26px] leading-[32px] mb-12">
+            <p className="text-gray-text font-bold lg:text-[26px] text-lg lg:leading-[32px]">
               Say good-bye to days of waiting for transfers to complete. With
               Waverlite, you can send money instantly, ensuring your funds are
               available when you need them most.
             </p>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
+            <button className="w-fit lg:mt-12 mt-6 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
               Get Started Now
             </button>
           </div>
         </div>
         <div className="flex gap-[28px] bg-[#e9f4fa80] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
-          <Image src={earth1} alt={""} />
-          <div className="w-full bg-[#272A2B] p-[52px] rounded-[36px]">
-            <h3 className="text-[#E9EAEA] text-[80px] leading-[80px] font-bold mb-6">
+          <div className="w-full order-first lg:order-2 bg-[#272A2B] p-[52px] rounded-[36px]">
+            <h3 className="text-[#E9EAEA] lg:text-[80px] text-[50px] lg:leading-[80px] leading-[50px] font-bold mb-6">
               Global Reach
             </h3>
             <p className="text-gray-text text-[26px] font-bold leading-[32px]">
@@ -49,9 +48,10 @@ const SendMoney = () => {
               </button>
             </Link>
           </div>
-          <Image src={earth2} alt={""} />
+          <Image src={earth1} alt={""} />
+          <Image className="order-last" src={earth2} alt={""} />
         </div>
-        <div className="grid grid-cols-2 bg-[#e9f4fa80] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+        {/* <div className="grid grid-cols-2 bg-[#e9f4fa80] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div>
             <Image src={avatars} alt={"Avatars"} />
           </div>
@@ -71,8 +71,8 @@ const SendMoney = () => {
               </button>
             </Link>
           </div>
-        </div>
-        <div className="grid grid-cols-2 gap-[28px]">
+        </div> */}
+        {/* <div className="grid grid-cols-2 gap-[28px]">
           <div className="security rounded-[64px]">
             <div className="p-[52px]">
               <h3 className="text-[#E9F4FA] text-[70px] font-bold leading-[80px] mb-6">
@@ -107,7 +107,7 @@ const SendMoney = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

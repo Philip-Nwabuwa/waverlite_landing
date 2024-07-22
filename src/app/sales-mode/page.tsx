@@ -7,7 +7,7 @@ import WhySales from "@/components/modules/sales-mode/Why-Sales";
 
 const page = () => {
   return (
-    <main>
+    <main className="flex flex-col lg:gap-[184px] gap-[100px]">
       <Hero />
       <Customer />
       <WhySales />

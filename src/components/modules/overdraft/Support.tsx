@@ -60,12 +60,12 @@ const Support = () => {
         </div>
       </div>
       <div>
-        <div className="pathClip bg-[#e9f4fa80] grid grid-cols-2 gap-[28px] p-[52px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
-          <div className="flex items-center gap-4">
+        <div className="pathClip bg-[#e9f4fa80] grid grid-cols-5 p-[52px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+          <div className="flex col-span-3 items-center gap-4">
             <Image className="h-fit" src={person1} alt="" />
             <Image src={person2} alt="" />
           </div>
-          <div>
+          <div className="col-span-2">
             <h3 className="text-[80px] font-bold leading-[80px] mb-6">
               Low Overdraft Fees
             </h3>

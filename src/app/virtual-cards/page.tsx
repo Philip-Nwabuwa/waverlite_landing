@@ -7,7 +7,7 @@ import Setup from "@/components/modules/virtual-card/Setup";
 
 const page = () => {
   return (
-    <main>
+    <main className="flex flex-col lg:gap-[184px] gap-[100px]">
       <Hero />
       <Setup />
       <Buzz />

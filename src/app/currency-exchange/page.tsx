@@ -6,7 +6,7 @@ import Transfers from "@/components/modules/currency-exchange/Transfers";
 
 const page = () => {
   return (
-    <main>
+    <main className="flex flex-col lg:gap-[184px] gap-[100px]">
       <Hero />
       <Transfers />
       <Buzz />

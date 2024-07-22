@@ -6,7 +6,7 @@ import Hero from "@/components/modules/api/Hero";
 
 const page = () => {
   return (
-    <main>
+    <main className="flex flex-col lg:gap-[184px] gap-[100px]">
       <Hero />
       <About />
       <Buzz />
