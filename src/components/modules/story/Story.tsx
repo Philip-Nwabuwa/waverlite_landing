@@ -34,7 +34,7 @@ const Story = () => {
           </div>
           <div>
             <p>
-              Jerah and Daniel's passion for a sustainable global payment
+              Jerah and Daniel&apos;s passion for a sustainable global payment
               solution has its root in their days of working together as
               software developers. It was at this time they came to understand
               the potential of software to help automate processes that could
@@ -43,7 +43,7 @@ const Story = () => {
             </p>
             <p>
               This shared passion led to the creation of Redbiller, the parent
-              company behind Waverlite, which has taken advantage of Africa's
+              company behind Waverlite, which has taken advantage of Africa&apos;s
               financial technology revolution. For Jerah and Daniel, the goal is
               to provide individuals and businesses with hands-on financial
               tools to explore, expand, and thrive globally.
@@ -52,9 +52,9 @@ const Story = () => {
         </div>
 
         <p>
-          "From an idea in our minds to a solution in your hands, Waverlite
+          &quot;From an idea in our minds to a solution in your hands, Waverlite
           opens you to a world of endless possibilities in global payments. We
-          are ready."
+          are ready.&quot;
         </p>
       </div>
     </section>

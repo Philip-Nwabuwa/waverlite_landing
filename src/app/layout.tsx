@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/common/Navbar";
+import { Analytics } from "@vercel/analytics/react"
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    <Analytics/>
       <body
         className={`${quicksand.className} w-full flex items-center justify-center`}
       >

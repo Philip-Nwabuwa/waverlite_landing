@@ -17,7 +17,7 @@ const Hero = () => {
         </p>
         <div className="relative">
           <h2 className="text-[#272A2B] text-[70px] font-bold leading-[80px]">
-            We've been helping individuals and businesses make{" "}
+            We&apos;ve been helping individuals and businesses make{" "}
             <span className="text-[#1E8DCC]">instant global payments.</span>
           </h2>
           <div className="absolute -top-10 left-5">
