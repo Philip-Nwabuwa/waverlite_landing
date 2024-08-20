@@ -3,8 +3,6 @@ import Link from "next/link";
 
 import send from "@/assets/images/freelancer/send.png";
 import currencies from "@/assets/images/currency-exchange/Coins-currencies.svg";
-import side from "@/assets/images/currency-exchange/sideImage.png";
-import frame from "@/assets/images/giftCard/Frame-wave.svg";
 
 const Secure = () => {
   return (

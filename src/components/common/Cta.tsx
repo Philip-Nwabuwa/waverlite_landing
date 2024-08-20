@@ -24,10 +24,18 @@ const Cta = () => {
             Get more from <br className="hidden lg:flex" /> Waverlite App
           </h4>
           <div className="flex lg:gap-[32px] gap-6">
-            <Link href={"/"}>
+            <Link
+              href={"https://apps.apple.com/us/app/waverlite/id6450453788"}
+              target="_blank"
+            >
               <Image src={AppStore} alt="App Store" />
             </Link>
-            <Link href={"/"}>
+            <Link
+              href={
+                "https://play.google.com/store/apps/details?id=com.redbiller.waverlite&pcampaignid=web_share"
+              }
+              target="_blank"
+            >
               <Image src={GooglePlay} alt="Google Play" />
             </Link>
           </div>
@@ -41,7 +49,7 @@ const Cta = () => {
             </div>
             <Image
               src={Hand}
-              className="hidden lg:flex absolute top-0 right-[-55px]"
+              className="hidden lg:flex absolute top-0 right-[-65px]"
               alt="Hand"
             />
           </div>

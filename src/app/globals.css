@@ -185,3 +185,8 @@
   display: inline-block;
   animation: scrollForever 30s linear infinite;
 }
+
+.svg-img:hover a svg,
+.svg-img:hover a svg path {
+  stroke: #1c80ba;
+}

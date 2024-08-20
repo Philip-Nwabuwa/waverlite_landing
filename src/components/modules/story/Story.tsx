@@ -15,7 +15,7 @@ const Story = () => {
         <div className="grid grid-cols-2">
           <div className="relative">
             <Image src={Ceo} alt="CEO" />
-            <div className="absolute top-0 right-0 w-[250px] flex items-center gap-5 bg-white py-2 px-5 shadow-sm rounded-r-2xl">
+            <div className="h-full max-h-[90px] absolute top-[220px] right-[180px] w-[250px] flex items-center gap-5 bg-white py-2 px-5 shadow-lg rounded-[8px] rounded-r-2xl">
               <div>
                 <h5>Daniel Odinaka</h5> <p>COO</p>
               </div>
@@ -23,7 +23,7 @@ const Story = () => {
                 <Image src={Linkedin} alt="Linkedin" />
               </Link>
             </div>
-            <div className="absolute bottom-0 left-0 w-[250px] bg-white py-2 px-5 shadow-sm rounded-r-2xl">
+            <div className="h-full max-h-[90px] absolute bottom-0 -left-10 w-[250px] flex items-center gap-5 bg-white py-2 px-5 shadow-lg rounded-[8px] rounded-r-2xl">
               <div>
                 <h5>Jerah Anibor</h5> <p>CEO</p>
               </div>
@@ -32,30 +32,35 @@ const Story = () => {
               </Link>
             </div>
           </div>
-          <div>
-            <p>
-              Jerah and Daniel&apos;s passion for a sustainable global payment
-              solution has its root in their days of working together as
-              software developers. It was at this time they came to understand
-              the potential of software to help automate processes that could
-              help businesses and people save money save time, and overall have
-              a better quality of life.
-            </p>
-            <p>
-              This shared passion led to the creation of Redbiller, the parent
-              company behind Waverlite, which has taken advantage of Africa&apos;s
-              financial technology revolution. For Jerah and Daniel, the goal is
-              to provide individuals and businesses with hands-on financial
-              tools to explore, expand, and thrive globally.
-            </p>
+          <div className="w-full max-w-[620px]">
+            <div className="h-full flex flex-col justify-center gap-9">
+              <p className="text-[20px] font-semibold text-gray-text">
+                Jerah and Daniel&apos;s passion for a sustainable global payment
+                solution has its root in their days of working together as
+                software developers. It was at this time they came to understand
+                the potential of software to help automate processes that could
+                help businesses and people save money save time, and overall
+                have a better quality of life.
+              </p>
+              <p className="text-[22px] font-semibold text-gray-text">
+                This shared passion led to the creation of Redbiller, the parent
+                company behind Waverlite, which has taken advantage of
+                Africa&apos;s financial technology revolution. For Jerah and
+                Daniel, the goal is to provide individuals and businesses with
+                hands-on financial tools to explore, expand, and thrive
+                globally.
+              </p>
+            </div>
           </div>
         </div>
 
-        <p>
-          &quot;From an idea in our minds to a solution in your hands, Waverlite
-          opens you to a world of endless possibilities in global payments. We
-          are ready.&quot;
-        </p>
+        <div className="w-full flex justify-center text-center">
+          <p className="w-full max-w-[800px] text-[30px] font-bold mt-12">
+            &quot;From an idea in our minds to a solution in your hands,
+            Waverlite opens you to a world of endless possibilities in global
+            payments. We are ready.&quot;
+          </p>
+        </div>
       </div>
     </section>
   );
