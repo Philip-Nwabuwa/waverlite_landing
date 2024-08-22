@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Plus from "@/assets/icons/plus.svg";
 import Minus from "@/assets/icons/minus.svg";
 
-const page = () => {
+const Faqpage = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFaq = (index: number) => {
@@ -82,4 +82,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Faqpage;

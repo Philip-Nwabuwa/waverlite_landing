@@ -6,9 +6,10 @@ const KycPage = () => {
 
       <p className="text-gray-text text-[20px] mb-5">
         Redbiller Technologies Inc. (Waverlite), is registered with the
-        Financial Transactions Reports Analysis Centre of Canada ("FINTRAC") as
-        a money service business and able to provide foreign exchange dealings
-        and money transfer services to customers resident in Canada.
+        Financial Transactions Reports Analysis Centre of Canada
+        (&quot;FINTRAC&quot;) as a money service business and able to provide
+        foreign exchange dealings and money transfer services to customers
+        resident in Canada.
       </p>
 
       <div className="text-gray-text text-[20px] mb-5">
@@ -43,9 +44,9 @@ const KycPage = () => {
         For more information on our AML/KYC policy, please send an email
         to compliance@waverlite.emailRedbiller Technologies Inc. (Waverlite), is
         registered with the Financial Transactions Reports Analysis Centre of
-        Canada ("FINTRAC") as a money service business and able to provide
-        foreign exchange dealings and money transfer services to customers
-        resident in Canada.
+        Canada (&quot;FINTRAC&quot;) as a money service business and able to
+        provide foreign exchange dealings and money transfer services to
+        customers resident in Canada.
       </p>
 
       <div className="text-gray-text text-[20px] mb-5">

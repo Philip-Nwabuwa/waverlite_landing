@@ -15,7 +15,7 @@ const Why = () => {
           Why Work With Us?{" "}
         </h1>
         <p className="w-full text-[#bcbdbd] text-[34px]">
-          At Waverlite, we're passionate about creating innovative payment
+          At Waverlite, we&apos;re passionate about creating innovative payment
           solutions that make life easier for everyone. Join us and help shape
           the future of financial technology.{" "}
         </p>
