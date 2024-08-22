@@ -446,7 +446,7 @@ const Navbar = () => {
   } = useDropdown();
 
   return (
-    <nav className="navbar fixed container-xl max-w-[1440px] z-50">
+    <nav className="navbar fixed container-xl z-50">
       <Link
         aria-label="Waverlite logo"
         href="/"
@@ -505,7 +505,7 @@ const Navbar = () => {
             Download App <Image src={ArrowDown} alt={""} />
           </div>
           {isDownloadOpen && (
-            <div className="w-[900px] h-[300px] absolute top-[120%] -left-[500px] rounded-[24px] shadow-md z-10">
+            <div className="w-[900px] h-[300px] absolute top-[120%] -left-[700px] rounded-[24px] shadow-md z-10">
               <div className="bg-primary flex lg:items-end items-center gap-10 rounded-[48px]">
                 <div className="flex relative pl-10">
                   <Image src={Phone} className="top-[10px]" alt="Phone" />
@@ -553,16 +553,16 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <div className="text-[#E9EAEA] flex items-center rounded-[10px]">
+        <div className="flex items-center rounded-[10px]">
           <Link
             href={"https://app.waverlite.com/"}
-            className="py-2 px-8 border-[0.5px] border-solid bg-[#1B80BA] hover:bg-[#2579a9] border-[#4ba4d6] hover: border-opacity-50 rounded-s-[10px]"
+            className="py-2 px-8 border-[0.5px] bg-white hover:bg-[#E9EAEA] text-[#1B80BA] rounded-s-[10px]"
           >
             Login
           </Link>
           <Link
             href={"https://app.waverlite.com/create-account"}
-            className="py-2 px-8 border-[0.5px] border-solid bg-[#1B80BA] hover:bg-[#2579a9] border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
+            className="py-2 px-8 border-[0.5px] border-solid bg-[#1B80BA] text-[#E9EAEA] hover:bg-[#2579a9] border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
           >
             Register
           </Link>
@@ -586,16 +586,16 @@ const Navbar = () => {
         >
           <div className="divide-y divide-gray-500/10">a</div>
           <div className="flex items-center justify-center py-6">
-            <div className="bg-[#1B80BA] w-fit text-[#E9EAEA] flex items-center rounded-[10px]">
+            <div className="w-fit flex items-center rounded-[10px]">
               <Link
                 href={"https://app.waverlite.com/"}
-                className="py-2 px-8 border-[0.5px] border-solid border-[#4ba4d6] border-opacity-50 rounded-s-[10px]"
+                className="py-2 px-8 border-[0.5px] text-[#1B80BA] bg-[#E9EAEA] rounded-s-[10px]"
               >
                 Login
               </Link>
               <Link
                 href={"https://app.waverlite.com/create-account"}
-                className="py-2 px-8 border-[0.5px] border-solid border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
+                className="py-2 px-8 bg-[#1B80BA] text-[#E9EAEA] border-[0.5px] border-solid border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
               >
                 Register
               </Link>

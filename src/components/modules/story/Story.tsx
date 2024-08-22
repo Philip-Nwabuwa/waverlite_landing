@@ -19,7 +19,9 @@ const Story = () => {
               <div>
                 <h5>Daniel Odinaka</h5> <p>COO</p>
               </div>
-              <Link href={"/"}>
+              <Link
+                href={"https://www.linkedin.com/in/daniel-odinaka-226258b6/"}
+              >
                 <Image src={Linkedin} alt="Linkedin" />
               </Link>
             </div>
@@ -27,7 +29,7 @@ const Story = () => {
               <div>
                 <h5>Jerah Anibor</h5> <p>CEO</p>
               </div>
-              <Link href={"/"}>
+              <Link href={"https://www.linkedin.com/in/jerahanibor/"}>
                 <Image src={Linkedin} alt="Linkedin" />
               </Link>
             </div>

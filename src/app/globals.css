@@ -78,14 +78,51 @@
   }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+select {
+  -webkit-appearance: none; /* Safari and Chrome */
+  -moz-appearance: none; /* Firefox */
+  appearance: none;
+  background-image: none; /* Remove default background arrow */
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding-right: 2rem;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
 .navbar {
   display: flex;
   height: 92px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(233, 244, 250, 0.5);
-  background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
 }
 
 .pathClip {
@@ -94,6 +131,13 @@
 
 .virtualCardBgLg {
   background-image: url("../assets/images/virtual-cards/Card-lg-hero-Background.svg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.careerBg {
+  background-image: url("../assets/images/careers/HeroImage.png");
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -116,7 +160,7 @@
   background-image: url("../assets/images/money-transfer/security.png");
   height: 1077px;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -124,7 +168,6 @@
   background-image: url("../assets/images/money-transfer/perfect.png");
   height: 1077px;
   width: 100%;
-  background-size: cover;
   background-repeat: no-repeat;
 }
 

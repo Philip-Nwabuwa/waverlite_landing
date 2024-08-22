@@ -13,7 +13,7 @@ import Link from "next/link";
 const Cta = () => {
   return (
     <section className="container-xl">
-      <div className="bg-primary flex lg:items-end items-center lg:gap-[92px] rounded-[48px]">
+      <div className="bg-primary flex lg:items-end justify-between items-center lg:gap-[92px] rounded-[48px]">
         <div className="hidden lg:flex relative lg:pl-[56px] lg:pt-[56px]">
           <Image src={Phone} className=" top-[-100px]" alt="Phone" />
         </div>
@@ -49,7 +49,7 @@ const Cta = () => {
             </div>
             <Image
               src={Hand}
-              className="hidden lg:flex absolute top-0 right-[-65px]"
+              className="hidden lg:flex absolute top-0 right-[-55px]"
               alt="Hand"
             />
           </div>

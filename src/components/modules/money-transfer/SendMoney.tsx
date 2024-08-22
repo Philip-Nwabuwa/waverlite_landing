@@ -32,7 +32,7 @@ const SendMoney = () => {
             </button>
           </div>
         </div>
-        <div className="flex gap-[28px] bg-[#e9f4fa80] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+        {/* <div className="flex gap-[28px] bg-[#e9f4fa80] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div className="w-full order-first lg:order-2 bg-[#272A2B] p-[52px] rounded-[36px]">
             <h3 className="text-[#E9EAEA] lg:text-[80px] text-[50px] lg:leading-[80px] leading-[50px] font-bold mb-6">
               Global Reach
@@ -50,7 +50,7 @@ const SendMoney = () => {
           </div>
           <Image src={earth1} alt={""} />
           <Image className="order-last" src={earth2} alt={""} />
-        </div>
+        </div> */}
         {/* <div className="grid grid-cols-2 bg-[#e9f4fa80] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div>
             <Image src={avatars} alt={"Avatars"} />
@@ -72,7 +72,7 @@ const SendMoney = () => {
             </Link>
           </div>
         </div> */}
-        {/* <div className="grid grid-cols-2 gap-[28px]">
+        <div className="grid md:grid-cols-2 gap-[28px]">
           <div className="security rounded-[64px]">
             <div className="p-[52px]">
               <h3 className="text-[#E9F4FA] text-[70px] font-bold leading-[80px] mb-6">
@@ -107,7 +107,7 @@ const SendMoney = () => {
               </Link>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
