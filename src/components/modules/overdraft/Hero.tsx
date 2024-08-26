@@ -10,10 +10,10 @@ const Hero = () => {
           <p className="text-gray-text font-bold text-[20px]">
             WAVERLITE OVERDRAFT BALANCE
           </p>
-          <h1 className="text-[84px] font-bold my-6 leading-[94px]">
+          <h1 className="text-[60px] font-bold my-6 leading-[74px]">
             Financial Flexibility for Canadians
           </h1>
-          <h2 className="text-[26px] text-[#525555] font-bold">
+          <h2 className="text-[24px] text-[#525555] font-bold">
             Waverlite&apos;s Overdraft Balance offers peace of mind with instant
             access to extra funds whenever you need them.
           </h2>

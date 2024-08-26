@@ -9,7 +9,7 @@ import avatars from "@/assets/images/money-transfer/avatars.png";
 const SendMoney = () => {
   return (
     <section className="container-xl">
-      <h2 className="lg:text-[84px] text-[40px] font-bold leading-[50px] lg:leading-[94px] text-center mb-[76px]">
+      <h2 className="lg:text-[60px] text-[40px] font-bold leading-[50px] lg:leading-[74px] text-center mb-[76px]">
         Easily Send <br />
         Money Overseas
       </h2>
@@ -19,7 +19,7 @@ const SendMoney = () => {
             <Image src={fast} alt={"Send fast"} />
           </div>
           <div>
-            <h3 className="lg:text-[80px] text-[40px] font-bold lg:leading-[80px] leading-[50px] mb-6">
+            <h3 className="lg:text-[60px] text-[40px] font-bold lg:leading-[80px] leading-[50px] mb-6">
               Instant Transfers
             </h3>
             <p className="text-gray-text font-bold lg:text-[26px] text-lg lg:leading-[32px]">
@@ -32,9 +32,9 @@ const SendMoney = () => {
             </button>
           </div>
         </div>
-        {/* <div className="flex gap-[28px] bg-[#e9f4fa80] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+        <div className="flex gap-[28px] bg-[#e9f4fa80] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div className="w-full order-first lg:order-2 bg-[#272A2B] p-[52px] rounded-[36px]">
-            <h3 className="text-[#E9EAEA] lg:text-[80px] text-[50px] lg:leading-[80px] leading-[50px] font-bold mb-6">
+            <h3 className="text-[#E9EAEA] lg:text-[60px] text-[50px] lg:leading-[80px] leading-[50px] font-bold mb-6">
               Global Reach
             </h3>
             <p className="text-gray-text text-[26px] font-bold leading-[32px]">
@@ -48,15 +48,15 @@ const SendMoney = () => {
               </button>
             </Link>
           </div>
-          <Image src={earth1} alt={""} />
-          <Image className="order-last" src={earth2} alt={""} />
-        </div> */}
-        {/* <div className="grid grid-cols-2 bg-[#e9f4fa80] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+          <Image className="hidden lg:flex" src={earth1} alt={""} />
+          <Image className="hidden lg:flex order-last" src={earth2} alt={""} />
+        </div>
+        <div className="grid lg:grid-cols-2 bg-[#e9f4fa80] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div>
-            <Image src={avatars} alt={"Avatars"} />
+            <Image src={avatars} className="hidden lg:flex" alt={"Avatars"} />
           </div>
           <div className="p-[52px]">
-            <h3 className="text-[70px] leading-[80px] font-bold mb-6">
+            <h3 className="text-[50px] leading-[80px] font-bold mb-6">
               Peer-to-Peer Technology
             </h3>
             <p className="text-gray-text text-[26px] font-bold leading-[32px]">
@@ -71,11 +71,11 @@ const SendMoney = () => {
               </button>
             </Link>
           </div>
-        </div> */}
+        </div>
         <div className="grid md:grid-cols-2 gap-[28px]">
           <div className="security rounded-[64px]">
             <div className="p-[52px]">
-              <h3 className="text-[#E9F4FA] text-[70px] font-bold leading-[80px] mb-6">
+              <h3 className="text-[#E9F4FA] text-[50px] font-bold leading-[80px] mb-6">
                 Your Security is Our Priority
               </h3>
               <p className="text-[#B9DCEF] text-[26px] font-bold leading-[32px]">
@@ -91,7 +91,7 @@ const SendMoney = () => {
           </div>
           <div className="perfect rounded-[64px]">
             <div className="p-[52px]">
-              <h3 className="text-[#E9F4FA] text-[70px] font-bold leading-[80px] mb-6">
+              <h3 className="text-[#E9F4FA] text-[50px] font-bold leading-[80px] mb-6">
                 Perfect
                 <br />
                 for Every Situation

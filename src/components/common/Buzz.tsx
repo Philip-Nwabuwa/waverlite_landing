@@ -77,11 +77,11 @@ const Buzz = () => {
   return (
     <section>
       <div className="flex justify-center lg:mb-[76px] mb-10">
-        <h4 className="lg:text-[80px] text-[40px] text-center font-bold lg:leading-[80px] leading-[50px]">
+        <h4 className="lg:text-[60px] text-[40px] text-center font-bold lg:leading-[80px] leading-[50px]">
           Buzz from the <br /> Waverlite Community
         </h4>
       </div>
-      <div className="relative flex w-full max-w-[1440px] py-[150px] flex-col items-center justify-center overflow-hidden">
+      <div className="relative flex w-full py-[150px] flex-col items-center justify-center overflow-hidden">
         <Marquee
           pauseOnHover
           className="absolute top-1/2 -translate-y-1/2 h-[300px] [--duration:20s]"

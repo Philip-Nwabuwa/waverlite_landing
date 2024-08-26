@@ -43,10 +43,10 @@ const Contact = () => {
   return (
     <section className="container-xl flex flex-col items-center">
       <div className="flex flex-col items-center justify-center gap-6 text-center lg:mb-[60px]">
-        <h1 className="text-black text-[84px] font-bold my-6 leading-[94px]">
+        <h1 className="text-black text-[40px] lg:text-[60px] font-bold my-6 leading-[70px]">
           Apply Now{" "}
         </h1>
-        <p className="w-full text-[#bcbdbd] text-[34px]">
+        <p className="w-full text-[#bcbdbd] text-[24px]">
           Ready to join the Waverlite team? <br />
           Fill out the form below to apply.
         </p>

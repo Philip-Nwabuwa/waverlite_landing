@@ -13,11 +13,11 @@ import freelancers2 from "@/assets/images/main/freelancers2.png";
 import sales from "@/assets/images/main/SalesMode_Slide.png";
 import map from "@/assets/images/main/map.png";
 
-const Experience = () => {
+const Simplify = () => {
   return (
     <section className="container-xl">
       <h3 className="text-[#272A2B] text-center lg:text-[60px] text-[40px] font-bold lg:leading-[94px] leading-[50px] mb-[72px]">
-        Feel the best experience with our features
+        Simplify Your Payments Anywhere{" "}
       </h3>
       <div className="flex flex-col gap-[28px]">
         <div className="bg-[#E9F4FA] grid lg:grid-cols-2 rounded-[32px]">
@@ -140,4 +140,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Simplify;

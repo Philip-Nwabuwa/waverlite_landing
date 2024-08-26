@@ -10,10 +10,10 @@ const About = () => {
     <section className="container-xl flex flex-col gap-[28px]">
       <div className="flex gap-[28px]">
         <div className="bg-[#E9F4FA] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] font-bold mb-[24px] leading-[80px]">
+          <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
             Filter by Category
           </h3>
-          <p className="text-[26px] text-[#9C9D9D] font-bold">
+          <p className="text-[24px] text-[#9C9D9D] font-bold">
             Filter results by category, such as dining, shopping, or services.
           </p>
           <Link href={"/"}>
@@ -24,10 +24,10 @@ const About = () => {
           <Image className="mt-[28px]" src={search} alt={"search"} />
         </div>
         <div className="bg-[#E9F4FA] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] font-bold mb-[24px] leading-[80px]">
+          <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
             Locate Businesses with Ease
           </h3>
-          <p className="text-[26px] text-[#9C9D9D] font-bold">
+          <p className="text-[24px] text-[#9C9D9D] font-bold">
             Search for nearby stores, restaurants, and services that accept
             Waverlite.
           </p>
@@ -41,10 +41,10 @@ const About = () => {
       </div>
       <div className="flex gap-[28px]">
         <div className="bg-[#E9F4FA] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] font-bold mb-[24px] leading-[80px]">
+          <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
             Get Instant Directions
           </h3>
-          <p className="text-[26px] text-[#9C9D9D] font-bold">
+          <p className="text-[24px] text-[#9C9D9D] font-bold">
             Get step-by-step directions to any Waverlite-supported business.
           </p>
           <Link href={"/"}>

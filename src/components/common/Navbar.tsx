@@ -7,13 +7,22 @@ import { Nunito } from "next/font/google";
 import Logo1 from "@/assets/icons/logo/Group.svg";
 import Waverlite from "@/assets/icons/logo/WaverliteBlack.svg";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
-import { SquareMenu, X } from "lucide-react";
+import { AlignJustify, ChevronDown, ChevronUp, X } from "lucide-react";
 import useDropdown from "@/hooks/useDropdown";
 import AppStore from "@/assets/images/cta/App Store.png";
 import GooglePlay from "@/assets/images/cta/Google Play.png";
 import Phone from "@/assets/images/cta/Galaxy S20 Ultra 1.png";
 import Hand from "@/assets/images/cta/Hand.png";
 import QrCode from "@/assets/images/cta/QR Code.png";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import {
+  CompanyList,
+  DeveloperList,
+  HelpList,
+  LegalList,
+  ProductsList,
+} from "./Footer";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -445,8 +454,39 @@ const Navbar = () => {
     ref: dropdownNavRef,
   } = useDropdown();
 
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [openList, setOpenList] = useState(null);
+
+  const toggleList = (listName: any) => {
+    if (openList === listName) {
+      setOpenList(null);
+    } else {
+      setOpenList(listName);
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar fixed container-xl z-50">
+    <nav
+      className={`navbar ${
+        isScrolled ? "navbar-scrolled" : ""
+      } fixed w-full px-[20px] sm:px-[40px] lg:px-[60px] 2xl:px-[100px] z-50`}
+    >
       <Link
         aria-label="Waverlite logo"
         href="/"
@@ -496,7 +536,7 @@ const Navbar = () => {
           Our Story
         </Link>
       </div>
-      <div className="lg:flex hidden items-center gap-2 py-2 px-4">
+      <div className="lg:flex hidden items-center gap-2 py-2 pl-4">
         <div className="relative" ref={downloadDropdownRef}>
           <div
             onClick={toggleDownloadDropdown}
@@ -556,12 +596,14 @@ const Navbar = () => {
         <div className="flex items-center rounded-[10px]">
           <Link
             href={"https://app.waverlite.com/"}
+            target="_blank"
             className="py-2 px-8 border-[0.5px] bg-white hover:bg-[#E9EAEA] text-[#1B80BA] rounded-s-[10px]"
           >
             Login
           </Link>
           <Link
             href={"https://app.waverlite.com/create-account"}
+            target="_blank"
             className="py-2 px-8 border-[0.5px] border-solid bg-[#1B80BA] text-[#E9EAEA] hover:bg-[#2579a9] border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
           >
             Register
@@ -575,34 +617,152 @@ const Navbar = () => {
         {isNavOpen ? (
           <X className="w-8 h-8" />
         ) : (
-          <SquareMenu className="w-8 h-8" />
+          <AlignJustify className="w-8 h-8" />
         )}
       </div>
-      {isNavOpen && (
-        <div
-          className={`flex flex-col lg:hidden container-xl absolute top-20 left-0 w-full bg-white text-black transform transition-transform duration-300 ${
-            isNavOpen ? "translate-y-0" : "-translate-y-full"
-          }`}
-        >
-          <div className="divide-y divide-gray-500/10">a</div>
-          <div className="flex items-center justify-center py-6">
-            <div className="w-fit flex items-center rounded-[10px]">
+      <AnimatePresence>
+        {isNavOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="px-[20px] sm:px-[40px] lg:px-[60px] 2xl:px-[100px] flex flex-col gap-4 lg:hidden absolute top-20 left-0 w-full bg-white text-black"
+          >
+            <div
+              className="flex mt-4 justify-between items-center cursor-pointer"
+              onClick={() => toggleList("products")}
+            >
+              <div className="font-semibold">Products</div>
+              {openList === "products" ? <ChevronUp /> : <ChevronDown />}
+            </div>
+            {openList === "products" && (
+              <ul className="flex flex-col gap-1 ml-4">
+                {ProductsList.map((item, index) => (
+                  <li className="flex flex-col leading-[32px]" key={index}>
+                    <Link
+                      href={item.href}
+                      onClick={() => {
+                        toggleNavDropdown();
+                      }}
+                    >
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <div
+              className="flex mt-4 justify-between items-center cursor-pointer"
+              onClick={() => toggleList("company")}
+            >
+              <div className="font-semibold">Company</div>
+              {openList === "company" ? <ChevronUp /> : <ChevronDown />}
+            </div>
+            {openList === "company" && (
+              <ul className="flex flex-col gap-1 ml-4">
+                {CompanyList.map((item, index) => (
+                  <li className="flex flex-col leading-[32px]" key={index}>
+                    <Link
+                      href={item.href}
+                      onClick={() => {
+                        toggleNavDropdown();
+                      }}
+                    >
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <div
+              className="flex mt-4 justify-between items-center cursor-pointer"
+              onClick={() => toggleList("developer")}
+            >
+              <div className="font-semibold">Developers</div>
+              {openList === "developer" ? <ChevronUp /> : <ChevronDown />}
+            </div>
+            {openList === "developer" && (
+              <ul className="flex flex-col gap-1 ml-4">
+                {DeveloperList.map((item, index) => (
+                  <li className="flex flex-col leading-[32px]" key={index}>
+                    <Link
+                      href={item.href}
+                      onClick={() => {
+                        toggleNavDropdown();
+                      }}
+                    >
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <div
+              className="flex mt-4 justify-between items-center cursor-pointer"
+              onClick={() => toggleList("legal")}
+            >
+              <div className="font-semibold">Legal</div>
+              {openList === "legal" ? <ChevronUp /> : <ChevronDown />}
+            </div>
+            {openList === "legal" && (
+              <ul className="flex flex-col gap-1 ml-4">
+                {LegalList.map((item, index) => (
+                  <li className="flex flex-col leading-[32px]" key={index}>
+                    <Link
+                      href={item.href}
+                      onClick={() => {
+                        toggleNavDropdown();
+                      }}
+                    >
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <div
+              className="flex mt-4 justify-between items-center cursor-pointer"
+              onClick={() => toggleList("help")}
+            >
+              <div className="font-semibold">Help</div>
+              {openList === "help" ? <ChevronUp /> : <ChevronDown />}
+            </div>
+            {openList === "help" && (
+              <ul className="flex flex-col gap-1 ml-4">
+                {HelpList.map((item, index) => (
+                  <li className="flex flex-col leading-[32px]" key={index}>
+                    <Link
+                      href={item.href}
+                      onClick={() => {
+                        toggleNavDropdown();
+                      }}
+                    >
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <div className="w-full flex justify-center items-center my-4 rounded-[10px]">
               <Link
                 href={"https://app.waverlite.com/"}
-                className="py-2 px-8 border-[0.5px] text-[#1B80BA] bg-[#E9EAEA] rounded-s-[10px]"
+                target="_blank"
+                className="py-2 px-8 border-[0.5px] bg-white hover:bg-[#E9EAEA] text-[#1B80BA] rounded-s-[10px]"
               >
                 Login
               </Link>
               <Link
                 href={"https://app.waverlite.com/create-account"}
-                className="py-2 px-8 bg-[#1B80BA] text-[#E9EAEA] border-[0.5px] border-solid border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
+                target="_blank"
+                className="py-2 px-8 border-[0.5px] border-solid bg-[#1B80BA] text-[#E9EAEA] hover:bg-[#2579a9] border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
               >
                 Register
               </Link>
             </div>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

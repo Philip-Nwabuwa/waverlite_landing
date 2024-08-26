@@ -16,7 +16,7 @@ const Customer = () => {
       <div className="flex flex-col gap-[28px]">
         <div className="flex flex-col bg-[#E9F4FA] p-[52px] rounded-[32px]">
           <div>
-            <h3 className="text-[68px] font-bold text-[#272A2B] leading-[80px] mb-[24px]">
+            <h3 className="lg:text-[60px] text-[40px] font-bold text-[#272A2B] leading-[80px] mb-[24px]">
               Expand Your Customer Base
             </h3>
             <p className="w-full max-w-[683px] text-[#9C9D9D] text-[20px] font-bold leading-[32px] mb-[48px]">
@@ -37,10 +37,10 @@ const Customer = () => {
         <div className="grid grid-cols-2 gap-[28px]">
           <div className="flex flex-col justify-between bg-[#E9F4FA] rounded-[64px]">
             <div className="px-[60px] pt-[60px]">
-              <h3 className="text-[80px] font-bold mb-[24px] leading-[80px]">
+              <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
                 Easy Setup
               </h3>
-              <p className="text-[26px] text-[#9C9D9D] font-bold">
+              <p className="text-[24px] text-[#9C9D9D] font-bold">
                 Quickly create virtual debit cards through the Waverlite app
                 with just a few clicks.
               </p>
@@ -52,16 +52,16 @@ const Customer = () => {
             </div>
             <Image
               src={SalesBoard}
-              className="rounded-[64px]"
+              className="rounded-[64px] w-full"
               alt="Sales mode dashboard"
             />
           </div>
           <div className=" bg-[#272A2B] rounded-[64px]">
             <div className="px-[60px] pt-[60px]">
-              <h3 className="text-[80px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
+              <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] leading-[70px]">
                 Global Acceptance
               </h3>
-              <p className="text-[#9C9D9D] text-[26px] font-bold">
+              <p className="text-[#9C9D9D] text-[24px] font-bold">
                 Use your virtual debit cards on popular platforms and websites
                 worldwide, including Amazon, Netflix, and more.
               </p>
@@ -73,7 +73,7 @@ const Customer = () => {
             </div>
             <Image
               src={SalesDash}
-              className="rounded-[64px]"
+              className="rounded-[64px] w-full"
               alt="Sales mode dashboard"
             />
           </div>
@@ -81,7 +81,7 @@ const Customer = () => {
         <div className="bg-[#E9F4FA] grid grid-cols-2 rounded-[32px]">
           <div className="p-[52px]">
             <Image src={Icon1} alt="" />
-            <h3 className="text-[68px] font-bold text-[#272A2B] leading-[80px] my-[24px]">
+            <h3 className="lg:text-[60px] text-[40px] font-bold text-[#272A2B] leading-[80px] my-[24px]">
               Scan to Pay
             </h3>
             <p className="text-[#9C9D9D] text-[20px] font-bold leading-[32px] mb-[48px]">

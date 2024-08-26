@@ -33,10 +33,10 @@ const brands = [
 const Brands = () => {
   return (
     <section className="container-xl">
-      <h3 className="text-[#272A2B] text-center lg:text-[80px] text-[32px] font-bold lg:leading-[94px] lg:mb-[72px] mb-10">
+      <h3 className="text-[#272A2B] text-center lg:text-[60px] text-[32px] font-bold lg:leading-[94px] lg:mb-[72px] mb-10">
         Over 100 of the fastest-growing brands use Waverlite
       </h3>
-      <p className="mt-6 text-gray-text font-bold lg:text-[26px] lg:leading-[32px] text-center mb-[72px]">
+      <p className="mt-6 text-gray-text font-bold lg:text-[24px] lg:leading-[32px] text-center mb-[72px]">
         With our secure and efficient platform,
         <br className="hidden lg:flex" /> we provide seamless transactions that
         support businesses <br className="hidden lg:flex" />

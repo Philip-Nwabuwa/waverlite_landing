@@ -10,10 +10,10 @@ const Support = () => {
   return (
     <section className="container-xl flex flex-col gap-[28px]">
       <div className="bg-[#272A2B] rounded-[64px] p-[28px]">
-        <h2 className="mb-6 text-[80px] text-[#E9EAEA] font-bold">
+        <h2 className="mb-6 lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold">
           Emergency Support
         </h2>
-        <p className="text-[#BCBDBD] text-[26px] font-bold">
+        <p className="text-[#BCBDBD] text-[24px] font-bold">
           Get immediate access to extra funds during unexpected expenses or{" "}
           <br />
           emergencies, ensuring you&apos;re never caught off guard.
@@ -29,7 +29,7 @@ const Support = () => {
       </div>
       <div className="grid grid-cols-5 gap-[28px]">
         <div className="col-span-2 bg-[#E9F4FA] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] font-bold mb-[24px] leading-[80px]">
+          <h3 className="lg:text-[60px] text-[40px] font-bold mb-[24px] leading-[80px]">
             No Waiting
           </h3>
           <p className="text-[26px] text-[#9C9D9D] font-bold">
@@ -44,7 +44,7 @@ const Support = () => {
           </Link>
         </div>
         <div className="col-span-3 bg-[#272A2B] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
+          <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
             No Hidden Charge
           </h3>
           <p className="text-[#9C9D9D] text-[26px] font-bold">
@@ -66,10 +66,10 @@ const Support = () => {
             <Image src={person2} alt="" />
           </div>
           <div className="col-span-2">
-            <h3 className="text-[80px] font-bold leading-[80px] mb-6">
+            <h3 className="lg:text-[60px] text-[40px] font-bold leading-[80px] mb-6">
               Low Overdraft Fees
             </h3>
-            <p className="text-gray-text font-bold text-[26px] leading-[32px] mb-12">
+            <p className="text-gray-text font-bold text-[24px] leading-[32px] mb-12">
               Benefit from competitive and reasonable overdraft fees that are
               designed to be budget-friendly and manageable.
             </p>

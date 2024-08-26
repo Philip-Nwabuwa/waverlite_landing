@@ -24,7 +24,7 @@ const icons = [
   },
 ];
 
-const ProductsList = [
+export const ProductsList = [
   { text: "Money Transfer", href: "/money-transfer" },
   { text: "Scan to pay", href: "/scan-to-pay" },
   { text: "Overdraft", href: "/overdraft" },
@@ -35,21 +35,21 @@ const ProductsList = [
   { text: "Locator", href: "/locator" },
 ];
 
-const CompanyList = [
+export const CompanyList = [
   { text: "Our Story", href: "/our-story" },
   { text: "Freelancers", href: "/freelancers" },
   { text: "Careers", href: "/career" },
 ];
-const DeveloperList = [
+export const DeveloperList = [
   { text: "API Documentation", href: "/api" },
   { text: "Tech Support", href: "#" },
 ];
-const LegalList = [
+export const LegalList = [
   { text: "AML & KYC Policy", href: "kyc-policy" },
   { text: "Privacy Policy", href: "/privacy-policy" },
   { text: "Terms of Service", href: "/terms-of-service" },
 ];
-const HelpList = [
+export const HelpList = [
   { text: "Contact", href: "/contact" },
   { text: "FAQs", href: "/faqs" },
 ];

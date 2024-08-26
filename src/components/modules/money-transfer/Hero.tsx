@@ -10,12 +10,12 @@ const Hero = () => {
         <p className="text-gray-text font-bold text-[20px]">
           GLOBAL MONEY TRANSFERS
         </p>
-        <h1 className="lg:text-[84px] text-[45px] font-bold my-6 leading-[50px] lg:leading-[94px]">
+        <h1 className="lg:text-[60px] text-[40px] font-bold my-6 leading-[50px] lg:leading-[94px]">
           Fast and Secure
           <br />
           Global Money Transfers
         </h1>
-        <h2 className="lg:text-[34px] text-xl text-[#525555]">
+        <h2 className="lg:text-[30px] text-xl text-[#525555]">
           Send money locally and internationally with ease.
         </h2>
         <Link href={"/"} className="w-full flex justify-center">

@@ -10,10 +10,10 @@ const Hero = () => {
         <p className="text-gray-text font-bold text-[20px]">
           WAVERLITE GIFT CARDS
         </p>
-        <h1 className="text-[84px] font-bold my-6 leading-[94px]">
+        <h1 className="lg:text-[60px] text-[40px] font-bold my-6 leading-[94px]">
           The Perfect Gift for Everyone
         </h1>
-        <h2 className="w-full max-w-[547px] text-[26px] text-[#525555] font-bold">
+        <h2 className="w-full max-w-[547px] text-[24px] text-[#525555] font-bold">
           Convenient, versatile, and secure gift cards for any occasion.
         </h2>
         <Link href={"/"} className="w-full flex justify-center">

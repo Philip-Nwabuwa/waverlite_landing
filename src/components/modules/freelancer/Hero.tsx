@@ -11,10 +11,10 @@ const Hero = () => {
         <p className="text-gray-text font-bold text-[20px] mt-16">
           BUILT FOR FREELANCERS{" "}
         </p>
-        <h1 className="text-[84px] font-bold my-6 leading-[94px]">
+        <h1 className="text-[40px] lg:text-[60px] font-bold my-6 leading-[70px]">
           Empower Your Freelance Career with Waverlite{" "}
         </h1>
-        <h2 className="w-full max-w-[547px] text-[26px] text-[#525555] font-bold">
+        <h2 className="w-full max-w-[547px] text-[24px] text-[#525555] font-bold">
           Simplify Payments and Expand Your Opportunities.{" "}
         </h2>
       </div>

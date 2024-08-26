@@ -11,10 +11,10 @@ const About = () => {
     <section className="container-xl flex flex-col gap-[28px]">
       <div className="pathClip bg-[#e9f4fa80] grid grid-cols-2 gap-[28px] p-[52px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
         <div>
-          <h3 className="text-[80px] font-bold leading-[80px] mb-6">
+          <h3 className="text-[40px] lg:text-[60px] font-bold leading-[70px] mb-6">
             3D Secure Authentication
           </h3>
-          <p className="text-gray-text font-bold text-[26px] leading-[32px] mb-12">
+          <p className="text-gray-text font-bold text-[24px] leading-[32px] mb-12">
             Waverlite uses 3D Secure Authentication to add an aditional layer of
             security by ensuring that all debit related requests made on your
             wallet actually originated from your server.
@@ -29,10 +29,10 @@ const About = () => {
       </div>
       <div className="grid grid-cols-2 gap-[28px]">
         <div className="bg-[#E9F4FA] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] font-bold mb-[24px] leading-[80px]">
+          <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
             Payouts, withdrawals, collections
           </h3>
-          <p className="text-[26px] text-[#9C9D9D] font-bold">
+          <p className="text-[24px] text-[#9C9D9D] font-bold">
             Make requests to send and receive money from your customers in
             Africa, Asia, Latin America, Canada and over 50 countries via
             Waverlite&apos;s robust APIs.
@@ -44,10 +44,10 @@ const About = () => {
           </Link>
         </div>
         <div className="bg-[#272A2B] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
+          <h3 className="text-[40px] lg:text-[60px] text-[#E9EAEA] font-bold mb-[24px] leading-[70px]">
             Customer profiles
           </h3>
-          <p className="text-[#9C9D9D] text-[26px] font-bold">
+          <p className="text-[#9C9D9D] text-[24px] font-bold">
             Customer profiles are used to keep track of customer information.
             All API operations are attached to a customer profile for ease of
             access and audit.
@@ -87,10 +87,10 @@ const About = () => {
           </div>
         </div>
         <div className="py-[52px] pr-[52px]">
-          <h3 className="text-[80px] font-bold leading-[80px] mb-6">
+          <h3 className="text-[40px] lg:text-[60px] font-bold leading-[70px] mb-6">
             Seamless payment reconciliation
           </h3>
-          <p className="text-gray-text font-bold text-[26px] leading-[32px] mb-12">
+          <p className="text-gray-text font-bold text-[24px] leading-[32px] mb-12">
             Waverlite&apos;s APIs handle pending or failed transactions through
             automatic reversals or retries, based on your account settings.{" "}
           </p>

@@ -11,10 +11,10 @@ const Hero = () => {
           <p className="text-gray-text font-bold text-[20px]">
             WAVERLITE FOR DEVELOPERS
           </p>
-          <h1 className="text-[80px] text-[#E9EAEA] font-bold my-6 leading-[94px]">
+          <h1 className="text-[40px] lg:text-[60px] text-[#E9EAEA] font-bold my-6 leading-[70px]">
             Robust APIs for Developers
           </h1>
-          <h2 className="text-[26px] text-[#525555] font-bold">
+          <h2 className="text-[24px] text-[#525555] font-bold">
             Waverlite was built with developers in mind. Give your application
             super powers with Waverlite API integration.
           </h2>

@@ -50,8 +50,8 @@ const Contact = () => {
           key={index}
         >
           <Image src={item.logo} alt={item.title} />
-          <h1 className="text-[60px] font-bold">{item.title}</h1>
-          <p className="text-[26px] text-gray-text">{item.content}</p>
+          <h1 className="lg:text-[60px] text-[40px] font-bold">{item.title}</h1>
+          <p className="text-[24px] text-gray-text">{item.content}</p>
           <div className="flex gap-[32px]">
             <div className="bg-[#E9F4FA] border-[#B9DCEF] border border-solid rounded-sm flex px-[32px] py-[24px] items-center gap-2">
               <Image src={mail} alt="mail" />

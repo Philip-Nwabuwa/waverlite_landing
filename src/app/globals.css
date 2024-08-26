@@ -117,12 +117,16 @@ select {
 
 .navbar {
   display: flex;
-  height: 92px;
+  height: 82px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(233, 244, 250, 0.5);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(10px);
+}
+
+.navbar-scrolled {
+  background-color: white;
 }
 
 .pathClip {
@@ -158,15 +162,14 @@ select {
 
 .security {
   background-image: url("../assets/images/money-transfer/security.png");
-  height: 1077px;
+  height: 100%;
   width: 100%;
-  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .perfect {
   background-image: url("../assets/images/money-transfer/perfect.png");
-  height: 1077px;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
 }

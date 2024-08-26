@@ -11,10 +11,10 @@ const Setup = () => {
     <section className="container-xl flex flex-col gap-[28px]">
       <div className="grid grid-cols-5 gap-[28px]">
         <div className="col-span-2 bg-[#E9F4FA] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] font-bold mb-[24px] leading-[80px]">
+          <h3 className="lg:text-[60px] text-[40px] font-bold mb-[24px] leading-[80px]">
             Easy Setup
           </h3>
-          <p className="text-[26px] text-[#9C9D9D] font-bold">
+          <p className="text-[24px] text-[#9C9D9D] font-bold">
             Quickly create virtual debit cards through the Waverlite app with
             just a few clicks.
           </p>
@@ -25,7 +25,7 @@ const Setup = () => {
           </Link>
         </div>
         <div className="col-span-3 bg-[#272A2B] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
+          <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
             Global Acceptance
           </h3>
           <p className="text-[#9C9D9D] text-[26px] font-bold">
@@ -72,10 +72,10 @@ const Setup = () => {
             </div>
           </div>
           <div className="py-[52px] pr-[52px]">
-            <h3 className="text-[80px] font-bold leading-[80px] mb-6">
+            <h3 className="lg:text-[60px] text-[40px] font-bold leading-[80px] mb-6">
               Control Spending
             </h3>
-            <p className="text-gray-text font-bold text-[26px] leading-[32px] mb-12">
+            <p className="text-gray-text font-bold text-[24px] leading-[32px] mb-12">
               Enable or disable your cards instantly to manage spending.
             </p>
             <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">

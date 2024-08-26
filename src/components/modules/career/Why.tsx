@@ -11,18 +11,18 @@ const Why = () => {
   return (
     <section className="container-xl">
       <div className="flex flex-col items-center justify-center gap-6 text-center lg:mb-[84px]">
-        <h1 className="text-black text-[84px] font-bold my-6 leading-[94px]">
+        <h1 className="text-black lg:text-[60px] text-[40px] font-bold my-6 leading-[94px]">
           Why Work With Us?{" "}
         </h1>
-        <p className="w-full text-[#bcbdbd] text-[34px]">
+        <p className="w-full text-[#bcbdbd] text-[24px]">
           At Waverlite, we&apos;re passionate about creating innovative payment
           solutions that make life easier for everyone. Join us and help shape
           the future of financial technology.{" "}
         </p>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col lg:flex-row justify-between gap-[30px]">
         <div className="flex flex-col gap-[30px]">
-          <div className="bg-[#272A2B] flex flex-col justify-between h-[490px] w-[400px] p-9 rounded-[44px]">
+          <div className="bg-[#272A2B] h-full flex flex-col justify-between p-9 rounded-[44px]">
             <Image src={bulb} alt="bulb" />
             <p className="text-[#E9EAEA] text-[40px] font-bold">
               {" "}
@@ -30,18 +30,18 @@ const Why = () => {
             </p>
           </div>
           <div>
-            <Image src={team2} alt="team2" />
+            <Image src={team2} alt="team2" className="w-full " />
           </div>
         </div>
         <div className="flex flex-col gap-[30px]">
-          <div className="bg-[#E9EAEA] flex flex-col justify-between h-[490px] w-[400px] p-9 rounded-[44px]">
+          <div className="bg-[#E9EAEA] h-full flex flex-col justify-between p-9 rounded-[44px]">
             <Image src={plant} alt="plant" />
             <p className="text-black text-[40px] font-bold">
               {" "}
               Innovative & dynamic work environment.
             </p>
           </div>
-          <div className="bg-[#E9EAEA] flex flex-col justify-between h-[490px] w-[400px] p-9 rounded-[44px]">
+          <div className="bg-[#E9EAEA] h-full flex flex-col justify-between p-9 rounded-[44px]">
             <Image src={cash} alt="cash" />
             <p className="text-black text-[40px] font-bold">
               {" "}
@@ -51,9 +51,9 @@ const Why = () => {
         </div>
         <div className="flex flex-col gap-[30px]">
           <div>
-            <Image src={team1} alt="team2" />
+            <Image src={team1} alt="team2" className="w-full" />
           </div>
-          <div className="bg-[#272A2B] flex flex-col justify-between h-[490px] w-[400px] p-9 rounded-[44px]">
+          <div className="bg-[#272A2B] h-[453px] flex flex-col justify-between p-9 rounded-[44px]">
             <Image src={colab} alt="colab" />
             <p className="text-[#E9EAEA] text-[40px] font-bold">
               {" "}

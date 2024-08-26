@@ -12,7 +12,7 @@ const PerfectGift = () => {
     <section className="container-xl flex flex-col gap-[28px]">
       <div className="pathClip flex justify-between bg-[#272A2B] rounded-[64px] p-[52px]">
         <div>
-          <h2 className="mb-6 text-[80px] text-[#E9EAEA] font-bold">
+          <h2 className="mb-6 lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold">
             Perfect Gifts
           </h2>
           <p className="w-full max-w-[525px] text-[#BCBDBD] text-[26px] font-bold">
@@ -33,7 +33,7 @@ const PerfectGift = () => {
       </div>
       <div className="grid grid-cols-5 gap-[28px]">
         <div className="col-span-2 bg-[#E9F4FA] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] font-bold mb-[24px] leading-[80px]">
+          <h3 className="lg:text-[60px] text-[40px] font-bold mb-[24px] leading-[80px]">
             No Hidden Fees
           </h3>
           <p className="text-[26px] text-[#9C9D9D] font-bold">
@@ -46,7 +46,7 @@ const PerfectGift = () => {
           </Link>
         </div>
         <div className="col-span-3 bg-[#272A2B] p-[60px] rounded-[64px]">
-          <h3 className="text-[80px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
+          <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
             Simple to Buy and Use
           </h3>
           <p className="text-[#9C9D9D] text-[26px] font-bold">
@@ -64,10 +64,10 @@ const PerfectGift = () => {
       <div>
         <div className="bg-[#e9f4fa80] grid grid-cols-4 gap-[28px] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div className="col-span-2 bg-[#1E8DCC] p-[52px] rounded-[36px]">
-            <h3 className="text-[#E9F4FA] text-[80px] font-bold leading-[80px] mb-6">
+            <h3 className="text-[#E9F4FA] lg:text-[60px] font-bold leading-[70px] mb-6">
               Convinient and Versatile
             </h3>
-            <p className="w-full max-w-[476px] text-[#B9DCEF] font-bold text-[26px] leading-[32px] mb-12">
+            <p className="w-full max-w-[476px] text-[#B9DCEF] font-bold text-[24px] leading-[32px] mb-12">
               Gift cards offer a convenient and versatile solution for any
               occasion.
             </p>

@@ -57,7 +57,7 @@ const Story = () => {
         </div>
 
         <div className="w-full flex justify-center text-center">
-          <p className="w-full max-w-[800px] text-[30px] font-bold mt-12">
+          <p className="w-full max-w-[800px] text-[26px] font-bold mt-12">
             &quot;From an idea in our minds to a solution in your hands,
             Waverlite opens you to a world of endless possibilities in global
             payments. We are ready.&quot;
