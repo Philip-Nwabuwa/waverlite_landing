@@ -10,7 +10,7 @@ const Team = () => {
           MEET THE TEAM
         </p>
         <div className="flex flex-col items-center justify-center mb-20">
-          <h2 className="container-xl text-[#272A2B] lg:text-[60px] text-[40px] font-bold leading-[70px] pt-12">
+          <h2 className="container-xl text-[#272A2B] lg:text-[60px] text-[40px] font-bold lg:leading-[70px] pt-12">
             Alone we can do so little,
             <span className="text-[#1E8DCC]">together </span>we can{" "}
             <span className="text-[#1E8DCC]">do so much </span>

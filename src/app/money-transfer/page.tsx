@@ -14,7 +14,7 @@ const page = () => {
       <Why />
       <Buzz />
       <Join />
-      <Updates />
+      {/* <Updates /> */}
       <Footer />
     </main>
   );

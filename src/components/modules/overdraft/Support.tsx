@@ -27,8 +27,8 @@ const Support = () => {
           <Image src={Group} alt="group" />
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-[28px]">
-        <div className="col-span-2 bg-[#E9F4FA] p-[60px] rounded-[64px]">
+      <div className="grid lg:grid-cols-5 gap-[28px]">
+        <div className="lg:col-span-2 bg-[#E9F4FA] lg:p-[60px] p-[30px] rounded-[64px]">
           <h3 className="lg:text-[60px] text-[40px] font-bold mb-[24px] leading-[80px]">
             No Waiting
           </h3>
@@ -43,7 +43,7 @@ const Support = () => {
             </button>
           </Link>
         </div>
-        <div className="col-span-3 bg-[#272A2B] p-[60px] rounded-[64px]">
+        <div className="lg:col-span-3 bg-[#272A2B] lg:p-[60px] p-[30px] rounded-[64px]">
           <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
             No Hidden Charge
           </h3>
@@ -60,20 +60,20 @@ const Support = () => {
         </div>
       </div>
       <div>
-        <div className="pathClip bg-[#e9f4fa80] grid grid-cols-5 p-[52px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
-          <div className="flex col-span-3 items-center gap-4">
+        <div className="pathClip bg-[#e9f4fa80] grid lg:grid-cols-5 lg:p-[52px] p-[30px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+          <div className="flex lg:col-span-3 items-center gap-4">
             <Image className="h-fit" src={person1} alt="" />
             <Image src={person2} alt="" />
           </div>
-          <div className="col-span-2">
-            <h3 className="lg:text-[60px] text-[40px] font-bold leading-[80px] mb-6">
+          <div className="lg:col-span-2">
+            <h3 className="lg:text-[60px] text-[40px] font-bold lg:leading-[80px] mb-6">
               Low Overdraft Fees
             </h3>
             <p className="text-gray-text font-bold text-[24px] leading-[32px] mb-12">
               Benefit from competitive and reasonable overdraft fees that are
               designed to be budget-friendly and manageable.
             </p>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
+            <button className="w-fit lg:mt-12 mt-6 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
               Get Started Now
             </button>
           </div>

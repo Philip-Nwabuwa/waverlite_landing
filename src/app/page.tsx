@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex flex-col lg:gap-[184px] gap-[100px]">
       <Hero />
-      <Updates />
+      {/* <Updates /> */}
       <Experience />
       <Brands />
       <Cta />

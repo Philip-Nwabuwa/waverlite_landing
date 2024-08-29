@@ -14,9 +14,9 @@ const Customer = () => {
   return (
     <section className="container-xl">
       <div className="flex flex-col gap-[28px]">
-        <div className="flex flex-col bg-[#E9F4FA] p-[52px] rounded-[32px]">
+        <div className="flex flex-col bg-[#E9F4FA] lg:p-[52px] p-[30px] rounded-[32px]">
           <div>
-            <h3 className="lg:text-[60px] text-[40px] font-bold text-[#272A2B] leading-[80px] mb-[24px]">
+            <h3 className="lg:text-[60px] text-[40px] font-bold text-[#272A2B] lg:leading-[80px] mb-[24px]">
               Expand Your Customer Base
             </h3>
             <p className="w-full max-w-[683px] text-[#9C9D9D] text-[20px] font-bold leading-[32px] mb-[48px]">
@@ -27,17 +27,17 @@ const Customer = () => {
               Get Started
             </button>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="lg:flex hidden items-center justify-between">
             <Image src={Sales1} alt={""} />
             <Image src={Sales2} alt={""} />
             <Image src={Sales3} alt={""} />
             <Image src={Sales4} alt={""} />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-[28px]">
+        <div className="grid lg:grid-cols-2 gap-[28px]">
           <div className="flex flex-col justify-between bg-[#E9F4FA] rounded-[64px]">
-            <div className="px-[60px] pt-[60px]">
-              <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
+            <div className="lg:px-[60px] px-[30px] lg:pt-[60px] pt-[30px]">
+              <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] lg:leading-[70px]">
                 Easy Setup
               </h3>
               <p className="text-[24px] text-[#9C9D9D] font-bold">
@@ -52,13 +52,13 @@ const Customer = () => {
             </div>
             <Image
               src={SalesBoard}
-              className="rounded-[64px] w-full"
+              className="rounded-[64px] mt-10 w-full"
               alt="Sales mode dashboard"
             />
           </div>
           <div className=" bg-[#272A2B] rounded-[64px]">
-            <div className="px-[60px] pt-[60px]">
-              <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] leading-[70px]">
+            <div className="lg:px-[60px] px-[30px] lg:pt-[60px] pt-[30px]">
+              <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] lg:leading-[70px]">
                 Global Acceptance
               </h3>
               <p className="text-[#9C9D9D] text-[24px] font-bold">
@@ -78,8 +78,8 @@ const Customer = () => {
             />
           </div>
         </div>
-        <div className="bg-[#E9F4FA] grid grid-cols-2 rounded-[32px]">
-          <div className="p-[52px]">
+        <div className="bg-[#E9F4FA] grid lg:grid-cols-2 rounded-[32px]">
+          <div className="lg:p-[52px] p-[30px]">
             <Image src={Icon1} alt="" />
             <h3 className="lg:text-[60px] text-[40px] font-bold text-[#272A2B] leading-[80px] my-[24px]">
               Scan to Pay

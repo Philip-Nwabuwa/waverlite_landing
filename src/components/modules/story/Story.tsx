@@ -12,10 +12,10 @@ const Story = () => {
           OUR STORY
         </p>
 
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2">
           <div className="relative">
             <Image src={Ceo} alt="CEO" />
-            <div className="h-full max-h-[90px] absolute top-[220px] right-[180px] w-[250px] flex items-center gap-5 bg-white py-2 px-5 shadow-lg rounded-[8px] rounded-r-2xl">
+            <div className="h-full max-h-[90px] absolute lg:top-[220px] top-[2 80px] lg:right-[180px] right-0 w-[250px] flex items-center gap-5 bg-white py-2 px-5 shadow-lg rounded-[8px] rounded-r-2xl">
               <div>
                 <h5>Daniel Odinaka</h5> <p>COO</p>
               </div>
@@ -25,7 +25,7 @@ const Story = () => {
                 <Image src={Linkedin} alt="Linkedin" />
               </Link>
             </div>
-            <div className="h-full max-h-[90px] absolute bottom-0 -left-10 w-[250px] flex items-center gap-5 bg-white py-2 px-5 shadow-lg rounded-[8px] rounded-r-2xl">
+            <div className="h-full max-h-[90px] absolute lg:bottom-0 lg:-left-10 w-[250px] flex items-center gap-5 bg-white py-2 px-5 shadow-lg rounded-[8px] rounded-r-2xl">
               <div>
                 <h5>Jerah Anibor</h5> <p>CEO</p>
               </div>
@@ -34,7 +34,7 @@ const Story = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full max-w-[620px]">
+          <div className="w-full max-w-[620px] mt-10">
             <div className="h-full flex flex-col justify-center gap-9">
               <p className="text-[20px] font-semibold text-gray-text">
                 Jerah and Daniel&apos;s passion for a sustainable global payment

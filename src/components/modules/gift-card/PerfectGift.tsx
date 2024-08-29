@@ -10,7 +10,7 @@ import frame from "@/assets/images/giftCard/Frame-wave.svg";
 const PerfectGift = () => {
   return (
     <section className="container-xl flex flex-col gap-[28px]">
-      <div className="pathClip flex justify-between bg-[#272A2B] rounded-[64px] p-[52px]">
+      <div className="pathClip flex lg:flex-row flex-col justify-between gap-6 bg-[#272A2B] rounded-[64px] lg:p-[52px] p-[30px]">
         <div>
           <h2 className="mb-6 lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold">
             Perfect Gifts
@@ -31,9 +31,9 @@ const PerfectGift = () => {
           <Image src={person2} alt="" />
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-[28px]">
-        <div className="col-span-2 bg-[#E9F4FA] p-[60px] rounded-[64px]">
-          <h3 className="lg:text-[60px] text-[40px] font-bold mb-[24px] leading-[80px]">
+      <div className="grid lg:grid-cols-5 gap-[28px]">
+        <div className="lg:col-span-2 bg-[#E9F4FA] lg:p-[60px] p-[30px] rounded-[64px]">
+          <h3 className="lg:text-[60px] text-[40px] font-bold mb-[24px] lg:leading-[80px]">
             No Hidden Fees
           </h3>
           <p className="text-[26px] text-[#9C9D9D] font-bold">
@@ -45,8 +45,8 @@ const PerfectGift = () => {
             </button>
           </Link>
         </div>
-        <div className="col-span-3 bg-[#272A2B] p-[60px] rounded-[64px]">
-          <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
+        <div className="lg:col-span-3 bg-[#272A2B] lg:p-[60px] p-[30px] rounded-[64px]">
+          <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] lg:leading-[80px]">
             Simple to Buy and Use
           </h3>
           <p className="text-[#9C9D9D] text-[26px] font-bold">
@@ -62,8 +62,8 @@ const PerfectGift = () => {
         </div>
       </div>
       <div>
-        <div className="bg-[#e9f4fa80] grid grid-cols-4 gap-[28px] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
-          <div className="col-span-2 bg-[#1E8DCC] p-[52px] rounded-[36px]">
+        <div className="bg-[#e9f4fa80] grid lg:grid-cols-4 gap-[28px] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+          <div className="col-span-2 bg-[#1E8DCC] lg:p-[52px] p-[30px] rounded-[36px]">
             <h3 className="text-[#E9F4FA] lg:text-[60px] font-bold leading-[70px] mb-6">
               Convinient and Versatile
             </h3>

@@ -12,7 +12,7 @@ const FreelancerPage = () => {
       <Secure />
       <Buzz />
       <Join />
-      <Updates />
+      {/* <Updates /> */}
       <Footer />
     </main>
   );

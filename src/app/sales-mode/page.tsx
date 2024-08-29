@@ -12,7 +12,7 @@ const page = () => {
       <Customer />
       <WhySales />
       <Buzz />
-      <Updates />
+      {/* <Updates /> */}
       <Footer />
     </main>
   );

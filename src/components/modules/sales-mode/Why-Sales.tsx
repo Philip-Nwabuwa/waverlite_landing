@@ -5,7 +5,7 @@ import star4 from "@/assets/icons/Star 3.svg";
 const WhySales = () => {
   return (
     <section className="bg-[#272A2B] text-[#E9EAEA] flex flex-col justify-center text-center">
-      <div className="container-xl apiBgLg hidden lg:flex flex-col">
+      {/* <div className="container-xl apiBgLg hidden lg:flex flex-col">
         <h3 className="text-[40px] font-bold leading-[94px] mb-[36px] pt-10">
           Why Your Business Needs Sales Mode
         </h3>
@@ -102,7 +102,7 @@ const WhySales = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

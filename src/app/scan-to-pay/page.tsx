@@ -12,7 +12,7 @@ const page = () => {
       <Simplify />
       <Buzz />
       <Join />
-      <Updates />
+      {/* <Updates /> */}
       <Footer />
     </main>
   );

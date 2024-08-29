@@ -1,8 +1,8 @@
 const Vision = () => {
   return (
     <section className="container-xl">
-      <div className="grid grid-cols-2 gap-[200px]">
-        <div className="space-y-[56px]">
+      <div className="grid lg:grid-cols-2 lg:gap-[200px] gap-[100px]">
+        <div className="lg:space-y-[56px] space-y-[30px]">
           <div className="space-y-4">
             <h4 className="text-[#9C9D9D]">FOUNDED</h4>
             <p>2022</p>
@@ -24,7 +24,7 @@ const Vision = () => {
             </p>
           </div>
         </div>
-        <div className="space-y-[56px]">
+        <div className="lg:space-y-[56px] space-y-[30px]">
           <div className="space-y-4">
             <h4 className="text-[#9C9D9D]">THE PROBLEM</h4>
             <p>

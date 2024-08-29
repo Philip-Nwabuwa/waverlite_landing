@@ -8,8 +8,8 @@ import map from "@/assets/images/locator/3d-view-map (1) 1.png";
 const About = () => {
   return (
     <section className="container-xl flex flex-col gap-[28px]">
-      <div className="flex gap-[28px]">
-        <div className="bg-[#E9F4FA] p-[60px] rounded-[64px]">
+      <div className="flex flex-col lg:flex-row gap-[28px]">
+        <div className="bg-[#E9F4FA] lg:p-[60px] p-[30px] rounded-[64px]">
           <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
             Filter by Category
           </h3>
@@ -23,7 +23,7 @@ const About = () => {
           </Link>
           <Image className="mt-[28px]" src={search} alt={"search"} />
         </div>
-        <div className="bg-[#E9F4FA] p-[60px] rounded-[64px]">
+        <div className="bg-[#E9F4FA] lg:p-[60px] p-[30px] rounded-[64px]">
           <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
             Locate Businesses with Ease
           </h3>
@@ -40,7 +40,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex gap-[28px]">
-        <div className="bg-[#E9F4FA] p-[60px] rounded-[64px]">
+        <div className="bg-[#E9F4FA] lg:p-[60px] p-[30px] rounded-[64px]">
           <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
             Get Instant Directions
           </h3>

@@ -16,25 +16,25 @@ const Hero = () => {
           ABOUT US
         </p>
         <div className="relative">
-          <h2 className="text-[#272A2B] text-[70px] font-bold leading-[80px]">
+          <h2 className="text-[#272A2B] lg:text-[70px] text-[40px] font-bold lg:leading-[80px]">
             We&apos;ve been helping individuals and businesses make{" "}
             <span className="text-[#1E8DCC]">instant global payments.</span>
           </h2>
           <div className="absolute -top-10 left-5">
-            <Image src={Star1} alt="star-blue" />
+            <Image src={Star1} alt="star-blue" className="hidden lg:block" />
           </div>
           <div className="absolute -top-20 right-40">
-            <Image src={Star2} alt="star-balck" />
+            <Image src={Star2} alt="star-balck" className="hidden lg:block" />
           </div>
           <div className="absolute bottom-6 right-80">
-            <Image src={Star1} alt="star-blue" />
+            <Image src={Star1} alt="star-blue" className="hidden lg:block" />
           </div>
           <div className="absolute -bottom-16 left-40">
-            <Image src={Star2} alt="star-black" />
+            <Image src={Star2} alt="star-black" className="hidden lg:block" />
           </div>
         </div>
       </div>
-      <div className="w-full flex items-center justify-between">
+      <div className="w-full hidden lg:flex items-center justify-between">
         <Image src={Story1} alt="Story1" width={200} height={200} />
         <Image src={Story2} alt="Story2" width={200} height={200} />
         <Image src={Story3} alt="Story3" width={200} height={200} />
