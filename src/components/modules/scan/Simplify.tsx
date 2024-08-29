@@ -20,7 +20,7 @@ const Simplify = () => {
       </h3>
       <div className="w-full text-[#BCBDBD] flex flex-col justify-center items-center gap-4 text-center ">
         <p className="text-[24px]">
-          Enjoy a vast array of options to suit everyone's preferences.
+          Enjoy a vast array of options to suit everyone&apos;s preferences.
         </p>
         <p className="text-[20px] max-w-[525px] ">
           Get gift cards for all your favourite platforms including iTunes,
