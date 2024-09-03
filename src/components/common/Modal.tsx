@@ -25,7 +25,7 @@ const Modal = ({ videoId }: Props) => {
     <div>
       <button
         onClick={handleOpenModal}
-        className="flex items-center gap-1.5 py-2 px-4 text-[#1B80BA] border border-solid border-[#1B80BA] rounded-[8px] bg-white font-semibold"
+        className="flex items-center gap-1.5 py-2 px-4 text-[#fff] border border-solid border-white rounded-[8px] font-semibold"
       >
         <Image src={PlayIcon} alt={""} /> Watch Demo
       </button>

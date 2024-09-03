@@ -57,39 +57,40 @@ export const HelpList = [
 const Footer = () => {
   return (
     <footer className="container-xl mb-[60px]">
-      <div className="bg-[#272A2B] lg:p-[52px] p-6 flex flex-col gap-[30px] lg:gap-[56px] rounded-[64px]">
-        <div className="grid lg:grid-cols-2 gap-[32px]">
-          <div className="text-[#E9EAEA] flex flex-col gap-[32px]">
-            <Image src={Mail} alt="Mail" />
-            <h5 className="lg:text-[48px] text-3xl font-bold lg:leading-[56.16px]">
-              Stay updated with
-              <br />
-              the latest
-            </h5>
-            <p className="lg:text-[22px] text-base font-semibold lg:leading-[28px]">
-              Join our newsletter to stay updated <br /> with new releases and
-              features
-            </p>
+      <div className="bg-[#101313] lg:p-[52px] p-6 flex flex-col gap-[30px] lg:gap-[56px] rounded-[64px]">
+        <div className="grid lg:grid-cols-2 lg:gap-[120px] gap-[32px]">
+          <div className="text-[#E9EAEA] flex flex-col lg:gap-[40px] gap-[32px]">
+            <div className="flex flex-col gap-[28px]">
+              <div className="flex items-center gap-[28px]">
+                <Image src={Mail} alt="Mail" />
+                <h5 className="lg:text-[42px] text-3xl font-semibold lg:leading-[45px]">
+                  Stay updated with the latest
+                </h5>
+              </div>
+              <p className="lg:text-[22px] text-base font-normal lg:leading-[28px]">
+                Join our newsletter to stay updated with new releases and
+                features
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col gap-[32px]">
-            <div className="hidden lg:flex p-8"></div>
+          <div className="flex flex-col gap-[8px] lg:pt-[20px]">
             <p className="text-[22px] text-[#E9EAEA] font-semibold">
               Enter your email
             </p>
             <div className="w-full flex lg:gap-4 gap-2">
               <input
-                className="w-full bg-[#696969] text-[#E9EAEA] py-2 px-4 rounded-lg"
-                placeholder="joe@gmail.com"
+                className="w-full bg-[#F2F5F6] text-[#6D6F70] py-2 px-4 rounded-lg outline-none"
+                placeholder="example@gmail.com"
               />
               <button className="py-2 px-6 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
                 Subscribe
               </button>
             </div>
-            <p className="text-gray-text text-lg font-bold">
+            <p className="text-[#9C9D9D] text-sm">
               By subscribing you agree to our{" "}
               <Link
                 href={"/privacy-policy"}
-                className="text-[#E9EAEA] underline hover:text-primary"
+                className="text-[#E9EAEA] font-semibold hover:text-primary"
               >
                 Privacy Policy
               </Link>
@@ -97,8 +98,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-0.5 w-full bg-[#525555]" />
-        <div className="lg:flex gap-2">
-          <div className="pr-2">
+        <div className="lg:flex lg:gap-20 gap-5">
+          <div>
             <div className="flex flex-col gap-[48px] text-[#E9EAEA]">
               <Link
                 aria-label="Waverlite logo"
@@ -125,7 +126,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-9 gap-4 my-10 lg:my-0">
+          <div className="grid grid-cols-2 lg:grid-cols-9 flex-grow gap-4 my-10 lg:my-0">
             <div className="lg:col-span-2">
               <h6 className="text-[#E9EAEA] font-bold text-[20px] lg:mb-9 mb-3">
                 Products
@@ -208,7 +209,7 @@ const Footer = () => {
         <p className="text-[#272A2B] text-[20px] font-semibold">
           © 2024 Waverlite, All rights reserved.
         </p>
-        <p className="text-gray-text text-base lg:text-[20px] font-semibold">
+        <p className="text-gray-text text-base lg:text-[20px]">
           Redbiller Technologies Inc. Ontario Canada is registered and
           regularised by the Financial Transactions and Report Analysis Centre
           of Canada (FINTRAC) as a Money Service Business with registration

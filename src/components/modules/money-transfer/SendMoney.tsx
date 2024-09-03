@@ -14,7 +14,7 @@ const SendMoney = () => {
         Money Overseas
       </h2>
       <div className="flex flex-col gap-[28px]">
-        <div className="pathClip bg-[#e9f4fa80] grid lg:grid-cols-2 gap-[28px] lg:lg:p-[52px] p-[30px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+        <div className="pathClip bg-[#e9f4fa80] grid lg:grid-cols-2 gap-[28px] lg:p-[52px] p-[30px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div className="h-full lg:h-[680px] order-last lg:order-first bg-[#1B80BA] flex justify-center items-end rounded-[12px] pl-6 pt-6">
             <Image src={fast} alt={"Send fast"} />
           </div>
@@ -32,7 +32,7 @@ const SendMoney = () => {
             </button>
           </div>
         </div>
-        <div className="flex gap-[28px] bg-[#e9f4fa80] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+        <div className="flex gap-[28px] bg-[#e9f4fa80] lg:p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div className="w-full order-first lg:order-2 bg-[#272A2B] lg:p-[52px] p-[30px] rounded-[36px]">
             <h3 className="text-[#E9EAEA] lg:text-[60px] text-[50px] lg:leading-[80px] leading-[50px] font-bold mb-6">
               Global Reach

@@ -55,49 +55,6 @@ const Why = () => {
           </ul>
         </div>
       </div>
-      <div className="lg:hidden flex flex-col">
-        <h3 className="text-[40px] font-bold leading-[50px] mb-[36px]">
-          Why Waverlite?
-        </h3>
-        <div className="flex flex-col gap-4">
-          <li className="bg-[#E9EAEA] flex gap-4 px-6 py-3 rounded-full border border-[#525555] border-solid">
-            <Image src={star4} alt={"star"} />
-            <p>100% Digital Transfers</p>
-          </li>
-          <li className="bg-[#E9EAEA] flex gap-4 px-6 py-3 rounded-full border border-[#525555] border-solid">
-            <Image src={star4} alt={"star"} />
-            <p>The best exchange rates</p>
-          </li>
-          <li className="bg-[#E9EAEA] flex gap-4 px-6 py-3 rounded-full border border-[#525555] border-solid">
-            <Image src={star4} alt={"star"} />
-            <p>Anti-fraud protection</p>
-          </li>
-          <li className="bg-[#E9EAEA] flex gap-4 px-6 py-3 rounded-full border border-[#525555] border-solid">
-            <Image src={star4} alt={"star"} />
-            <p>100% Digital Transfers</p>
-          </li>
-          <li className="bg-[#E9EAEA] flex gap-4 px-6 py-3 rounded-full border border-[#525555] border-solid">
-            <Image src={star4} alt={"star"} />
-            <p>Fair and transparent fees</p>
-          </li>
-          <li className="bg-[#E9EAEA] flex gap-4 px-6 py-3 rounded-full border border-[#525555] border-solid">
-            <Image src={star4} alt={"star"} />
-            <p>Anti-fraud protection</p>
-          </li>
-          <li className="bg-[#E9EAEA] flex gap-4 px-6 py-3 rounded-full border border-[#525555] border-solid">
-            <Image src={star4} alt={"star"} />
-            <p>100% Digital Transfers</p>
-          </li>
-          <li className="bg-[#E9EAEA] flex gap-4 px-6 py-3 rounded-full border border-[#525555] border-solid">
-            <Image src={star4} alt={"star"} />
-            <p>The best exchange rates</p>
-          </li>
-          <li className="bg-[#E9EAEA] flex gap-4 px-6 py-3 rounded-full border border-[#525555] border-solid">
-            <Image src={star4} alt={"star"} />
-            <p>Anti-fraud protection</p>
-          </li>
-        </div>
-      </div>
     </section>
   );
 };

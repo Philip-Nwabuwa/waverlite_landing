@@ -42,7 +42,7 @@ const Contact = () => {
   };
   return (
     <section className="container-xl flex flex-col items-center">
-      <div className="flex flex-col items-center justify-center gap-6 text-center lg:mb-[60px]">
+      <div className="flex flex-col items-center justify-center gap-6 text-center lg:mb-[60px] mb-[20px]">
         <h1 className="text-black text-[40px] lg:text-[60px] font-bold my-6 leading-[70px]">
           Apply Now{" "}
         </h1>
@@ -52,7 +52,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="w-full max-w-[700px] flex flex-col gap-[60px]">
-        <div className="flex items-center gap-8">
+        <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full relative">
             <p>Firstname</p>
             <input
@@ -70,7 +70,7 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="flex items-center gap-8">
+        <div className="flex flex-col md:flex-row  items-center gap-8">
           <div className="w-full relative">
             <p>Email</p>
             <input
@@ -96,7 +96,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-8">
+        <div className="flex flex-col md:flex-row  items-center gap-8">
           <div className="w-full relative">
             <p>Role</p>
             <div
@@ -149,7 +149,7 @@ const Contact = () => {
             )}
           </div>
         </div>
-        <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row  gap-8">
           <div className="w-full relative">
             <p>
               Tell us a bit about yourself and why you think we should consider

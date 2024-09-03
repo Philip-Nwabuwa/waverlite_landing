@@ -9,7 +9,7 @@ import Switch from "@/assets/images/api/switch.svg";
 const About = () => {
   return (
     <section className="container-xl flex flex-col gap-[28px]">
-      <div className="pathClip bg-[#e9f4fa80] grid grid-cols-2 gap-[28px] p-[52px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+      <div className="pathClip bg-[#e9f4fa80] grid lg:grid-cols-2 gap-[28px] lg:p-[52px] p-6 border-2 border-solid border-[#b9dcef80] rounded-[64px]">
         <div>
           <h3 className="text-[40px] lg:text-[60px] font-bold leading-[70px] mb-6">
             3D Secure Authentication
@@ -27,8 +27,8 @@ const About = () => {
           <Image src={lock} alt={"Send fast"} />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-[28px]">
-        <div className="bg-[#E9F4FA] p-[60px] rounded-[64px]">
+      <div className="grid lg:grid-cols-2 gap-[28px]">
+        <div className="bg-[#E9F4FA] lg:p-[52px] p-6 rounded-[64px]">
           <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
             Payouts, withdrawals, collections
           </h3>
@@ -43,7 +43,7 @@ const About = () => {
             </button>
           </Link>
         </div>
-        <div className="bg-[#272A2B] p-[60px] rounded-[64px]">
+        <div className="bg-[#272A2B] lg:p-[52px] p-6 rounded-[64px]">
           <h3 className="text-[40px] lg:text-[60px] text-[#E9EAEA] font-bold mb-[24px] leading-[70px]">
             Customer profiles
           </h3>
@@ -60,7 +60,7 @@ const About = () => {
           <Image src={avatars} alt="No hidden charges" />
         </div>
       </div>
-      <div className="bg-[#e9f4fa80] grid grid-cols-2 gap-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+      <div className="bg-[#e9f4fa80] grid lg:grid-cols-2 gap-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
         <div className="bg-[#272A2B] flex flex-col gap-[36px] justify-center items-center p-[28px] rounded-[64px]">
           <div className="w-full bg-[#323435] flex gap-6 px-[30px] py-2.5 rounded-[30px] border border-solid border-[#9c9d9d33]">
             <div className="flex items-center gap-5">
@@ -86,7 +86,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="py-[52px] pr-[52px]">
+        <div className="lg:py-[52px] lg:pr-[52px] lg:pl-0 pr-6 pl-6 py-6">
           <h3 className="text-[40px] lg:text-[60px] font-bold leading-[70px] mb-6">
             Seamless payment reconciliation
           </h3>

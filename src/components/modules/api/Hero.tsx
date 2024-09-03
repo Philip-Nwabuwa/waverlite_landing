@@ -6,7 +6,7 @@ import hero from "@/assets/images/api/web_designv2_7 1.png";
 const Hero = () => {
   return (
     <section className="container-xl apiBgLg bg-[#272A2B]">
-      <div className="grid grid-cols-2 gap-6 items-center pt-[200px] pb-20">
+      <div className="grid lg:grid-cols-2 gap-6 items-center pt-[200px] pb-20">
         <div>
           <p className="text-gray-text font-bold text-[20px]">
             WAVERLITE FOR DEVELOPERS

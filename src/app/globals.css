@@ -173,6 +173,23 @@ select {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.scanBg {
+  background-image: url("../assets/images/main/scanBgSm.png");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .scanBg {
+    background-image: url("../assets/images/main/scanBg.svg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .careerBg {
   background-image: url("../assets/images/careers/HeroImage.png");
   height: 100vh;

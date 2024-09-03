@@ -24,7 +24,9 @@ const Hero = () => {
           </button>
         </Link>
       </div>
-      <Image priority src={hero} alt={"Globe"} />
+      <div className="flex justify-center rounded-2xl">
+        <Image priority unoptimized src={hero} alt={"Globe"} />
+      </div>
     </section>
   );
 };

@@ -13,7 +13,7 @@ const Hero = () => {
           partnering with us, please reach out via one of the emails listed
           below.{" "}
         </h2>
-        <Image priority src={hero} alt={"Globe"} />
+        <Image priority className="w-[600px]" src={hero} alt={"Globe"} />
       </div>
     </section>
   );

@@ -484,7 +484,7 @@ const Navbar = () => {
   return (
     <nav
       className={`navbar ${
-        isScrolled ? "navbar-scrolled" : ""
+        isScrolled ? "navbar-scrolled shadow" : ""
       } fixed w-full px-[20px] sm:px-[40px] lg:px-[60px] 2xl:px-[100px] z-50`}
     >
       <Link
@@ -504,8 +504,8 @@ const Navbar = () => {
             Products <Image src={ArrowDown} alt={""} />
           </div>
           {isDropdownOpen && (
-            <div className="w-max absolute top-full left-0 bg-[#FBFBFB] rounded-[24px] shadow-md p-4 z-10">
-              <ul className="bg-[#fff] p-3 grid grid-cols-2 gap-3">
+            <div className="w-max absolute top-full left-0 bg-[#FBFBFB] rounded-[24px] shadow-md p-2 z-10">
+              <ul className="bg-[#fff] p-3 grid grid-cols-2 gap-3 rounded-[18px]">
                 {NavItems.map(({ href, icon, title, description }, index) => (
                   <li
                     key={index}
@@ -545,7 +545,7 @@ const Navbar = () => {
             Download App <Image src={ArrowDown} alt={""} />
           </div>
           {isDownloadOpen && (
-            <div className="w-[900px] h-[300px] absolute top-[120%] -left-[700px] rounded-[24px] shadow-md z-10">
+            <div className="w-[900px] h-[300px] absolute top-[120%] -left-[700px] rounded-[24px] shadow-xl z-10">
               <div className="bg-primary flex lg:items-end items-center gap-10 rounded-[48px]">
                 <div className="flex relative pl-10">
                   <Image src={Phone} className="top-[10px]" alt="Phone" />
@@ -604,7 +604,7 @@ const Navbar = () => {
           <Link
             href={"https://app.waverlite.com/create-account"}
             target="_blank"
-            className="py-2 px-8 border-[0.5px] border-solid bg-[#1B80BA] text-[#E9EAEA] hover:bg-[#2579a9] border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
+            className="py-2 px-8 border-[0.5px] border-solid bg-primary text-[#E9EAEA] hover:bg-[#2579a9] border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
           >
             Register
           </Link>
@@ -755,7 +755,7 @@ const Navbar = () => {
               <Link
                 href={"https://app.waverlite.com/create-account"}
                 target="_blank"
-                className="py-2 px-8 border-[0.5px] border-solid bg-[#1B80BA] text-[#E9EAEA] hover:bg-[#2579a9] border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
+                className="py-2 px-8 border-[0.5px] border-solid bg-primary text-[#E9EAEA] hover:bg-[#2579a9] border-[#4ba4d6] border-opacity-50 rounded-e-[10px]"
               >
                 Register
               </Link>

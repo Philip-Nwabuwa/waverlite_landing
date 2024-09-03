@@ -19,7 +19,7 @@ const Cta = () => {
         </div>
         <div className="flex flex-col lg:py-[56px] lg:pr-[56px] py-10 px-10 gap-[36px]">
           <h4
-            className={`${nunito.className} text-[#E9EAEA] font-extrabold lg:text-[60px] text-center lg:text-start text-4xl lg:leading-[98px]`}
+            className={`${nunito.className} text-[#E9EAEA] font-extrabold lg:text-[60px] text-center lg:text-start text-4xl lg:leading-[70px]`}
           >
             Get more from <br className="hidden lg:flex" /> Waverlite App
           </h4>

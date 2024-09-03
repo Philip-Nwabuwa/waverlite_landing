@@ -32,17 +32,17 @@ const brands = [
 
 const Brands = () => {
   return (
-    <section className="container-xl">
-      <h3 className="text-[#272A2B] text-center lg:text-[60px] text-[32px] font-bold lg:leading-[94px] lg:mb-[72px] mb-10">
+    <section className="container-xl flex flex-col justify-center items-center">
+      <h3 className="text-[#272A2B] max-w-[1024px] text-center lg:text-[60px] text-[32px] font-bold lg:leading-[70px] lg:mb-[32px] mb-10">
         Over 100 of the fastest-growing brands use Waverlite
       </h3>
-      <p className="mt-6 text-gray-text font-bold lg:text-[24px] lg:leading-[32px] text-center mb-[72px]">
+      <p className="text-gray-text lg:text-[24px] lg:leading-[32px] text-center">
         With our secure and efficient platform,
         <br className="hidden lg:flex" /> we provide seamless transactions that
         support businesses <br className="hidden lg:flex" />
         in scaling and thriving in today&apos;s global economy.
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 lg:gap-8 gap-4">
+      {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 lg:gap-8 gap-4">
         {brands.map((brand, index) => (
           <div
             key={index}
@@ -51,7 +51,7 @@ const Brands = () => {
             <Image src={brand.src} alt={brand.alt} />
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

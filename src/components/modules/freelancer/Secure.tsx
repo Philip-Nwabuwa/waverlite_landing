@@ -8,7 +8,7 @@ const Secure = () => {
   return (
     <section className="container-xl flex flex-col gap-[28px]">
       <div className="flex flex-col gap-[28px]">
-        <div className="pathClip bg-[#e9f4fa80] grid grid-cols-2 gap-[28px] p-[52px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
+        <div className="pathClip bg-[#e9f4fa80] grid lg:grid-cols-2 gap-[28px] p-[52px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div>
             <h3 className="text-[40px] lg:text-[60px] font-bold leading-[70px] mb-6">
               Fast and Easy Payments{" "}
@@ -26,7 +26,7 @@ const Secure = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-[28px]">
+      <div className="grid lg:grid-cols-5 gap-[28px]">
         <div className="col-span-2 bg-[#E9F4FA] p-[60px] rounded-[64px]">
           <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
             Secure and Reliable{" "}

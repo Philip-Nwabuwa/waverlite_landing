@@ -2,6 +2,7 @@ import Modal from "@/components/common/Modal";
 import Image from "next/image";
 
 import heroImageSm from "@/assets/images/main/mainSm.png";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -17,15 +18,18 @@ const Hero = () => {
                 Your fastest route to <br /> global payments.
               </h4>
             </div>
-            <p className="text-white lg:text-[16px] pt-[30px] text-sm lg:leading-8">
+            <p className="text-white lg:text-[20px] pt-[30px] text-sm lg:leading-8">
               Travel the world and spend like a local with instant global
               payments. <br /> No spending limits, just freedom.
             </p>
             <div className="flex flex-col pb-[160px]">
               <div className="flex gap-6 pt-[30px]">
-                <button className="py-2 px-6 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
+                <Link
+                  href={"https://app.waverlite.com/create-account"}
+                  className="py-2 px-6 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+                >
                   Get Started
-                </button>
+                </Link>
                 <Modal videoId="4aPBhAQ7TGU?si=eT5T37FmJdE_kDSt" />
               </div>
               <p className="text-white lg:text-[16px] pt-[30px] text-sm lg:leading-8">

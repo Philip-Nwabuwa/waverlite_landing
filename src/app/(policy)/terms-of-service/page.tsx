@@ -3,7 +3,9 @@ import Link from "next/link";
 const TermsPage = () => {
   return (
     <section>
-      <h1 className="text-[70px] font-bold mb-[60px]">TERMS OF SERVICE</h1>
+      <h1 className="lg:text-[70px] text-[40px] font-bold mb-[60px]">
+        TERMS OF SERVICE
+      </h1>
       <h2 className="text-[26px] font-bold mb-6">Introduction</h2>
 
       <p className="text-gray-text text-[20px] mb-5">
