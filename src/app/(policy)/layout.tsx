@@ -24,7 +24,7 @@ const KycLayout = ({
   return (
     <main className="flex flex-col lg:gap-[184px] gap-[100px]">
       <div className="container-xl flex gap-10 mt-[200px]">
-        <div className="hidden lg:flex h-fit w-full max-w-[250px] bg-white border-2 border-solid border-[#BCBDBD] shadow-lg rounded-2xl ">
+        <div className="hidden lg:block h-fit w-full max-w-[250px] bg-white border-2 border-solid border-[#BCBDBD] shadow-lg rounded-2xl ">
           {sidebarItems.map((item, index) => (
             <Link key={index} href={item.href}>
               <p
