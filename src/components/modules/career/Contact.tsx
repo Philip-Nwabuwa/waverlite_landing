@@ -6,7 +6,9 @@ import { SetStateAction, useState } from "react";
 const Contact = () => {
   const [roleIsOpen, setRoleIsOpen] = useState(false);
   const [experienceIsOpen, setExperienceIsOpen] = useState(false);
+  const [countryIsOpen, setCountryIsOpen] = useState(false);
   const [selectedRole, setSelectedRole] = useState("Select your role");
+  const [selectedCountry, setSelectedCountry] = useState("CA");
   const [selectedExperience, setSelectedExperience] = useState(
     "Select your experience"
   );
@@ -19,6 +21,17 @@ const Contact = () => {
     { value: "sales", label: "Sales" },
   ];
 
+  const countries = [
+    { value: "ca", label: "CA" },
+    { value: "ng", label: "NG" },
+    { value: "uk", label: "UK" },
+    { value: "us", label: "US" },
+    { value: "au", label: "AU" },
+    { value: "in", label: "IN" },
+    { value: "de", label: "DE" },
+    { value: "fr", label: "FR" },
+  ];
+
   const experiences = [
     { value: "junior", label: "Junior" },
     { value: "mid", label: "Mid" },
@@ -27,11 +40,18 @@ const Contact = () => {
   ];
 
   const toggleRoleDropdown = () => setRoleIsOpen(!roleIsOpen);
+  const toggleContryDropdown = () => setCountryIsOpen(!countryIsOpen);
+
   const toggleExperienceDropdown = () => setExperienceIsOpen(!experienceIsOpen);
 
   const handleRoleSelect = (option: { label: SetStateAction<string> }) => {
     setSelectedRole(option.label);
     setRoleIsOpen(false);
+  };
+
+  const handleCountrySelect = (option: { label: SetStateAction<string> }) => {
+    setSelectedCountry(option.label);
+    setCountryIsOpen(false);
   };
 
   const handleExperienceSelect = (option: {
@@ -90,10 +110,27 @@ const Contact = () => {
               type="number"
             />
             <div className="absolute top-1/2 left-0 ml-3">
-              <div className="flex items-center gap-1">
-                <p>US</p> <ChevronDown className="size-4" />
+              <div
+                onClick={toggleContryDropdown}
+                className="flex items-center gap-1 cursor-pointer"
+              >
+                <p>{selectedCountry}</p> <ChevronDown className="size-4" />
               </div>
             </div>
+
+            {countryIsOpen && (
+              <div className="absolute top-full left-0 mt-2 w-full bg-[#fff] border-2 border-solid border-[#E9EAEA] rounded-[8px] shadow-lg z-10">
+                {countries.map((option) => (
+                  <div
+                    key={option.value}
+                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                    onClick={() => handleCountrySelect(option)}
+                  >
+                    {option.label}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
         <div className="flex flex-col md:flex-row  items-center gap-8">

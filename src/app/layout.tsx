@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/common/Navbar";
 
-const quicksand = Quicksand({ subsets: ["latin"] });
+const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Waverlite | Fast Global Payment",
@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${quicksand.className} w-full bg-[#FDFDFD] flex items-center justify-center `}
+        className={`${nunito.className} w-full bg-[#FDFDFD] flex items-center justify-center `}
       >
-        <div className="flex justify-center">
+        <div className="max-w-[1440px] flex justify-center">
           <Navbar />
           {children}
         </div>

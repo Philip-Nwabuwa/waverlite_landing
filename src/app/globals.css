@@ -154,13 +154,13 @@ select {
   height: 82px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(233, 244, 250, 0.5);
   background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(10px);
 }
 
 .navbar-scrolled {
   background-color: white;
+  transition: ease-in 0.2s;
 }
 
 .pathClip {
@@ -192,7 +192,7 @@ select {
 
 .careerBg {
   background-image: url("../assets/images/careers/HeroImage.png");
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -291,4 +291,81 @@ select {
 .svg-img:hover a svg,
 .svg-img:hover a svg path {
   stroke: #1c80ba;
+}
+
+.cardContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+}
+
+.cardContainer .card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 500px;
+  width: 1000px;
+  border-radius: 25px;
+  padding: 50px;
+  transform-origin: top;
+}
+
+.cardContainer .card h2 {
+  text-align: center;
+  margin: 0px;
+  font-size: 28px;
+}
+
+.cardContainer .card .body {
+  display: flex;
+  height: 100%;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.cardContainer .card .body .description {
+  width: 40%;
+  position: relative;
+  top: 10%;
+}
+
+.cardContainer .card .body .description p {
+  font-size: 16px;
+}
+
+.cardContainer .card .body .description p::first-letter {
+  font-size: 28px;
+  font-family: "Title";
+}
+
+.cardContainer .card .body .description span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardContainer .card .body .description span a {
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cardContainer .card .body .imageContainer {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.cardContainer .card .body .imageContainer .inner {
+  width: 100%;
+  height: 100%;
+}
+
+.cardContainer .card .body .imageContainer img {
+  object-fit: cover;
 }

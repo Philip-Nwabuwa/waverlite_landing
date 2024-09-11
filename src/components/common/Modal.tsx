@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import { X } from "lucide-react";
 import PlayIcon from "@/assets/icons/PlayCircle.svg";
+import PlayIconDark from "@/assets/icons/PlayCircle.png";
 
 type Props = {
   videoId: string;
@@ -25,9 +26,11 @@ const Modal = ({ videoId }: Props) => {
     <div>
       <button
         onClick={handleOpenModal}
-        className="flex items-center gap-1.5 py-2 px-4 text-[#fff] border border-solid border-white rounded-[8px] font-semibold"
+        className="flex items-center gap-1.5 py-2 px-4 lg:text-[#fff] border border-solid lg:border-white border-black rounded-[8px] font-semibold"
       >
-        <Image src={PlayIcon} alt={""} /> Watch Demo
+        <Image src={PlayIcon} alt={""} className="hidden lg:flex" />{" "}
+        <Image src={PlayIconDark} alt={""} className="flex lg:hidden" />
+        Watch Demo
       </button>
 
       {showModal && (

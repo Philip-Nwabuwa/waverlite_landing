@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="careerBg pt-[200px]">
+    <section className="careerBg py-[200px]">
       <div className="flex flex-col items-center justify-center gap-6 text-center lg:mb-[84px]">
         <h1 className="text-white lg:text-[60px] text-[40px] font-bold my-6 leading-[70px]">
           Join Our Team at Waverlite{" "}
