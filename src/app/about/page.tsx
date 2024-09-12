@@ -3,6 +3,13 @@ import Footer from "@/components/common/Footer";
 import Hero from "@/components/modules/about/Hero";
 import Story from "@/components/modules/about/Story";
 import Vision from "@/components/modules/about/Vision";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Waverlite | About Us",
+  description:
+    "Waverlite is the fastest way to send and receive money as an immigrant, student, freelancer or an expanding business.",
+};
 
 const page = () => {
   return (

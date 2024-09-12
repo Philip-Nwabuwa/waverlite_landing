@@ -57,8 +57,8 @@ const Experience = () => {
             </button>
           </div>
           <div className="grid grid-cols-2 lg:hidden gap-[10px] pt-[24px]">
-            <Image unoptimized src={freelancerSm1} alt="" className="w-full" />
-            <Image unoptimized src={freelancerSm2} alt="" className="w-full" />
+            <Image src={freelancerSm1} alt="" className="w-full" />
+            <Image src={freelancerSm2} alt="" className="w-full" />
           </div>
           <div className="lg:flex hidden col-span-3">
             <Image src={freelancers1} alt="freeelancer 1" />
@@ -84,7 +84,7 @@ const Experience = () => {
             </button>
           </div>
           <div className="gap-[28px] pt-[24px]">
-            <Image unoptimized src={giftCards} alt="" className="w-full" />
+            <Image src={giftCards} alt="" className="w-full" />
           </div>
         </div>
 
@@ -104,7 +104,7 @@ const Experience = () => {
             </button>
           </div>
           <div className="gap-[28px] pt-[24px]">
-            <Image unoptimized src={salesMode} alt="" className="w-full" />
+            <Image src={salesMode} alt="" className="w-full" />
           </div>
         </div>
       </div>

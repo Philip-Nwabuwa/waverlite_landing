@@ -15,9 +15,9 @@ const Hero = () => {
               <p className="w-fit text-[15px] flex items-center gap-2 px-4 mb-4 py-2 bg-[#f0faff] text-[#1B80BA] rounded-[6px] font-semibold">
                 Instant & Secure <Image src={lock} alt={"lock"} />
               </p>
-              <h4 className="text-white xl:text-[64px] text-[50px] font-bold leading-[50px] lg:leading-[70px] mb-[30px]">
+              <h1 className="text-white xl:text-[64px] text-[50px] font-bold leading-[50px] lg:leading-[70px] mb-[30px]">
                 Your fastest route to <br /> global payments.
-              </h4>
+              </h1>
             </div>
             <p className="text-white lg:text-[20px] pt-[30px] text-sm lg:leading-8">
               Travel the world and spend like a local with instant global <br />
@@ -44,9 +44,9 @@ const Hero = () => {
             <p className="w-fit flex items-center gap-2 px-3 py-1 mb-4 bg-[#f0faff] text-[#1B80BA] rounded-[6px] font-semibold">
               Instant & Secure <Image src={lock} alt={"lock"} />
             </p>
-            <h4 className="text-[24px] font-bold leading-[40px] mb-[6px]">
+            <h1 className="text-[24px] font-bold leading-[40px] mb-[6px]">
               Your fastest route to global payments.
-            </h4>
+            </h1>
           </div>
           <p className="pt-[16px] text-sm lg:leading-8">
             Travel the world and spend like a local with instant global

@@ -1,5 +1,6 @@
 "use client";
 import useRedirectBasedOnDevice from "@/hooks/useRedirectBasedOnDevice";
+import Home from "../page";
 
 const MyComponent = () => {
   const mobileUrl = "/";
@@ -15,7 +16,7 @@ const MyComponent = () => {
     androidUrl,
   });
 
-  return null;
+  return <Home />;
 };
 
 export default MyComponent;

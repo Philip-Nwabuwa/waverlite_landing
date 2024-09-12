@@ -1,12 +1,16 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 import AppStore from "@/assets/icons/applestore.png";
 import GooglePlay from "@/assets/icons/playstore.png";
 import Phone from "@/assets/images/Iphone-cta.png";
-import QrCode from "@/assets/images/qr-code.png";
-import Link from "next/link";
+import useDomain from "@/hooks/useDomain";
 
 const Cta = () => {
+  const domain = useDomain();
+
   return (
     <section className="container-xl">
       <div className="bg-[#004A74] flex lg:flex-row flex-col lg:items-end justify-between items-center lg:gap-[92px] rounded-[30px]">
@@ -37,7 +41,13 @@ const Cta = () => {
           </Link>
 
           <div className="bg-[#01446A] hidden lg:flex flex-row items-center rounded-[18px] gap-4 px-5 py-[33px]">
-            <Image src={QrCode} alt="Qr Code" className="size-[146px]" />
+            <Image
+              src={`https://api.qrserver.com/v1/create-qr-code/?data=${domain}/scan&size=146x146`}
+              alt="Qr Code"
+              className="size-[146px]"
+              width={100}
+              height={100}
+            />
             <div className="flex flex-col lg:gap-[32px] gap-6">
               <h4 className="text-[24px] text-white font-medium">
                 Scan to download app

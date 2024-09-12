@@ -11,7 +11,7 @@ const Story = () => {
         <div className="grid lg:grid-cols-2">
           <div className="relative">
             <Image src={Ceo} alt="CEO" />
-            <div className="h-full max-h-[90px] absolute lg:top-[220px] top-[2 80px] lg:right-[180px] right-0 w-[250px] flex items-center gap-5 bg-white py-2 px-5 shadow-lg rounded-[8px] rounded-r-2xl">
+            {/* <div className="h-full max-h-[90px] absolute lg:top-[220px] top-[2 80px] lg:right-[180px] right-0 w-[250px] flex items-center gap-5 bg-white py-2 px-5 shadow-lg rounded-[8px] rounded-r-2xl">
               <div>
                 <h5>Daniel Odinaka</h5> <p>COO</p>
               </div>
@@ -28,7 +28,7 @@ const Story = () => {
               <Link href={"https://www.linkedin.com/in/jerahanibor/"}>
                 <Image src={Linkedin} alt="Linkedin" />
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="w-full max-w-[620px] mt-10">
             <div className="h-full flex flex-col w-full max-w-[511px]">

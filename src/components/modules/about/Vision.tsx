@@ -1,14 +1,14 @@
 const Vision = () => {
   return (
     <section className="container-xl visionLogo">
-      <div className="grid grid-cols-6 gap-[110px] pt-[50px] pb-[126px]">
-        <div className="col-span-1">
+      <div className="grid lg:grid-cols-6 gap-10 lg:gap-[110px] pt-[50px] pb-[126px]">
+        <div className="lg:col-span-1">
           <h3 className="text-primary text-[24px] font-semibold mb-4">
             Founded
           </h3>
           <p className="lg:text-[20px] text-[16px] font-bold">2022</p>
         </div>
-        <div className="col-span-2 flex flex-col gap-[30px]">
+        <div className="lg:col-span-2 flex flex-col gap-[30px]">
           <div>
             <h3 className="text-primary text-[24px] font-semibold mb-4">
               OUR MISSION
@@ -30,7 +30,7 @@ const Vision = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-3 flex flex-col gap-[30px]">
+        <div className="lg:col-span-3 flex flex-col gap-[30px]">
           <div>
             <h3 className="text-primary text-[24px] font-semibold mb-4">
               THE PROBLEM
