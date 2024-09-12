@@ -120,6 +120,7 @@ const Contact = () => {
       experience: selectedExperience || "",
       about: aboutRef.current?.value || "",
       portfolio: portfolioRef.current?.value || "",
+      "g-recaptcha-response": { reCAPTCHA },
     };
 
     const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID!;
