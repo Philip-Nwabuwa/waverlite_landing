@@ -58,9 +58,25 @@ const FaqLayout = ({
         </div>
       </div>
       <div className="container-xl flex flex-col items-center">
-        <div className="flex gap-2">
-          <Image src={LogoMain} alt="" />
-          <Image src={LogoSide} alt="" />
+        <div className="flex gap-2 mb-4">
+          <Image
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/icons/logo/main-white.svg"
+            }
+            className="w-full h-full"
+            height={100}
+            width={100}
+            alt=""
+          />
+          <Image
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/icons/logo/side-white.svg"
+            }
+            alt=""
+            className="w-full h-full"
+            height={100}
+            width={100}
+          />
         </div>
         <div>
           <p>

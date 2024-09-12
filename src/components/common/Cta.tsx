@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import AppStore from "@/assets/icons/applestore.png";
 import GooglePlay from "@/assets/icons/playstore.png";
-import Phone from "@/assets/images/Iphone-cta.png";
+import Phone from "@/assets/images/cta/Iphone-cta.png";
 import useDomain from "@/hooks/useDomain";
 
 const Cta = () => {

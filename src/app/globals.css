@@ -164,39 +164,39 @@ select {
 }
 
 .pathClip {
-  background-image: url("../assets/images/money-transfer/Clip\ path\ group.svg");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/money-transfer/Clip\ path\ group.svg");
 }
 
 .virtualCardBgLg {
-  background-image: url("../assets/images/virtual-cards/Card-lg-hero-Background.svg");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/virtual-cards/Card-lg-hero-Background.svg");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .aboutUsWave {
-  background-image: url("../assets/images/about/wave.svg");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/about/wave.svg");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .giftCardLogo {
-  background-image: url("../assets/images/main/Main-Logo.png");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/main/Main-Logo.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .visionLogo {
-  background-image: url("../assets/images/about/Main-Logo.svg");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/about/Main-Logo.svg");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .scanBg {
-  background-image: url("../assets/images/main/scanBgSm.png");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/main/scanBgSm.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -204,7 +204,7 @@ select {
 
 @media (min-width: 1024px) {
   .scanBg {
-    background-image: url("../assets/images/main/scanBg.svg");
+    background-image: url("https://res.cloudinary.com/w22/wlt-website/images/main/scanBg.svg");
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -212,47 +212,47 @@ select {
 }
 
 .careerBg {
-  background-image: url("../assets/images/careers/HeroImage.png");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/careers/HeroImage.png");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .apiBgLg {
-  background-image: url("../assets/images/api/Wave.png");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/api/Wave.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .mainBgLg {
-  background-image: url("../assets/images/main/main.png");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/main/main.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .storyBgLg {
-  background-image: url("../assets/images/story/Gradient.png");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/story/Gradient.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .security {
-  background-image: url("../assets/images/money-transfer/security.png");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/money-transfer/security.png");
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
 }
 
 .perfect {
-  background-image: url("../assets/images/money-transfer/perfect.png");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/money-transfer/perfect.png");
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
 }
 
 .gridWhy {
-  background-image: url("../assets/images/money-transfer/grid.svg");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/money-transfer/grid.svg");
   height: 504px;
   width: 100%;
   background-size: contain;

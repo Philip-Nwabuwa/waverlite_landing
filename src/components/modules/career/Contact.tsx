@@ -1,9 +1,13 @@
 "use client";
 
 import { ChevronDown, Mail } from "lucide-react";
-import { SetStateAction, useState } from "react";
+import { FormEvent, SetStateAction, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
+
   const [roleIsOpen, setRoleIsOpen] = useState(false);
   const [experienceIsOpen, setExperienceIsOpen] = useState(false);
   const [countryIsOpen, setCountryIsOpen] = useState(false);
@@ -12,6 +16,14 @@ const Contact = () => {
   const [selectedExperience, setSelectedExperience] = useState(
     "Select your experience"
   );
+
+  const firstNameRef = useRef<HTMLInputElement>(null);
+  const surnameRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const phoneRef = useRef<HTMLInputElement>(null);
+  const aboutRef = useRef<HTMLTextAreaElement>(null);
+  const portfolioRef = useRef<HTMLInputElement>(null);
+
   const roles = [
     { value: "developer", label: "Developer" },
     { value: "designer", label: "Designer" },
@@ -41,7 +53,6 @@ const Contact = () => {
 
   const toggleRoleDropdown = () => setRoleIsOpen(!roleIsOpen);
   const toggleContryDropdown = () => setCountryIsOpen(!countryIsOpen);
-
   const toggleExperienceDropdown = () => setExperienceIsOpen(!experienceIsOpen);
 
   const handleRoleSelect = (option: { label: SetStateAction<string> }) => {
@@ -60,6 +71,61 @@ const Contact = () => {
     setSelectedExperience(option.label);
     setExperienceIsOpen(false);
   };
+
+  const areAllFieldsFilled = () => {
+    return (
+      firstNameRef.current?.value &&
+      surnameRef.current?.value &&
+      emailRef.current?.value &&
+      phoneRef.current?.value &&
+      selectedRole !== "Select your role" &&
+      selectedExperience !== "Select your experience" &&
+      aboutRef.current?.value &&
+      portfolioRef.current?.value
+    );
+  };
+
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+
+    if (!areAllFieldsFilled()) {
+      toast({
+        variant: "destructive",
+        description: "Please fill in all fields before submitting.",
+      });
+      return;
+    }
+
+    const formData = {
+      firstName: firstNameRef.current?.value || "",
+      surname: surnameRef.current?.value || "",
+      email: emailRef.current?.value || "",
+      phone: phoneRef.current?.value || "",
+      role: selectedRole || "",
+      country: selectedCountry || "",
+      experience: selectedExperience || "",
+      about: aboutRef.current?.value || "",
+      portfolio: portfolioRef.current?.value || "",
+    };
+
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID!;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID!;
+    const publicId = process.env.NEXT_PUBLIC_PUBLIC_ID!;
+
+    emailjs.send(serviceId, templateId, formData, publicId).then(
+      () => {
+        toast({
+          description: "Your message has been sent.",
+        });
+      },
+      (error) => {
+        toast({
+          variant: "destructive",
+          description: "An error occured, try again later.",
+        });
+      }
+    );
+  };
   return (
     <section className="container-xl flex flex-col items-center">
       <div className="flex flex-col items-center justify-center gap-6 text-center lg:mb-[60px] mb-[20px]">
@@ -71,13 +137,17 @@ const Contact = () => {
           Fill out the form below to apply.
         </p>
       </div>
-      <div className="w-full max-w-[700px] flex flex-col gap-[60px]">
+      <form
+        onSubmit={sendEmail}
+        className="w-full max-w-[700px] flex flex-col gap-[60px]"
+      >
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full relative">
             <p>Firstname</p>
             <input
               className="w-full bg-[#fff] border border-solid border-[#E9EAEA] px-4 py-2 rounded-[8px]"
               placeholder="John"
+              ref={firstNameRef}
               type="text"
             />
           </div>
@@ -86,6 +156,7 @@ const Contact = () => {
             <input
               className="w-full bg-[#fff] border border-solid border-[#E9EAEA] px-4 py-2 rounded-[8px]"
               placeholder="Doe"
+              ref={surnameRef}
               type="text"
             />
           </div>
@@ -96,6 +167,7 @@ const Contact = () => {
             <input
               className="w-full bg-[#fff] border border-solid border-[#E9EAEA] pl-10 pr-4 py-2 rounded-[8px]"
               placeholder="johndoe@email.com"
+              ref={emailRef}
               type="email"
             />
             <div className="absolute top-1/2 left-0 ml-2">
@@ -107,6 +179,7 @@ const Contact = () => {
             <input
               className="w-full bg-[#fff] border border-solid border-[#E9EAEA] pl-[60px] pr-4 py-2 rounded-[8px]"
               placeholder="+1 (555) 000-0000"
+              ref={phoneRef}
               type="number"
             />
             <div className="absolute top-1/2 left-0 ml-3">
@@ -195,6 +268,7 @@ const Contact = () => {
             <textarea
               className="w-full bg-[#fff] border border-solid border-[#E9EAEA] px-4 py-2 rounded-[8px]"
               placeholder="A little about the company and the team that you’ll be working with."
+              ref={aboutRef}
               rows={3}
             />
           </div>
@@ -203,16 +277,21 @@ const Contact = () => {
             <input
               className="w-full bg-[#fff] border border-solid border-[#E9EAEA] px-4 py-2 rounded-[8px]"
               placeholder="www.johndoe.com"
+              ref={portfolioRef}
               type="link"
             />
           </div>
         </div>
+
         <div className="w-full flex justify-end">
-          <button className="bg-[#1E8DCC] text-[#E9EAEA] w-fit rounded-[8px] px-8 py-2">
+          <button
+            type="submit"
+            className="bg-[#1E8DCC] text-[#E9EAEA] w-fit rounded-[8px] px-8 py-4"
+          >
             Submit Application
           </button>
         </div>
-      </div>
+      </form>
     </section>
   );
 };
