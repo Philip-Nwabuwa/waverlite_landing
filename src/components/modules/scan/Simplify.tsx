@@ -1,11 +1,8 @@
 import Image from "next/image";
 
-import QrScan from "@/assets/images/main/qr.png";
 import Icon1 from "@/assets/icons/main/Icon1.svg";
 import Icon2 from "@/assets/icons/main/Icon2.svg";
-import Giftcard1 from "@/assets/images/main/gift-card1.png";
-import Giftcard2 from "@/assets/images/main/gift-card2.png";
-import Giftcard3 from "@/assets/images/main/gift-card3.png";
+
 import freelancers1 from "@/assets/images/main/freelancers1.png";
 import freelancers2 from "@/assets/images/main/freelancers2.png";
 import person1 from "@/assets/images/overdraft/overdraft-person.png";
@@ -28,22 +25,6 @@ const Simplify = () => {
         </p>
       </div>
       <div className="flex flex-col gap-[28px]">
-        <div>
-          <div className="flex lg:hidden mt-[64px]">
-            <Image src={Giftcard2} className="w-full" alt="Gift card1" />
-          </div>
-          <div className="wrapper lg:flex hidden items-center mt-[64px] bg-[#000] rounded-[36px]">
-            <div className="item item1">
-              <Image src={Giftcard1} alt="Gift card1" />
-            </div>
-            <div className="item item2">
-              <Image src={Giftcard2} alt="Gift card2" />
-            </div>
-            <div className="item item3">
-              <Image src={Giftcard3} alt="Gift card3" />
-            </div>
-          </div>
-        </div>
         <div className="pathClip flex lg:flex-row flex-col justify-between gap-6 bg-[#272A2B] rounded-[64px] p-[52px]">
           <div>
             <h2 className="mb-6 lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold">
@@ -78,9 +59,6 @@ const Simplify = () => {
             <button className="py-2 px-6 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
               Learn More
             </button>
-          </div>
-          <div className="p-[28px]">
-            <Image src={QrScan} className="w-full" alt={""} />
           </div>
         </div>
         <div className="bg-[#E9F4FA] lg:p-[28px] p-6 rounded-[32px]">
