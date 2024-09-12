@@ -23,6 +23,7 @@ const Contact = () => {
   const phoneRef = useRef<HTMLInputElement>(null);
   const aboutRef = useRef<HTMLTextAreaElement>(null);
   const portfolioRef = useRef<HTMLInputElement>(null);
+  const refCaptcha = useRef<any>(null);
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -102,12 +103,21 @@ const Contact = () => {
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
 
+    const token = refCaptcha.current.getValue();
+
     if (!areAllFieldsFilled()) {
       toast({
         variant: "destructive",
         description: "Please fill in all fields before submitting.",
       });
       return;
+    }
+
+    if (refCaptcha.current) {
+      const token = refCaptcha.current.getValue();
+      console.log("Captcha token:", token);
+    } else {
+      console.error("Captcha is not loaded yet.");
     }
 
     const formData = {
@@ -120,7 +130,7 @@ const Contact = () => {
       experience: selectedExperience || "",
       about: aboutRef.current?.value || "",
       portfolio: portfolioRef.current?.value || "",
-      "g-recaptcha-response": { reCAPTCHA },
+      "g-recaptcha-response": token,
     };
 
     const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID!;
@@ -297,7 +307,11 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="g-recaptcha" data-sitekey={reCAPTCHA}></div>
+        <div
+          className="g-recaptcha"
+          data-sitekey={reCAPTCHA}
+          ref={refCaptcha}
+        ></div>
 
         <div className="w-full flex justify-end">
           <button
