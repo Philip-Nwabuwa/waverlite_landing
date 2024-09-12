@@ -1,7 +1,7 @@
 "use client";
 
 import { ChevronDown, Mail } from "lucide-react";
-import { FormEvent, SetStateAction, useRef, useState } from "react";
+import { FormEvent, SetStateAction, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@/hooks/use-toast";
 
@@ -23,6 +23,18 @@ const Contact = () => {
   const phoneRef = useRef<HTMLInputElement>(null);
   const aboutRef = useRef<HTMLTextAreaElement>(null);
   const portfolioRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.google.com/recaptcha/enterprise.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   const roles = [
     { value: "developer", label: "Developer" },
@@ -50,6 +62,8 @@ const Contact = () => {
     { value: "senior", label: "Senior" },
     { value: "lead", label: "Lead" },
   ];
+
+  const reCAPTCHA = process.env.NEXT_PUBLIC_RECAPTCHA_KEY!;
 
   const toggleRoleDropdown = () => setRoleIsOpen(!roleIsOpen);
   const toggleContryDropdown = () => setCountryIsOpen(!countryIsOpen);
@@ -282,6 +296,7 @@ const Contact = () => {
             />
           </div>
         </div>
+        <div className="g-recaptcha" data-sitekey={reCAPTCHA}></div>
 
         <div className="w-full flex justify-end">
           <button
