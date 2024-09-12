@@ -42,7 +42,7 @@ const Cta = () => {
 
           <div className="bg-[#01446A] hidden lg:flex flex-row items-center rounded-[18px] gap-4 px-5 py-[33px]">
             <Image
-              src={`https://api.qrserver.com/v1/create-qr-code/?data=${domain}/scan&size=146x146`}
+              src={`https://api.qrserver.com/v1/create-qr-code/?data=${domain}/scan&color=fff&bgcolor=01446A`}
               alt="Qr Code"
               className="size-[146px]"
               width={100}
