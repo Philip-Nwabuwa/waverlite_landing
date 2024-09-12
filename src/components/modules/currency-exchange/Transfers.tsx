@@ -22,9 +22,12 @@ const Transfers = () => {
               Enjoy quick and straightforward currency exchanges with minimal
               steps, making it convenient for all users.
             </p>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
+            <Link
+              href={"https://app.waverlite.com/create-account"}
+              className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+            >
               Get Started Now
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -33,31 +36,33 @@ const Transfers = () => {
           <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] lg:eading-[80px]">
             No Waiting
           </h3>
-          <p className="text-[24px] text-[#9C9D9D] font-bold">
+          <p className="text-[24px] text-[#9C9D9D] font-bold mb-12">
             Your overdraft balance activates automatically when your funds run
             low, allowing for uninterrupted financial operations without any
             delays.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
         </div>
         <div className="lg:col-span-3 bg-[#272A2B] lg:p-[60px] p-[30px] rounded-[64px]">
           <h3 className="text-[40px] lg:text-[60px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
             No Hidden Charge
           </h3>
-          <p className="text-[#9C9D9D] text-[24px] font-bold">
+          <p className="text-[#9C9D9D] text-[24px] font-bold mb-12">
             Enjoy clear and upfront pricing with Waverlite. Know exactly what
             you&apos;re paying without any surprise fees or hidden costs.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 mb-[60px] py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit mb-[60px] py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
-          <Image src={currencies} alt="No hidden charges" />
+          <Image src={currencies} alt="No hidden charges" className="mt-12" />
         </div>
       </div>
       <div className="bg-[#e9f4fa80] grid lg:grid-cols-4 gap-[28px] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
@@ -75,9 +80,12 @@ const Transfers = () => {
             Gift cards offer a convenient and versatile solution for any
             occasion.
           </p>
-          <button className="w-fit mt-12 py-2 px-8 bg-[#E9EAEA] rounded-[8px] font-semibold">
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit py-4 px-8 bg-[#E9EAEA] rounded-[8px] font-semibold"
+          >
             Convert
-          </button>
+          </Link>
         </div>
       </div>
     </section>

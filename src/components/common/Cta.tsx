@@ -17,27 +17,27 @@ const Cta = () => {
             className="rounded-[10px] lg:rounded-none"
           />
         </div>
-        <div className="flex flex-col lg:py-[56px] lg:pr-[56px] py-10 px-5 lg:gap-[36px] gap-[24px]">
-          <h4 className=" text-[#E9EAEA] font-medium lg:text-[60px] lg:text-start text-3xl lg:leading-[70px]">
+        <div className="flex flex-col lg:py-[56px] lg:pr-[56px] py-10 px-5">
+          <h4 className=" text-[#E9EAEA] font-medium lg:text-[48px] lg:text-start text-3xl lg:leading-[70px] mb-6">
             Get more from <br className="hidden lg:flex" /> Waverlite App
           </h4>
-          <p className="text-[#E9EAEA] hidden lg:flex w-full max-w-[580px] text-[20px] text-center lg:text-start font-medium leading-[28px]">
+          <p className="text-[#E9EAEA] hidden lg:flex w-full max-w-[580px] text-[20px] text-center lg:text-start font-medium leading-[28px] mb-[35px]">
             Scan the QR code below to download the Waverlite app directly to
             your device.
           </p>
-          <p className="text-[#E9EAEA] w-full max-w-[580px] text-[16px] text-start font-normal leading-[28px] flex lg:hidden">
+          <p className="text-[#E9EAEA] w-full max-w-[580px] text-[16px] text-start font-normal leading-[28px] flex lg:hidden mb-[26px]">
             Download now to start experiencing the convenience of Waverlite.
           </p>
 
           <Link
             href={"/scan"}
-            className="bg-primary w-fit text-white font-bold text-[16px] py-4 px-8 rounded-[10px]"
+            className="bg-primary lg:hidden flex w-fit text-white font-bold text-[16px] py-4 px-[30px] rounded-[10px]"
           >
             Download App
           </Link>
 
           <div className="bg-[#01446A] hidden lg:flex flex-row items-center rounded-[18px] gap-4 px-5 py-[33px]">
-            <Image src={QrCode} alt="Qr Code" className="size-[180px]" />
+            <Image src={QrCode} alt="Qr Code" className="size-[146px]" />
             <div className="flex flex-col lg:gap-[32px] gap-6">
               <h4 className="text-[24px] text-white font-medium">
                 Scan to download app

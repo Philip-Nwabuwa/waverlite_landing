@@ -36,8 +36,8 @@ export const ProductsList = [
 ];
 
 export const CompanyList = [
-  { text: "About Us", href: "/about-us" },
-  { text: "Our Story", href: "/our-story" },
+  { text: "About Us", href: "/about" },
+  // { text: "Our Story", href: "/our-story" },
   { text: "Careers", href: "/career" },
 ];
 export const DeveloperList = [
@@ -59,11 +59,11 @@ const Footer = () => {
             <div className="flex lg:gap-[28px] gap-4">
               <Image src={Mail} alt="Mail" className="lg:size-[60px] size-12" />
 
-              <div className="flex flex-col items-center lg:gap-[28px] gap-4">
+              <div className="flex flex-col items-center lg:gap-[28px] gap-[14px]">
                 <h5 className="lg:text-[42px] text-3xl font-medium lg:leading-[45px]">
                   Stay updated with the latest
                 </h5>
-                <p className="text-[#E0E3E3] lg:text-[22px] text-base font-light lg:leading-[28px]">
+                <p className="text-[#E0E3E3] lg:text-[18px] text-base font-light lg:leading-[28px]">
                   Join our newsletter to stay updated with new releases and
                   features
                 </p>
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-[8px] lg:pt-[20px]">
-            <p className="lg:text-[22px] text-[18px] text-[#E9EAEA] font-medium">
+            <p className="lg:text-[20px] text-[18px] text-[#E9EAEA] font-medium">
               Enter your email
             </p>
             <div className="w-full flex lg:gap-4 gap-2">
@@ -109,7 +109,7 @@ const Footer = () => {
                 </Link>
                 <p className="text-[15px] font-semibold">We Are Here</p>
                 <address className="text-[#9C9D9D] text-[13px] font-normal">
-                  325 Front Street West,Toronto, ON M5V 2Y1, Canada
+                  325 Front Street West, <br /> Toronto, ON M5V 2Y1, Canada
                 </address>
               </div>
             </div>
@@ -178,7 +178,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-0.5 w-full bg-[#525555] -mt-10" />
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex gap-[24px]">
             {icons.map((icon, index) => (
               <Link target="_blank" key={index} href={icon.href}>
@@ -190,7 +190,7 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-          <div className="flex lg:flex-row flex-col items-center text-[14px] font-normal gap-3">
+          <div className="flex md:flex-row flex-col items-center text-[14px] font-normal gap-5">
             <Link href={"/contact"} className="text-primary text-[16px]">
               Contact
             </Link>

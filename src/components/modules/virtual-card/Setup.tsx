@@ -14,30 +14,36 @@ const Setup = () => {
           <h3 className="lg:text-[60px] text-[40px] font-bold mb-[24px] lg:leading-[80px]">
             Easy Setup
           </h3>
-          <p className="text-[24px] text-[#9C9D9D] font-bold">
+          <p className="text-[24px] text-[#9C9D9D] font-bold mb-12">
             Quickly create virtual debit cards through the Waverlite app with
             just a few clicks.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Dollar Card
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Dollar Card
           </Link>
         </div>
         <div className="lg:col-span-3 bg-[#272A2B] p-[30px] lg:p-[60px] rounded-[64px]">
           <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] lg:leading-[80px]">
             Global Acceptance
           </h3>
-          <p className="text-[#9C9D9D] text-[26px] font-bold">
+          <p className="text-[#9C9D9D] text-[26px] font-bold mb-12">
             Use your virtual debit cards on popular platforms and websites
             worldwide, including Amazon, Netflix, and more.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 mb-[60px] py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Dollar Card
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit mb-[60px] py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Dollar Card
           </Link>
-          <Image className="rounded-lg" src={Globe} alt="No hidden charges" />
+          <Image
+            className="rounded-lg mt-12"
+            src={Globe}
+            alt="No hidden charges"
+          />
         </div>
       </div>
       <div>
@@ -78,9 +84,12 @@ const Setup = () => {
             <p className="text-gray-text font-bold text-center text-[24px] leading-[32px] mb-12">
               Enable or disable your cards instantly to manage spending.
             </p>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
+            <Link
+              href={"https://app.waverlite.com/create-account"}
+              className="w-fit mt-12 py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+            >
               Get Dollar Card
-            </button>
+            </Link>
           </div>
         </div>
       </div>

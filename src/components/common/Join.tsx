@@ -11,10 +11,11 @@ const Join = () => {
         exploring new cities, working abroad, or simply enjoying a vacation,
         Waverlite ensures you can spend like a local without any hassle.
       </p>
-      <Link href={"/"} className="w-full flex justify-center">
-        <button className="w-fit mt-12 py-3 px-6 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold border-[#272A2B] border-solid border-b-4 border-r-4">
-          Get Started Now
-        </button>
+      <Link
+        href={"https://app.waverlite.com/create-account"}
+        className="flex justify-center w-fit mt-12 py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold border-[#272A2B] border-solid border-b-4 border-r-4"
+      >
+        Get Started Now
       </Link>
     </section>
   );

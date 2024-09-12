@@ -15,15 +15,16 @@ const PerfectGift = () => {
           <h2 className="mb-6 lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold">
             Perfect Gifts
           </h2>
-          <p className="w-full max-w-[525px] text-[#BCBDBD] text-[26px] font-bold">
+          <p className="w-full max-w-[525px] text-[#BCBDBD] text-[26px] font-bold  mb-12">
             These gift cards are perfect for your loved ones, employees, and
             customers. Show your appreciation and make gift-giving easy with
             choices they&apos;ll love.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 py-2 px-8 bg-[#E9EAEA] rounded-[8px] font-semibold">
-              Buy Gift Card
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit py-4 px-8 bg-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Buy Gift Card
           </Link>
         </div>
         <div className="flex items-center gap-4">
@@ -36,29 +37,31 @@ const PerfectGift = () => {
           <h3 className="lg:text-[60px] text-[40px] font-bold mb-[24px] lg:leading-[80px]">
             No Hidden Fees
           </h3>
-          <p className="text-[26px] text-[#9C9D9D] font-bold">
+          <p className="text-[26px] text-[#9C9D9D] font-bold mb-12">
             What you see is what you get—no hidden fees or charges.{" "}
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
         </div>
         <div className="lg:col-span-3 bg-[#272A2B] lg:p-[60px] p-[30px] rounded-[64px]">
           <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] lg:leading-[80px]">
             Simple to Buy and Use
           </h3>
-          <p className="text-[#9C9D9D] text-[26px] font-bold">
+          <p className="text-[#9C9D9D] text-[26px] font-bold mb-12">
             Purchase gift cards online and redeem them instantly at
             participating merchants.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 mb-[60px] py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit mb-[60px] py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
-          <Image src={person3} alt="No hidden charges" />
+          <Image src={person3} alt="No hidden charges" className="mt-12" />
         </div>
       </div>
       <div>
@@ -71,9 +74,12 @@ const PerfectGift = () => {
               Gift cards offer a convenient and versatile solution for any
               occasion.
             </p>
-            <button className="w-fit mt-12 py-2 px-8 bg-[#E9EAEA] rounded-[8px] font-semibold">
+            <Link
+              href={"https://app.waverlite.com/create-account"}
+              className="w-fit mt-12 py-4 px-8 bg-[#E9EAEA] rounded-[8px] font-semibold"
+            >
               Buy Gift Card
-            </button>
+            </Link>
           </div>
           <div className="col-span-1">
             <Image className="w-fit h-full" src={person4} alt="" />

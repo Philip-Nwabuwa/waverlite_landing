@@ -19,9 +19,12 @@ const About = () => {
             security by ensuring that all debit related requests made on your
             wallet actually originated from your server.
           </p>
-          <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit mt-12 py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
             Get Started Now
-          </button>
+          </Link>
         </div>
         <div className="h-full lg:h-[680px] bg-[#1B80BA] flex justify-center items-end rounded-[12px] pl-6 pt-6">
           <Image src={lock} alt={"Send fast"} />
@@ -32,30 +35,32 @@ const About = () => {
           <h3 className="text-[40px] lg:text-[60px] font-bold mb-[24px] leading-[70px]">
             Payouts, withdrawals, collections
           </h3>
-          <p className="text-[24px] text-[#9C9D9D] font-bold">
+          <p className="text-[24px] text-[#9C9D9D] font-bold mb-12">
             Make requests to send and receive money from your customers in
             Africa, Asia, Latin America, Canada and over 50 countries via
             Waverlite&apos;s robust APIs.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
         </div>
         <div className="bg-[#272A2B] lg:p-[52px] p-6 rounded-[64px]">
           <h3 className="text-[40px] lg:text-[60px] text-[#E9EAEA] font-bold mb-[24px] leading-[70px]">
             Customer profiles
           </h3>
-          <p className="text-[#9C9D9D] text-[24px] font-bold">
+          <p className="text-[#9C9D9D] text-[24px] font-bold mb-12">
             Customer profiles are used to keep track of customer information.
             All API operations are attached to a customer profile for ease of
             access and audit.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 mb-[60px] py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit mb-[60px] py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
           <Image src={avatars} alt="No hidden charges" />
         </div>
@@ -94,9 +99,12 @@ const About = () => {
             Waverlite&apos;s APIs handle pending or failed transactions through
             automatic reversals or retries, based on your account settings.{" "}
           </p>
-          <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
             Learn more
-          </button>
+          </Link>
         </div>
       </div>
     </section>

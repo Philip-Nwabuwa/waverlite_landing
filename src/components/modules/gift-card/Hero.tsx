@@ -16,10 +16,11 @@ const Hero = () => {
         <h2 className="w-full max-w-[547px] text-[24px] text-[#525555] font-bold">
           Convenient, versatile, and secure gift cards for any occasion.
         </h2>
-        <Link href={"/"} className="w-full flex justify-center">
-          <button className="w-fit my-12 py-3 px-6 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold border-[#272A2B] border-solid border-b-4 border-r-4">
-            Get Started Now
-          </button>
+        <Link
+          href={"https://app.waverlite.com/create-account"}
+          className="flex justify-center w-fit my-12 py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold border-[#272A2B] border-solid border-b-4 border-r-4"
+        >
+          Get Started Now
         </Link>
       </div>
       <Image priority src={hero} alt={"Globe"} />

@@ -1,16 +1,16 @@
+import Cta from "@/components/common/Cta";
 import Footer from "@/components/common/Footer";
-import Hero from "@/components/modules/story/Hero";
-import Story from "@/components/modules/story/Story";
-import Team from "@/components/modules/story/Team";
-import Vision from "@/components/modules/story/Vision";
+import Hero from "@/components/modules/about/Hero";
+import Story from "@/components/modules/about/Story";
+import Vision from "@/components/modules/about/Vision";
 
 const page = () => {
   return (
     <main className="storyBgLg flex flex-col lg:gap-[184px] gap-[100px]">
       <Hero />
       <Vision />
-      <Team />
       <Story />
+      <Cta />
       <Footer />
     </main>
   );

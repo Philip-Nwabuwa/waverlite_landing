@@ -27,7 +27,7 @@ const SendMoney = () => {
               Waverlite, you can send money instantly, ensuring your funds are
               available when you need them most.
             </p>
-            <button className="w-fit lg:mt-12 mt-6 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
+            <button className="w-fit lg:mt-12 mt-6 py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
               Get Started Now
             </button>
           </div>
@@ -37,15 +37,16 @@ const SendMoney = () => {
             <h3 className="text-[#E9EAEA] lg:text-[60px] text-[50px] lg:leading-[80px] leading-[50px] font-bold mb-6">
               Global Reach
             </h3>
-            <p className="text-gray-text text-[26px] font-bold leading-[32px]">
+            <p className="text-gray-text text-[26px] font-bold leading-[32px] mb-12">
               Send money across the globe effortlessly. Waverlite enables you to
               make international transfers quickly and efficiently, connecting
               you with users worldwide.
             </p>
-            <Link href={"/"}>
-              <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-                Get Started Now
-              </button>
+            <Link
+              href={"https://app.waverlite.com/create-account"}
+              className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+            >
+              Get Started Now
             </Link>
           </div>
           <Image className="hidden lg:flex" src={earth1} alt={""} />
@@ -59,16 +60,17 @@ const SendMoney = () => {
             <h3 className="lg:text-[50px] text-[40px] lg:leading-[80px] font-bold mb-6">
               Peer-to-Peer Technology
             </h3>
-            <p className="text-gray-text text-[26px] font-bold leading-[32px]">
+            <p className="text-gray-text text-[26px] font-bold leading-[32px] mb-12">
               Utilize our peer-to-peer (P2P) technology to send money to other
               Waverlite users seamlessly. This cutting-edge technology ensures
               secure, direct transfers between users without intermediary
               delays.
             </p>
-            <Link href={"/"}>
-              <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-                Get Started Now
-              </button>
+            <Link
+              href={"https://app.waverlite.com/create-account"}
+              className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+            >
+              Get Started Now
             </Link>
           </div>
         </div>
@@ -78,14 +80,15 @@ const SendMoney = () => {
               <h3 className="text-[#E9F4FA] lg:text-[50px] text-[40px] font-bold lg:leading-[80px] mb-6">
                 Your Security is Our Priority
               </h3>
-              <p className="text-[#B9DCEF] text-[26px] font-bold leading-[32px]">
+              <p className="text-[#B9DCEF] text-[26px] font-bold leading-[32px] mb-12">
                 Whether you’re a business owner, a student, or sending money to
                 family, Waverlite has got you covered.
               </p>
-              <Link href={"/"}>
-                <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-                  Get Started Now
-                </button>
+              <Link
+                href={"https://app.waverlite.com/create-account"}
+                className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+              >
+                Get Started Now
               </Link>
             </div>
           </div>
@@ -96,14 +99,15 @@ const SendMoney = () => {
                 <br />
                 for Every Situation
               </h3>
-              <p className="text-[#B9DCEF] text-[26px] font-bold leading-[32px]">
+              <p className="text-[#B9DCEF] text-[26px] font-bold leading-[32px] mb-12">
                 Whether you’re a business owner, a student, or sending money to
                 family, Waverlite has got you covered.
               </p>
-              <Link href={"/"}>
-                <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-                  Get Started Now
-                </button>
+              <Link
+                href={"https://app.waverlite.com/create-account"}
+                className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+              >
+                Get Started Now
               </Link>
             </div>
           </div>

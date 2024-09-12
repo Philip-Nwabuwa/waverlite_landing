@@ -1,39 +1,34 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
 
-import { X } from "lucide-react";
 import PlayIcon from "@/assets/icons/PlayCircle.svg";
 import PlayIconDark from "@/assets/icons/PlayCircle.png";
+import Link from "next/link";
+const Modal = () => {
+  // const [showModal, setShowModal] = useState(false);
 
-type Props = {
-  videoId: string;
-};
+  // const handleOpenModal = () => {
+  //   setShowModal(true);
+  // };
 
-const Modal = ({ videoId }: Props) => {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleOpenModal = () => {
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
+  // const handleCloseModal = () => {
+  //   setShowModal(false);
+  // };
 
   return (
     <div>
-      <button
-        onClick={handleOpenModal}
-        className="flex items-center gap-1.5 py-2 px-4 lg:text-[#fff] border border-solid lg:border-white border-black rounded-[8px] font-semibold"
+      <Link
+        href={
+          "https://www.youtube.com/watch?v=4aPBhAQ7TGU&embeds_referring_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=Mjg2NjY"
+        }
+        className="flex items-center gap-1.5 py-4 px-[30px] text-[14px] lg:text-[16px] lg:text-[#fff] border border-solid lg:border-white border-black rounded-[8px] font-bold"
+        target="_blank"
       >
         <Image src={PlayIcon} alt={""} className="hidden lg:flex" />{" "}
         <Image src={PlayIconDark} alt={""} className="flex lg:hidden" />
-        Watch Demo
-      </button>
+        Watch demo
+      </Link>
 
-      {showModal && (
+      {/* {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
             <button className="close-button" onClick={handleCloseModal}>
@@ -41,8 +36,6 @@ const Modal = ({ videoId }: Props) => {
             </button>
             <div className="video-container">
               <iframe
-                width="1200"
-                height="700"
                 src={`https://www.youtube.com/embed/${videoId}`}
                 title="YouTube video player"
                 frameBorder="0"
@@ -52,7 +45,7 @@ const Modal = ({ videoId }: Props) => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

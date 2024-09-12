@@ -13,15 +13,16 @@ const Support = () => {
         <h2 className="mb-6 lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold">
           Emergency Support
         </h2>
-        <p className="text-[#BCBDBD] text-[24px] font-bold">
+        <p className="text-[#BCBDBD] text-[24px] font-bold mb-12">
           Get immediate access to extra funds during unexpected expenses or{" "}
           <br />
           emergencies, ensuring you&apos;re never caught off guard.
         </p>
-        <Link href={"/"}>
-          <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-            Get Started Now
-          </button>
+        <Link
+          href={"https://app.waverlite.com/create-account"}
+          className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+        >
+          Get Started Now
         </Link>
         <div className="pt-[64px]">
           <Image src={Group} alt="group" />
@@ -32,31 +33,37 @@ const Support = () => {
           <h3 className="lg:text-[60px] text-[40px] font-bold mb-[24px] leading-[80px]">
             No Waiting
           </h3>
-          <p className="text-[26px] text-[#9C9D9D] font-bold">
+          <p className="text-[26px] text-[#9C9D9D] font-bold mb-12">
             Your overdraft balance activates automatically when your funds run
             low, allowing for uninterrupted financial operations without any
             delays.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
         </div>
         <div className="lg:col-span-3 bg-[#272A2B] lg:p-[60px] p-[30px] rounded-[64px]">
           <h3 className="lg:text-[60px] text-[40px] text-[#E9EAEA] font-bold mb-[24px] leading-[80px]">
             No Hidden Charge
           </h3>
-          <p className="text-[#9C9D9D] text-[26px] font-bold">
+          <p className="text-[#9C9D9D] text-[26px] font-bold mb-12">
             Enjoy clear and upfront pricing with Waverlite. Know exactly what
             you&apos;re paying without any surprise fees or hidden costs.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 mb-[60px] py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit mb-[60px] py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
-          <Image src={HiddenCharges} alt="No hidden charges" />
+          <Image
+            src={HiddenCharges}
+            alt="No hidden charges"
+            className="mt-12"
+          />
         </div>
       </div>
       <div>
@@ -73,9 +80,12 @@ const Support = () => {
               Benefit from competitive and reasonable overdraft fees that are
               designed to be budget-friendly and manageable.
             </p>
-            <button className="w-fit lg:mt-12 mt-6 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
+            <Link
+              href={"https://app.waverlite.com/create-account"}
+              className="w-fit lg mt-6 py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+            >
               Get Started Now
-            </button>
+            </Link>
           </div>
         </div>
       </div>

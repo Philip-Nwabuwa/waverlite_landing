@@ -306,7 +306,7 @@ const ResourcesItems: IconType[] = [
     description: "Supporting text",
   },
   {
-    href: "/faq",
+    href: "/faqs",
     icon: (
       <svg
         width="24"
@@ -412,7 +412,7 @@ const Navbar = () => {
                         <li
                           key={index}
                           onClick={toggleDropdown}
-                          className="px-6 py-2 hover:bg-[#F1FAFF] rounded-md"
+                          className="pl-6 pr-[32px] py-2 hover:bg-[#F1FAFF] rounded-md"
                         >
                           <Link
                             key={index}
@@ -421,10 +421,12 @@ const Navbar = () => {
                           >
                             {icon}
                             <div>
-                              <p className="text-[20px] font-semibold">
+                              <p className="text-[18px] font-semibold">
                                 {title}
                               </p>
-                              <p className="text-[14px]">{description}</p>
+                              <p className="text-[14px] text-[#424646]">
+                                {description}
+                              </p>
                             </div>
                           </Link>
                         </li>
@@ -454,7 +456,7 @@ const Navbar = () => {
                         <li
                           key={index}
                           onClick={toggleCompanyDropdown}
-                          className="px-6 py-2 hover:bg-[#F1FAFF] rounded-md"
+                          className="pl-6 pr-[88px] py-2 hover:bg-[#F1FAFF] rounded-md"
                         >
                           <Link
                             key={index}
@@ -494,7 +496,7 @@ const Navbar = () => {
                         <li
                           key={index}
                           onClick={toggleResourcesDropdown}
-                          className="px-6 py-2 hover:bg-[#F1FAFF] rounded-md"
+                          className="pl-6 pr-[88px] hover:bg-[#F1FAFF] rounded-md"
                         >
                           <Link
                             key={index}
@@ -522,7 +524,7 @@ const Navbar = () => {
           <Link
             href={"https://app.waverlite.com/create-account"}
             target="_blank"
-            className="py-3 px-8 bg-[#101212] text-[#E9EAEA] rounded-[10px]"
+            className="py-[17px] px-[30px] bg-[#101212] text-[#E9EAEA] rounded-[10px]"
           >
             Get started
           </Link>
