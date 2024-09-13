@@ -1,13 +1,13 @@
 "use client";
 
-import { ChevronDown, Mail } from "lucide-react";
-import { FormEvent, SetStateAction, useEffect, useRef, useState } from "react";
+import { ChevronDown, Loader2, Mail } from "lucide-react";
+import { FormEvent, SetStateAction, useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import axios from "axios";
 
 const Contact = () => {
   const { toast } = useToast();
-  const reCAPTCHA = process.env.NEXT_PUBLIC_RECAPTCHA_SECRET!;
-  console.log(reCAPTCHA);
 
   const [roleIsOpen, setRoleIsOpen] = useState(false);
   const [experienceIsOpen, setExperienceIsOpen] = useState(false);
@@ -17,6 +17,7 @@ const Contact = () => {
   const [selectedExperience, setSelectedExperience] = useState(
     "Select your experience"
   );
+  const [isLoading, setIsLoading] = useState(false);
 
   const firstNameRef = useRef<HTMLInputElement>(null);
   const surnameRef = useRef<HTMLInputElement>(null);
@@ -24,31 +25,6 @@ const Contact = () => {
   const phoneRef = useRef<HTMLInputElement>(null);
   const aboutRef = useRef<HTMLTextAreaElement>(null);
   const portfolioRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = `https://www.google.com/recaptcha/enterprise.js?render=${reCAPTCHA}`;
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-
-    script.onload = () => {
-      if (
-        typeof (window as any).grecaptcha !== "undefined" &&
-        (window as any).grecaptcha.enterprise
-      ) {
-        (window as any).grecaptcha.enterprise.ready(() => {
-          console.log("reCAPTCHA Enterprise is ready");
-        });
-      }
-    };
-
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   const roles = [
     { value: "developer", label: "Developer" },
@@ -111,23 +87,32 @@ const Contact = () => {
     );
   };
 
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
   const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
 
     if (!areAllFieldsFilled()) {
       toast({
         variant: "destructive",
         description: "Please fill in all fields before submitting.",
       });
+      setIsLoading(false);
       return;
     }
+
     try {
-      const recaptchaToken = await (window as any).grecaptcha.execute(
-        reCAPTCHA,
-        {
-          action: "submit",
-        }
-      );
+      if (!executeRecaptcha) {
+        toast({
+          variant: "destructive",
+          description: "Failed to execute reCAPTCHA.",
+        });
+        setIsLoading(false);
+        return;
+      }
+
+      const recaptchaToken = await executeRecaptcha("submit");
 
       const formData = {
         firstName: firstNameRef.current?.value || "",
@@ -142,17 +127,9 @@ const Contact = () => {
         recaptchaToken,
       };
 
-      const response = await fetch("/api/career", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await axios.post("/api/career", formData);
 
-      const result = await response.json();
-
-      if (response.ok) {
+      if (response.status === 200) {
         toast({
           variant: "default",
           description: "Your application was sent successfully!",
@@ -160,16 +137,17 @@ const Contact = () => {
       } else {
         toast({
           variant: "destructive",
-          description: result.error || "Something went wrong!",
+          description: "Something went wrong!",
         });
       }
-    } catch (error) {
+    } catch (error: any) {
       console.log(error);
       toast({
         variant: "destructive",
-        description: "An error occurred. Please try again.",
+        description: error.response.data.error,
       });
     }
+    setIsLoading(false);
   };
   return (
     <section className="container-xl flex flex-col items-center">
@@ -327,14 +305,18 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="g-recaptcha" data-sitekey={reCAPTCHA}></div>
 
         <div className="w-full flex justify-end">
           <button
             type="submit"
+            disabled={isLoading}
             className="bg-[#1E8DCC] text-[#E9EAEA] w-fit rounded-[8px] px-8 py-4"
           >
-            Submit Application
+            {isLoading ? (
+              <Loader2 className="size-6 animate-spin" />
+            ) : (
+              "Submit Application"
+            )}
           </button>
         </div>
       </form>
