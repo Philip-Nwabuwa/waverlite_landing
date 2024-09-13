@@ -2,11 +2,12 @@
 
 import { ChevronDown, Mail } from "lucide-react";
 import { FormEvent, SetStateAction, useEffect, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const { toast } = useToast();
+  const reCAPTCHA = process.env.NEXT_PUBLIC_RECAPTCHA_SECRET!;
+  console.log(reCAPTCHA);
 
   const [roleIsOpen, setRoleIsOpen] = useState(false);
   const [experienceIsOpen, setExperienceIsOpen] = useState(false);
@@ -23,13 +24,25 @@ const Contact = () => {
   const phoneRef = useRef<HTMLInputElement>(null);
   const aboutRef = useRef<HTMLTextAreaElement>(null);
   const portfolioRef = useRef<HTMLInputElement>(null);
-  const refCaptcha = useRef<any>(null);
 
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://www.google.com/recaptcha/enterprise.js";
+    script.src = `https://www.google.com/recaptcha/enterprise.js?render=${reCAPTCHA}`;
     script.async = true;
     script.defer = true;
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      if (
+        typeof (window as any).grecaptcha !== "undefined" &&
+        (window as any).grecaptcha.enterprise
+      ) {
+        (window as any).grecaptcha.enterprise.ready(() => {
+          console.log("reCAPTCHA Enterprise is ready");
+        });
+      }
+    };
+
     document.body.appendChild(script);
 
     return () => {
@@ -63,8 +76,6 @@ const Contact = () => {
     { value: "senior", label: "Senior" },
     { value: "lead", label: "Lead" },
   ];
-
-  const reCAPTCHA = process.env.NEXT_PUBLIC_RECAPTCHA_KEY!;
 
   const toggleRoleDropdown = () => setRoleIsOpen(!roleIsOpen);
   const toggleContryDropdown = () => setCountryIsOpen(!countryIsOpen);
@@ -100,10 +111,8 @@ const Contact = () => {
     );
   };
 
-  const sendEmail = (e: FormEvent) => {
+  const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
-
-    const token = refCaptcha.current.getValue();
 
     if (!areAllFieldsFilled()) {
       toast({
@@ -112,44 +121,55 @@ const Contact = () => {
       });
       return;
     }
+    try {
+      const recaptchaToken = await (window as any).grecaptcha.execute(
+        reCAPTCHA,
+        {
+          action: "submit",
+        }
+      );
 
-    if (refCaptcha.current) {
-      const token = refCaptcha.current.getValue();
-      console.log("Captcha token:", token);
-    } else {
-      console.error("Captcha is not loaded yet.");
-    }
+      const formData = {
+        firstName: firstNameRef.current?.value || "",
+        surname: surnameRef.current?.value || "",
+        email: emailRef.current?.value || "",
+        phone: phoneRef.current?.value || "",
+        role: selectedRole || "",
+        country: selectedCountry || "",
+        experience: selectedExperience || "",
+        about: aboutRef.current?.value || "",
+        portfolio: portfolioRef.current?.value || "",
+        recaptchaToken,
+      };
 
-    const formData = {
-      firstName: firstNameRef.current?.value || "",
-      surname: surnameRef.current?.value || "",
-      email: emailRef.current?.value || "",
-      phone: phoneRef.current?.value || "",
-      role: selectedRole || "",
-      country: selectedCountry || "",
-      experience: selectedExperience || "",
-      about: aboutRef.current?.value || "",
-      portfolio: portfolioRef.current?.value || "",
-      "g-recaptcha-response": token,
-    };
+      const response = await fetch("/api/career", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID!;
-    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID!;
-    const publicId = process.env.NEXT_PUBLIC_PUBLIC_ID!;
+      const result = await response.json();
 
-    emailjs.send(serviceId, templateId, formData, publicId).then(
-      () => {
+      if (response.ok) {
         toast({
-          description: "Your message has been sent.",
+          variant: "default",
+          description: "Your application was sent successfully!",
         });
-      },
-      (error) => {
+      } else {
         toast({
           variant: "destructive",
-          description: "An error occured, try again later.",
+          description: result.error || "Something went wrong!",
         });
       }
-    );
+    } catch (error) {
+      console.log(error);
+      toast({
+        variant: "destructive",
+        description: "An error occurred. Please try again.",
+      });
+    }
   };
   return (
     <section className="container-xl flex flex-col items-center">
@@ -307,11 +327,7 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div
-          className="g-recaptcha"
-          data-sitekey={reCAPTCHA}
-          ref={refCaptcha}
-        ></div>
+        <div className="g-recaptcha" data-sitekey={reCAPTCHA}></div>
 
         <div className="w-full flex justify-end">
           <button
