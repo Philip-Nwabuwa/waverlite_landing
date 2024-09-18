@@ -8,11 +8,11 @@ import { useEffect, useState } from "react";
 import Logo1 from "@/assets/icons/logo/Group.svg";
 import Waverlite from "@/assets/icons/logo/WaverliteBlack.svg";
 import ThickArrow from "@/assets/icons/CaretDown.svg";
-import { AlignJustify, ChevronDown, ChevronUp, X } from "lucide-react";
+import { AlignJustify, ChevronDown, X } from "lucide-react";
 import useDropdown from "@/hooks/useDropdown";
 
 import { CompanyList, DeveloperList, LegalList, ProductsList } from "./Footer";
-import useDomain from "@/hooks/useDomain";
+import QrCode from "@/assets/images/qr-code.png";
 
 type IconType = {
   href: string;
@@ -328,8 +328,6 @@ const ResourcesItems: IconType[] = [
 ];
 
 const Navbar = () => {
-  const domain = useDomain();
-
   const {
     isOpen: isDropdownOpen,
     toggleDropdown,
@@ -570,7 +568,7 @@ const Navbar = () => {
                   <div className="flex justify-center items-center mb-4">
                     <Image
                       unoptimized
-                      src={`https://api.qrserver.com/v1/create-qr-code/?data=${domain}/scan&color=000&bgcolor=fff`}
+                      src={QrCode}
                       alt="Qr Code"
                       className="size-[146px]"
                       width={100}

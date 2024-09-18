@@ -14,47 +14,49 @@ const TermsPage = () => {
       <div className="text-gray-text text-[20px] mb-5">
         <ul className="list-disc list-inside ml-5">
           <li>
-            The words "you" and "your" refer to the person who uses the Platform
-            and Services.
+            The words &quot;you&quot; and &quot;your&quot; refer to the person
+            who uses the Platform and Services.
           </li>
           <li>
-            The words "Waverlite", "we" and "us" and "our" refer to Redbiller
-            Technologies Inc, Canada, a licensed money service business, which
-            provides the Service under the trade name Waverlite through
-            Redbiller Technologies Inc, Ontario Canada. Waverlite is also the
-            name of the Platform.
+            The words &quot;Waverlite&quot;, &quot;we&quot; and &quot;us&quot;
+            and &quot;our&quot; refer to Redbiller Technologies Inc, Canada, a
+            licensed money service business, which provides the Service under
+            the trade name Waverlite through Redbiller Technologies Inc, Ontario
+            Canada. Waverlite is also the name of the Platform.
           </li>
           <li>
-            The word "Platform" or "app" means the technology made available by
-            Waverlite to you on your mobile phone or other electronic device by
-            which you may access and use the Service.
+            The word &quot;Platform&quot; or &quot;app&quot; means the
+            technology made available by Waverlite to you on your mobile phone
+            or other electronic device by which you may access and use the
+            Service.
           </li>
           <li>
-            The word "Beneficiary" means the person to whom you send money.
+            The word &quot;Beneficiary&quot; means the person to whom you send
+            money.
           </li>
           <li>
-            The word "E-Wallet" means the stored value account into which your
-            Remittance may be paid to your Beneficiary, generally accessible on
-            your Beneficiary's mobile phone.
+            The word &quot;E-Wallet&quot; means the stored value account into
+            which your Remittance may be paid to your Beneficiary, generally
+            accessible on your Beneficiary&apos;s mobile phone.
           </li>
           <li>
-            The word "Payment Account" means the debit or prepaid card account
-            or bank account (or such other source of funds that Waverlite agrees
-            to accept from time to time for use hereunder and that you authorize
-            Waverlite to charge) that you provide to Waverlite for Waverlite to
-            charge for payment for your use of the Platform. The Payment Account
-            must be issued or held in your name at a depository institution in
-            your country.
+            The word &quot;Payment Account&quot; means the debit or prepaid card
+            account or bank account (or such other source of funds that
+            Waverlite agrees to accept from time to time for use hereunder and
+            that you authorize Waverlite to charge) that you provide to
+            Waverlite for Waverlite to charge for payment for your use of the
+            Platform. The Payment Account must be issued or held in your name at
+            a depository institution in your country.
           </li>
           <li>
-            The word "Remittance" means the transfer of funds that you request
-            and authorize Waverlite to process through the Platform for payment
-            to your Beneficiary.
+            The word &quot;Remittance&quot; means the transfer of funds that you
+            request and authorize Waverlite to process through the Platform for
+            payment to your Beneficiary.
           </li>
           <li>
-            The word "Service" means the transfer of funds from you to your
-            Beneficiary through the Platform, and activities related to that
-            transfer.
+            The word &quot;Service&quot; means the transfer of funds from you to
+            your Beneficiary through the Platform, and activities related to
+            that transfer.
           </li>
         </ul>
       </div>
@@ -133,23 +135,24 @@ const TermsPage = () => {
         Waverlite. Waverlite provides a remittance service only; the funds that
         you direct Waverlite to pay to your Beneficiary are not held by
         Waverlite as a deposit or in escrow, and Waverlite is not holding or
-        processing your Remittance as a fiduciary. Waverlite's only obligation
-        is to pay your Remittance to your Beneficiary or to return the principal
-        amount of the Remittance to you.
+        processing your Remittance as a fiduciary. Waverlite&apos;s only
+        obligation is to pay your Remittance to your Beneficiary or to return
+        the principal amount of the Remittance to you.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         4.3 The Service is generally available 24 hours a day, 365 days a year,
         although there may be times when the Service is unavailable to you or to
-        your Beneficiary. Periods of unavailability may be caused by Waverlite's
-        own acts (such as temporary periods when the Service is taken off-line
-        to make upgrades or improvements), or by events beyond Waverlite's
-        control, such as power outages, telecommunications failures, war or
-        civil unrest, natural disasters or other acts of God. Waverlite may from
-        time to time set limits on the value of Remittances you may send (both
-        individually and over a period of time), as well as the value of
-        Remittances any Beneficiary may receive. Waverlite may delay payment of
-        your Remittance to allow Waverlite to determine that your Remittance
-        complies with applicable law, regulation or Waverlite policies.
+        your Beneficiary. Periods of unavailability may be caused by
+        Waverlite&apos;s own acts (such as temporary periods when the Service is
+        taken off-line to make upgrades or improvements), or by events beyond
+        Waverlite&apos;s control, such as power outages, telecommunications
+        failures, war or civil unrest, natural disasters or other acts of God.
+        Waverlite may from time to time set limits on the value of Remittances
+        you may send (both individually and over a period of time), as well as
+        the value of Remittances any Beneficiary may receive. Waverlite may
+        delay payment of your Remittance to allow Waverlite to determine that
+        your Remittance complies with applicable law, regulation or Waverlite
+        policies.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         Waverlite has the right, without notice to you, to refuse to accept or
@@ -179,8 +182,8 @@ const TermsPage = () => {
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         5.2 Waverlite will disclose its fees and charges for providing the
-        Service to you before you initiate a Remittance. Waverlite's fees and
-        charges may change from time to time, and may depend, among other
+        Service to you before you initiate a Remittance. Waverlite&apos;s fees
+        and charges may change from time to time, and may depend, among other
         factors, on the principal amount of your Remittance, your type of
         Payment Account, your location, and the location of your Beneficiary.
       </p>
@@ -213,21 +216,21 @@ const TermsPage = () => {
         you when you initiate your Remittance, your Beneficiary may incur costs,
         fees or charges from his or her bank, mobile phone company, E-Wallet
         issuer or other party to maintain or withdraw the funds. Furthermore,
-        your Beneficiary's ability to use or withdraw the funds you send may be
-        limited by the terms of your Beneficiary's E-Wallet issuer.
+        your Beneficiary&apos;s ability to use or withdraw the funds you send
+        may be limited by the terms of your Beneficiary&apos;s E-Wallet issuer.
       </p>
 
       <h2 className="text-[26px] font-bold mb-6">6. Reliance by Waverlite</h2>
       <p className="text-gray-text text-[20px] mb-5">
         Use care when inputting information about your Beneficiary; spell your
-        Beneficiary's name correctly and provide it in full, and verify that you
-        have provided us with the Beneficiary's correct phone number, email
-        address and or account number. You represent and warrant to us that all
-        information you enter into the Platform or otherwise provide to
-        Waverlite is true and complete, including information about you, your
-        Payment Account, and your Beneficiary. When processing a Remittance
-        Payment, Waverlite may rely on the registration information and
-        Remittance information that you provide, including information about
+        Beneficiary&apos;s name correctly and provide it in full, and verify
+        that you have provided us with the Beneficiary&apos;s correct phone
+        number, email address and or account number. You represent and warrant
+        to us that all information you enter into the Platform or otherwise
+        provide to Waverlite is true and complete, including information about
+        you, your Payment Account, and your Beneficiary. When processing a
+        Remittance Payment, Waverlite may rely on the registration information
+        and Remittance information that you provide, including information about
         your Beneficiary. You acknowledge that any errors in the information you
         provide, including misidentification of Beneficiary(s), incorrect or
         inconsistent account names and numbers, or misspellings, are your
@@ -250,8 +253,8 @@ const TermsPage = () => {
         In the event that any of these Terms is held to be invalid or
         unenforceable, then that provision will be limited or eliminated to the
         minimum extent necessary, and the remaining provisions of these Terms
-        will remain in full effect. JOCHEBED's failure to enforce any right or
-        provision of these Terms will not be deemed a waiver of such right or
+        will remain in full effect. JOCHEBED&apos;s failure to enforce any right
+        or provision of these Terms will not be deemed a waiver of such right or
         provision.
       </p>
 
@@ -273,7 +276,7 @@ const TermsPage = () => {
         Waverlite reserves the right to change payment method options. If a
         Beneficiary cannot be located and identified, the Remittance Payment
         funds may be returned to you either by a credit to your Payment Account
-        or by check, at Waverlite's option.
+        or by check, at Waverlite&apos;s option.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         8.2 Waverlite reserves the right to establish identification and
@@ -286,15 +289,15 @@ const TermsPage = () => {
         Waverlite believes that you or your Beneficiary may be in violation of
         this Agreement or any applicable law, regulation or Waverlite policy.
         Although Waverlite has the right to establish identification and
-        verification requirements, and the Beneficiary's failure to comply with
-        them is a basis to decline payment of the Remittance, Waverlite has no
-        obligation to establish any such requirements.
+        verification requirements, and the Beneficiary&apos;s failure to comply
+        with them is a basis to decline payment of the Remittance, Waverlite has
+        no obligation to establish any such requirements.
       </p>
 
       <h2 className="text-[26px] font-bold mb-6">9. Foreign Exchange</h2>
       <p className="text-gray-text text-[20px] mb-5">
         9.1 Payments to Beneficiaries are generally made in the currency of the
-        Beneficiary's country.
+        Beneficiary&apos;s country.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         9.2 If a currency conversion is required, Waverlite and/or
@@ -302,9 +305,9 @@ const TermsPage = () => {
         which you initiate your Remittance into the local currency at the
         Waverlite exchange rate for your Remittance in effect at the time you
         initiate your Remittance. Waverlite will disclose the exchange rate to
-        you before you authorize the Remittance. Waverlite's exchange rates vary
-        from time to time, and may also differ depending on the principal value
-        of your Remittance and other factors. In addition to the fees and
+        you before you authorize the Remittance. Waverlite&apos;s exchange rates
+        vary from time to time, and may also differ depending on the principal
+        value of your Remittance and other factors. In addition to the fees and
         charges applicable to your Remittance, Waverlite makes money when your
         currency is converted into the currency in which your Remittance is
         paid.
@@ -325,8 +328,8 @@ const TermsPage = () => {
           activity;
         </li>
         <li>
-          exceeding Waverlite's transaction limits (whether in amount, frequency
-          or otherwise);
+          exceeding Waverlite&apos;s transaction limits (whether in amount,
+          frequency or otherwise);
         </li>
         <li>
           sent for the purpose of gambling, including placing bets or paying
@@ -388,7 +391,7 @@ const TermsPage = () => {
         <li>We suspects fraud or irregularity or illegality;</li>
         <li>
           Your name or the name of your Beneficiary is a possible match to a
-          name on one or more applicable 'watch lists' maintained by
+          name on one or more applicable &apos;watch lists&apos; maintained by
           governments, inter-governmental groups or Waverlite to help detect and
           prevent illegal activity;
         </li>
@@ -418,9 +421,9 @@ const TermsPage = () => {
       <p className="text-gray-text text-[20px] mb-5">
         Waverlite is not responsible for any delay, failure to execute, or an
         error in the execution of your Remittance request due to circumstances
-        beyond Waverlite's reasonable control, whether caused by strikes, power
-        failures, equipment malfunctions, war, riots, governmental or court
-        orders, work stoppages or similar occurrences or circumstances, or
+        beyond Waverlite&apos;s reasonable control, whether caused by strikes,
+        power failures, equipment malfunctions, war, riots, governmental or
+        court orders, work stoppages or similar occurrences or circumstances, or
         incorrect or incomplete information provided by you. You further agree
         that Waverlite may refuse to process or delay processing any request if
         it would violate any guideline, rule, policy or regulation of any
@@ -428,28 +431,29 @@ const TermsPage = () => {
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         Under no circumstances will Waverlite be liable for damages, whether
-        caused by the negligence of Waverlite's employees, contractors, agents
-        or others, beyond the sum of ONE THOUSAND CANADIAN DOLLARS (1,000.00
-        CAD), in addition to refunding the principal amount of the Remittance
-        and any fees and costs you may have paid to Waverlite to send it, unless
-        you have contacted Waverlite before you send your Remittance and have
-        obtained our written agreement to a higher limit on liability. If we
-        agree to a higher limit on liability, we may charge you for it.
+        caused by the negligence of Waverlite&apos;s employees, contractors,
+        agents or others, beyond the sum of ONE THOUSAND CANADIAN DOLLARS
+        (1,000.00 CAD), in addition to refunding the principal amount of the
+        Remittance and any fees and costs you may have paid to Waverlite to send
+        it, unless you have contacted Waverlite before you send your Remittance
+        and have obtained our written agreement to a higher limit on liability.
+        If we agree to a higher limit on liability, we may charge you for it.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         Under no circumstances will Waverlite be liable for any incidental,
         indirect, special, punitive or consequential damages or the like. THE
-        PLATFORM AND SERVICE ARE PROVIDED TO YOU ON AN "AS IS" AND "AS
-        AVAILABLE" BASIS. WAVERLITE MAKES NO WARRANTIES, EXPRESS OR IMPLIED WITH
-        RESPECT TO THE PLATFORM OR THE SERVICE. WAVERLITE DOES NOT WARRANT THE
-        FUNCTIONALITY OF THE PLATFORM OR THE ACCURACY, ADEQUACY OR COMPLETENESS
-        OF ANY INFORMATION RELATED THERETO AND EXPRESSLY DISCLAIMS LIABILITY FOR
-        NON- FUNCTIONALITY OF THE PLATFORM AND THE SERVICE, OR ERRORS OR
-        OMISSIONS IN ANY INFORMATION. NO WARRANTY OF ANY KIND, IMPLIED,
-        EXPRESSED OR STATUTORY INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-        NONINFRINGEMENT OF THIRD PARTY RIGHTS, TITLE, MERCHANTABILITY, FITNESS
-        FOR A PARTICULAR PURPOSE AND FREEDOM FROM COMPUTER VIRUS, IS GIVEN IN
-        CONJUNCTION WITH THE PLATFORM OR THE SERVICE.
+        PLATFORM AND SERVICE ARE PROVIDED TO YOU ON AN &quot;AS IS&quot; AND
+        &quot;AS AVAILABLE&quot; BASIS. WAVERLITE MAKES NO WARRANTIES, EXPRESS
+        OR IMPLIED WITH RESPECT TO THE PLATFORM OR THE SERVICE. WAVERLITE DOES
+        NOT WARRANT THE FUNCTIONALITY OF THE PLATFORM OR THE ACCURACY, ADEQUACY
+        OR COMPLETENESS OF ANY INFORMATION RELATED THERETO AND EXPRESSLY
+        DISCLAIMS LIABILITY FOR NON- FUNCTIONALITY OF THE PLATFORM AND THE
+        SERVICE, OR ERRORS OR OMISSIONS IN ANY INFORMATION. NO WARRANTY OF ANY
+        KIND, IMPLIED, EXPRESSED OR STATUTORY INCLUDING BUT NOT LIMITED TO THE
+        WARRANTIES OF NONINFRINGEMENT OF THIRD PARTY RIGHTS, TITLE,
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND FREEDOM FROM
+        COMPUTER VIRUS, IS GIVEN IN CONJUNCTION WITH THE PLATFORM OR THE
+        SERVICE.
       </p>
 
       <h2 className="text-[26px] font-bold mb-6">
@@ -465,24 +469,24 @@ const TermsPage = () => {
         support@waverlite.email, and we will attempt to recall it.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
-        If your Remittance has not yet been credited to your Beneficiary's
+        If your Remittance has not yet been credited to your Beneficiary&apos;s
         account, we will refund it to you (including all fees, if any) within
         three (5) business days. However, if the Remittance has already been
-        credited to your Beneficiary's account we will be unable to cancel it.
-        If you notify us that the account number, telephone number, Beneficiary
-        name or other information that you provided to us when you initiated
-        your Remittance was incorrect, we will promptly use reasonable efforts
-        to recover the amount of your Remittance, but we may be unable to do so
-        if your Remittance has already been paid or credited in accordance with
-        the information you provided.
+        credited to your Beneficiary&apos;s account we will be unable to cancel
+        it. If you notify us that the account number, telephone number,
+        Beneficiary name or other information that you provided to us when you
+        initiated your Remittance was incorrect, we will promptly use reasonable
+        efforts to recover the amount of your Remittance, but we may be unable
+        to do so if your Remittance has already been paid or credited in
+        accordance with the information you provided.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         You have a right to dispute errors in your transaction. There is no
         charge for this service. If you think there is an error, contact us at
         support@waverlite.email within 180 days after you sent your Remittance,
-        and provide your name, contact information, the Beneficiary's name, the
-        date of your transfer, as well as the reason you believe there has been
-        an error.
+        and provide your name, contact information, the Beneficiary&apos;s name,
+        the date of your transfer, as well as the reason you believe there has
+        been an error.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         We will investigate and determine whether an error occurred, and we will
@@ -499,8 +503,8 @@ const TermsPage = () => {
       <p className="text-gray-text text-[20px] mb-5">
         Waverlite will pay all refunds (whether resulting from a canceled or
         disputed Remittance) either by a credit to your Payment Account or by
-        check payment, at Waverlite's option. Alternatively, you can choose to
-        have Waverlite process the Remittance again for no additional charge.
+        check payment, at Waverlite&apos;s option. Alternatively, you can choose
+        to have Waverlite process the Remittance again for no additional charge.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         However, if Waverlite has not charged your Payment Account, but an
@@ -511,7 +515,7 @@ const TermsPage = () => {
         between your bank and our payment processor, over which we have no
         control. Except for our obligation to investigate and refund described
         above, Waverlite is not liable to you for any loss resulting from
-        Waverlite's inability to cancel or refund a Remittance.
+        Waverlite&apos;s inability to cancel or refund a Remittance.
       </p>
 
       <h2 className="text-[26px] font-bold mb-6">14. Indemnity</h2>
@@ -519,15 +523,15 @@ const TermsPage = () => {
         In consideration of our agreement to provide you with the Platform and
         Service, you agree to indemnify and hold Waverlite harmless from and
         against any and all claims, suits, judgments, executions, liabilities,
-        losses, damages, costs, and expenses - including reasonable attorney's
-        fees - in connection with or arising out of (i) your use of the Platform
-        or the Service, (ii) your breach of this Agreement, or (iii) Waverlite
-        acting upon your request for a Remittance.
+        losses, damages, costs, and expenses - including reasonable
+        attorney&apos;s fees - in connection with or arising out of (i) your use
+        of the Platform or the Service, (ii) your breach of this Agreement, or
+        (iii) Waverlite acting upon your request for a Remittance.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         Without limiting the generality of the foregoing indemnification
         obligation, you shall indemnify Waverlite for any losses caused due to
-        any inaccurate, non- current or incomplete information that you provided
+        any inaccurate, non-current or incomplete information that you provided
         to Waverlite and for any losses due to your failure to maintain the
         secrecy and confidentiality of all your IDs, passwords, or due to any
         unauthorized use of your ID and/or password.
@@ -545,13 +549,13 @@ const TermsPage = () => {
         where the Remittance was sent. The arbitration shall proceed in
         accordance with the provisions of the applicable provincial Arbitration
         Act. Where allowed neither party shall have the right to participate in
-        any class of claimants pertaining to any claim and Third parties' claims
-        shall not be joined in any arbitration between Waverlite and you. The
-        decision arrived at by the arbitrator(s) shall be final and binding and
-        no appeal shall lie therefrom. Judgement upon the award rendered by the
-        arbitrator may be entered in any court having jurisdiction. Each party
-        will pay for its own attorneys, experts and witnesses. The costs of the
-        arbitrator(s) shall be divided equally between the parties.
+        any class of claimants pertaining to any claim and Third parties&apos;
+        claims shall not be joined in any arbitration between Waverlite and you.
+        The decision arrived at by the arbitrator(s) shall be final and binding
+        and no appeal shall lie therefrom. Judgement upon the award rendered by
+        the arbitrator may be entered in any court having jurisdiction. Each
+        party will pay for its own attorneys, experts and witnesses. The costs
+        of the arbitrator(s) shall be divided equally between the parties.
       </p>
 
       <h2 className="text-[26px] font-bold mb-6">
@@ -599,26 +603,26 @@ const TermsPage = () => {
       <p className="text-gray-text text-[20px] mb-5">
         If you are sending money from Canada, this service is provided by
         Redbiller Technologies Inc, Ontario Canada and is subject to the laws of
-        Canada, without regard to its 'conflicts of laws' rules which might
-        require the Platform of the law of another jurisdiction. You may have
-        additional rights under your provincial law. If you are sending money
-        from a different country, you may have other rights under the laws of
-        that country.
+        Canada, without regard to its &apos;conflicts of laws&apos; rules which
+        might require the Platform of the law of another jurisdiction. You may
+        have additional rights under your provincial law. If you are sending
+        money from a different country, you may have other rights under the laws
+        of that country.
       </p>
 
       <h2 className="text-[26px] font-bold mb-6">19. Privacy Policy</h2>
       <p className="text-gray-text text-[20px]">
         The Privacy Policy describes the way Redbiller Technologies Inc is doing
         business through our Platform, Waverlite, and its affiliates
-        (collectively, "Waverlite" or "us") obtains, uses, stores, manages and
-        disposes of certain information that you, as a user of our services,
-        provide to us. You have certain rights to know what information we
-        collect, how we use it, and how you may obtain and correct it. You
-        consent that you have read and agree with the Privacy Policy.
-        Waverlite's privacy policy may change in the future. If that happens,
-        the revised version will be posted on our website and will be sent to
-        current users via the email addresses associated with their Waverlite
-        account registrations.
+        (collectively, &quot;Waverlite&quot; or &quot;us&quot;) obtains, uses,
+        stores, manages and disposes of certain information that you, as a user
+        of our services, provide to us. You have certain rights to know what
+        information we collect, how we use it, and how you may obtain and
+        correct it. You consent that you have read and agree with the Privacy
+        Policy. Waverlite&apos;s privacy policy may change in the future. If
+        that happens, the revised version will be posted on our website and will
+        be sent to current users via the email addresses associated with their
+        Waverlite account registrations.
       </p>
     </section>
   );

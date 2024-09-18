@@ -7,33 +7,36 @@ const PrivacyPage = () => {
       <h2 className="text-[26px] font-bold mb-6">Introduction</h2>
 
       <p className="text-gray-text text-[20px] mb-5">
-        This Privacy Policy (the “Policy”) represents the policy of Redbiller
-        Technologies Inc., an Ontario corporation (together with all
-        subsidiaries thereof, the “Company”) regarding the collection, use, and
-        management of personal data belonging to:
+        This Privacy Policy (the &apos;Policy&apos;) represents the policy of
+        Redbiller Technologies Inc., an Ontario corporation (together with all
+        subsidiaries thereof, the &apos;Company&apos;) regarding the collection,
+        use, and management of personal data belonging to:
       </p>
 
       <div className="text-gray-text text-[20px] mb-5">
         <ul className="list-disc list-inside ml-5">
           <li>
-            All visitors (“Site Visitors”) to the Company’s website located at
-            https://www.waverlite.com/ (the “Website”).
+            All visitors (&apos;Site Visitors&apos;) to the Company&apos;s
+            website located at https://www.waverlite.com/ (the
+            &apos;Website&apos;).
           </li>
           <li>
-            Anyone who registers or uses (“Platform Users”) the Company’s
-            service Platform(s) (the “Platform”).
+            Anyone who registers or uses (&apos;Platform Users&apos;) the
+            Company&apos;s service Platform(s) (the &apos;Platform&apos;).
           </li>
           <li>
-            Anyone who enrolls for the Services of the Company (“Clients”).
+            Anyone who enrolls for the Services of the Company
+            (&apos;Clients&apos;).
           </li>
           <li>
             Site Visitors, Platform Users, and Clients are referred to
-            collectively as “Users”.{" "}
+            collectively as &apos;Users&apos;.{" "}
           </li>
           <li>
             The Website and the Platform together with the Services (as defined
             below) and all content contained therein are referred to
-            collectively as the “Resources” as further described in the
+            collectively as the &apos;Resources&apos; as further described in
+            the
           </li>
         </ul>
       </div>
@@ -159,17 +162,17 @@ const PrivacyPage = () => {
             Voluntarily complete a customer survey or provide feedback on any of
             our message boards or via email
           </li>
-          <li>Use or view the Site via your browser’s cookies</li>
+          <li>Use or view the Site via your browser&apos;s cookies</li>
           <li>Download or use the Platform</li>
           <li>
             Submit content to the Site, like reviews, messages, or comments
           </li>
           <li>
-            Enable access to their device’s location-tracking functionality,
-            whether the Site or Platform is running in the foreground (Platform
-            or Site open and on-screen) or background (Platform or Site open but
-            not on-screen). Certain functionality may be affected while location
-            data is turned off.
+            Enable access to their device&apos;s location-tracking
+            functionality, whether the Site or Platform is running in the
+            foreground (Platform or Site open and on-screen) or background
+            (Platform or Site open but not on-screen). Certain functionality may
+            be affected while location data is turned off.
           </li>
         </ul>
       </div>
@@ -202,20 +205,21 @@ const PrivacyPage = () => {
 
       <p className="text-gray-text text-[20px] mb-5">
         The Company does not sell or share user personal data with third parties
-        for their direct marketing, except with users’ consent.
+        for their direct marketing, except with users&apos; consent.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         The Company provides software Services as defined in the User Agreement.
         The Company may collect data from its Clients in order to perform such
-        services (the “Services”). You acknowledge, accept, and agree that
-        without the data collected as set forth above, the Company will not be
-        able to provide the Services and most functionality of the Platform
+        services (the &apos;Services&apos;). You acknowledge, accept, and agree
+        that without the data collected as set forth above, the Company will not
+        be able to provide the Services and most functionality of the Platform
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         Clients consent to the release of this information and data to the
-        Company for the purpose of the performance of the Company’s Services for
-        the Client’s benefit. This release of information and the relationship
-        between the Company and its Clients is subject to the User Agreement.
+        Company for the purpose of the performance of the Company&apos;s
+        Services for the Client&apos;s benefit. This release of information and
+        the relationship between the Company and its Clients is subject to the
+        User Agreement.
       </p>
 
       <h2 className="text-[26px] font-bold mb-6">How Do We Store Your Data?</h2>
@@ -223,7 +227,7 @@ const PrivacyPage = () => {
       <p className="text-gray-text text-[20px] mb-5">
         The Company securely stores Client data on servers leased from a
         reputable third party hosting/cloud service located in the United
-        States. Data is retained in accordance with the Company’s User
+        States. Data is retained in accordance with the Company&apos;s User
         Agreement.
       </p>
 
@@ -244,15 +248,16 @@ const PrivacyPage = () => {
       </p>
 
       <p className="text-gray-text text-[20px] mb-5">
-        In certain circumstances, the Company may be unable to delete a user’s
-        account, such as if there’s an outstanding credit on the account or an
-        unresolved claim or dispute. Upon resolution of the issue preventing
-        deletion, the Company will delete the account as described above. The
-        Company may also retain certain information if necessary, for purposes
-        of safety, security, and fraud prevention. For example, if the Company
-        deactivates a user’s account because of unsafe behavior or security
-        incidents, the Company may retain certain information about that account
-        to prevent that user from opening a new account in the future.
+        In certain circumstances, the Company may be unable to delete a
+        user&apos;s account, such as if there&apos;s an outstanding credit on
+        the account or an unresolved claim or dispute. Upon resolution of the
+        issue preventing deletion, the Company will delete the account as
+        described above. The Company may also retain certain information if
+        necessary, for purposes of safety, security, and fraud prevention. For
+        example, if the Company deactivates a user&apos;s account because of
+        unsafe behavior or security incidents, the Company may retain certain
+        information about that account to prevent that user from opening a new
+        account in the future.
       </p>
       <h2 className="text-[26px] font-bold mb-6">Data Usage and Processing</h2>
 
@@ -278,7 +283,7 @@ const PrivacyPage = () => {
         </li>
         <li>
           Usage data, which is necessary to maintain, optimize, and enhance the
-          Company's Services
+          Company&apos;s Services
         </li>
         <li>Transaction information</li>
         <li>Information relating to customer support</li>
@@ -288,20 +293,20 @@ const PrivacyPage = () => {
         For purposes of the legitimate interests of the Company or other parties
       </h3>
       <p className="text-gray-text text-[20px] mb-5">
-        This includes using personal data to maintain and enhance our Users'
-        safety and security. For example, we use personal data to prevent use of
-        our Services by Users who have engaged in inappropriate or dangerous
-        behavior, such as by retaining data of banned Users to prevent their use
-        of the Platform.
+        This includes using personal data to maintain and enhance our
+        Users&apos; safety and security. For example, we use personal data to
+        prevent use of our Services by Users who have engaged in inappropriate
+        or dangerous behavior, such as by retaining data of banned Users to
+        prevent their use of the Platform.
       </p>
       <p className="text-gray-text text-[20px] mb-5">
         This also includes purposes such as combating fraud; improving our
         Services, direct marketing, research, and development; and enforcing the
-        Company's User Agreement.
+        Company&apos;s User Agreement.
       </p>
 
       <h3 className="text-[22px] font-bold mb-4">
-        To fulfill the Company's legal obligations
+        To fulfill the Company&apos;s legal obligations
       </h3>
       <p className="text-gray-text text-[20px] mb-5">
         We collect and use personal data to comply with applicable laws. The
@@ -312,7 +317,7 @@ const PrivacyPage = () => {
 
       <h3 className="text-[22px] font-bold mb-4">With consent</h3>
       <p className="text-gray-text text-[20px] mb-5">
-        The Company may collect and use personal data based on the User's
+        The Company may collect and use personal data based on the User&apos;s
         consent. Responses to such surveys are collected on the basis of consent
         and will be deleted once no longer necessary for the purposes collected.
       </p>
@@ -327,16 +332,16 @@ const PrivacyPage = () => {
         Data Sharing and Disclosure
       </h2>
       <p className="text-gray-text text-[20px] mb-5">
-        Some of the Company's products, Services, and features require that we
-        share data with other Users or at a User's request. We may also share
-        data with our affiliates, subsidiaries, and partners, for legal reasons
-        or in connection with claims or disputes. The Company may share the data
-        we collect:
+        Some of the Company&apos;s products, Services, and features require that
+        we share data with other Users or at a User&apos;s request. We may also
+        share data with our affiliates, subsidiaries, and partners, for legal
+        reasons or in connection with claims or disputes. The Company may share
+        the data we collect:
       </p>
 
       <ul className="list-disc list-inside ml-5 text-gray-text text-[20px] mb-5">
         <li>With Other Users</li>
-        <li>At the User's request</li>
+        <li>At the User&apos;s request</li>
         <li>With the general public</li>
         <li>With the User account owner</li>
         <li>With the Company subsidiaries and affiliates</li>
@@ -374,7 +379,7 @@ const PrivacyPage = () => {
 
       <p className="text-gray-text text-[20px] mb-5">
         Clients who voluntarily provide their personal data in order for the
-        Company to provide Services do so pursuant to the Company's User
+        Company to provide Services do so pursuant to the Company&apos;s User
         Agreement.
       </p>
 
@@ -452,7 +457,7 @@ const PrivacyPage = () => {
       </h2>
       <p className="text-gray-text text-[20px] mb-5">
         It is our policy to post any changes we make to our Policy on this page.
-        If we make material changes to how we treat our users' personal
+        If we make material changes to how we treat our user&apos;s personal
         information, through a notice on the Website home page or in the
         Platform. The date the Policy was last revised is identified at the top
         of the page. You are responsible for ensuring we have an up-to-date

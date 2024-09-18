@@ -1,13 +1,9 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 
-import useDomain from "@/hooks/useDomain";
+import QrCode from "@/assets/images/qr-code.png";
 
 const Cta = () => {
-  const domain = useDomain();
-
   return (
     <section className="container-xl">
       <div className="bg-[#004A74] flex lg:flex-row flex-col lg:items-end justify-between items-center lg:gap-[92px] rounded-[30px]">
@@ -45,9 +41,9 @@ const Cta = () => {
           <div className="bg-[#01446A] hidden lg:flex flex-row items-center rounded-[18px] gap-4 px-5 py-[33px]">
             <Image
               unoptimized
-              src={`https://api.qrserver.com/v1/create-qr-code/?data=${domain}/scan&color=fff&bgcolor=01446A`}
+              src={QrCode}
               alt="Qr Code"
-              className="size-[146px]"
+              className="size-[146px] rounded-[10px]"
               width={100}
               height={100}
             />
@@ -70,7 +66,7 @@ const Cta = () => {
                     width={100}
                     height={100}
                     alt="Google Play"
-                    className="w-fit"
+                    className="size-[25px]"
                   />
                   <p className="text-white font-normal text-[12px]">
                     Play Store
@@ -88,7 +84,7 @@ const Cta = () => {
                     width={100}
                     height={100}
                     alt="App Store"
-                    className="w-fit"
+                    className="size-[25px]"
                   />
                   <p className="text-white font-normal text-[12px]">
                     App Store
