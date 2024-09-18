@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import hero from "@/assets/images/locator/hero.png";
-
 const Hero = () => {
   return (
     <section className="container-xl mt-[200px]">
@@ -19,7 +17,17 @@ const Hero = () => {
           </h2>
         </div>
         <div>
-          <Image priority src={hero} alt={"Globe"} />
+          <Image
+            unoptimized
+            priority
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/locator/hero.png"
+            }
+            width={100}
+            height={100}
+            className="w-full h-full"
+            alt={"Globe"}
+          />
         </div>
       </div>
     </section>

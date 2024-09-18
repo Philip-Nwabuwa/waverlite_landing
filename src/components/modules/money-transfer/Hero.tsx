@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import hero from "@/assets/images/money-transfer/hero.png";
-
 const Hero = () => {
   return (
     <section className="mt-[200px] container-xl">
@@ -25,7 +23,17 @@ const Hero = () => {
         </Link>
       </div>
       <div className="flex justify-center rounded-2xl">
-        <Image priority unoptimized src={hero} alt={"Globe"} />
+        <Image
+          priority
+          unoptimized
+          src={
+            "https://res.cloudinary.com/w22/wlt-website/images/money-transfer/hero.png"
+          }
+          width={100}
+          height={100}
+          className="w-full h-full lg:rounded-[60px] rounded-[20px]"
+          alt={"Globe"}
+        />
       </div>
     </section>
   );

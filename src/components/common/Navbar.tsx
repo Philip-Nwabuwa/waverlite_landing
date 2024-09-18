@@ -7,11 +7,12 @@ import { useEffect, useState } from "react";
 
 import Logo1 from "@/assets/icons/logo/Group.svg";
 import Waverlite from "@/assets/icons/logo/WaverliteBlack.svg";
-import ArrowDown from "@/assets/icons/arrow-down.svg";
+import ThickArrow from "@/assets/icons/CaretDown.svg";
 import { AlignJustify, ChevronDown, ChevronUp, X } from "lucide-react";
 import useDropdown from "@/hooks/useDropdown";
 
 import { CompanyList, DeveloperList, LegalList, ProductsList } from "./Footer";
+import useDomain from "@/hooks/useDomain";
 
 type IconType = {
   href: string;
@@ -74,7 +75,7 @@ const ProductsItems: IconType[] = [
       </svg>
     ),
     title: "Money Transfer",
-    description: "Supporting text",
+    description: "Secure, Fast, Global Transfers.",
   },
   {
     href: "/overdraft",
@@ -93,7 +94,7 @@ const ProductsItems: IconType[] = [
       </svg>
     ),
     title: "Overdraft",
-    description: "Global money transfer",
+    description: "Instant Access, Flexible Repayments",
   },
   {
     href: "/gift-cards",
@@ -146,10 +147,10 @@ const ProductsItems: IconType[] = [
       </svg>
     ),
     title: "Gift Cards",
-    description: "Supporting text",
+    description: "The Perfect Gift, Anytime, Anywhere",
   },
   {
-    href: "/virtual-cards",
+    href: "/debit-cards",
     icon: (
       <svg
         width="32"
@@ -198,8 +199,8 @@ const ProductsItems: IconType[] = [
         />
       </svg>
     ),
-    title: "Virtual Debit Cards",
-    description: "Supporting text",
+    title: "Debit Cards",
+    description: "Instant Access, Unlimited Convenience.",
   },
   {
     href: "/sales-mode",
@@ -218,7 +219,7 @@ const ProductsItems: IconType[] = [
       </svg>
     ),
     title: "Sales Mode",
-    description: "Supporting text",
+    description: "Boost Your Sales with Ease",
   },
   {
     href: "currency-exchange",
@@ -240,7 +241,7 @@ const ProductsItems: IconType[] = [
       </svg>
     ),
     title: "Currency Exchange",
-    description: "Supporting text",
+    description: "Seamless, Real-Time Currency Exchange",
   },
 ];
 
@@ -262,7 +263,7 @@ const CompanyItems: IconType[] = [
       </svg>
     ),
     title: "About Us",
-    description: "Supporting text",
+    description: "Your Trusted Partner for Seamless Global Payments",
   },
   {
     href: "/career",
@@ -281,7 +282,7 @@ const CompanyItems: IconType[] = [
       </svg>
     ),
     title: "Careers",
-    description: "Supporting text",
+    description: "Join Us and Shape the Future.",
   },
 ];
 
@@ -303,7 +304,7 @@ const ResourcesItems: IconType[] = [
       </svg>
     ),
     title: "API Documents",
-    description: "Supporting text",
+    description: "Comprehensive API Docs for Seamless Integration",
   },
   {
     href: "/faqs",
@@ -322,15 +323,22 @@ const ResourcesItems: IconType[] = [
       </svg>
     ),
     title: "FAQs",
-    description: "Global money transfer",
+    description: "Your Questions, Answered",
   },
 ];
 
 const Navbar = () => {
+  const domain = useDomain();
+
   const {
     isOpen: isDropdownOpen,
     toggleDropdown,
     ref: dropdownRef,
+  } = useDropdown();
+  const {
+    isOpen: isDownloadDropdownOpen,
+    toggleDropdown: toggleDownloadDropdown,
+    ref: dropdownDownloadRef,
   } = useDropdown();
   const {
     isOpen: isCompanyDropdownOpen,
@@ -381,8 +389,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar ${
-        isScrolled ? "navbar-scrolled shadow" : ""
+      className={`navbar bg-white ${
+        isScrolled ? "shadow-md transition-all" : ""
       } fixed w-full px-[20px] sm:px-[40px] lg:px-[60px] 2xl:px-[100px] z-50`}
     >
       <div className="w-full max-w-[1440px] mx-auto flex justify-between items-center">
@@ -400,7 +408,12 @@ const Navbar = () => {
               className="flex gap-2 items-center py-2 px-4 rounded-lg cursor-pointer"
               onClick={toggleDropdown}
             >
-              Products <Image src={ArrowDown} alt={""} />
+              Products{" "}
+              {isDropdownOpen ? (
+                <ChevronDown className="rotate-180 ease-in-out duration-300" />
+              ) : (
+                <ChevronDown className="ease-in-out duration-300" />
+              )}
             </div>
             {isDropdownOpen && (
               <div className="w-max absolute top-[65px] left-0 z-10">
@@ -412,7 +425,7 @@ const Navbar = () => {
                         <li
                           key={index}
                           onClick={toggleDropdown}
-                          className="pl-6 pr-[32px] py-2 hover:bg-[#F1FAFF] rounded-md"
+                          className="pl-6 pr-[32px] p-2 hover:bg-[#F1FAFF] rounded-md"
                         >
                           <Link
                             key={index}
@@ -442,7 +455,12 @@ const Navbar = () => {
               className="flex gap-2 items-center py-2 px-4 rounded-lg cursor-pointer"
               onClick={toggleCompanyDropdown}
             >
-              Company <Image src={ArrowDown} alt={""} />
+              Company{" "}
+              {isCompanyDropdownOpen ? (
+                <ChevronDown className="rotate-180 ease-in-out duration-300" />
+              ) : (
+                <ChevronDown className="ease-in-out duration-300" />
+              )}
             </div>
             {isCompanyDropdownOpen && (
               <div className="w-max absolute top-[65px] left-0 z-10">
@@ -456,7 +474,7 @@ const Navbar = () => {
                         <li
                           key={index}
                           onClick={toggleCompanyDropdown}
-                          className="pl-6 pr-[88px] py-2 hover:bg-[#F1FAFF] rounded-md"
+                          className="pl-6 pr-[88px] p-2 hover:bg-[#F1FAFF] rounded-md"
                         >
                           <Link
                             key={index}
@@ -484,7 +502,12 @@ const Navbar = () => {
               className="flex gap-2 items-center py-2 px-4 rounded-lg cursor-pointer"
               onClick={toggleResourcesDropdown}
             >
-              Resources <Image src={ArrowDown} alt={""} />
+              Resources{" "}
+              {isResourcesDropdownOpen ? (
+                <ChevronDown className="rotate-180 ease-in-out duration-300" />
+              ) : (
+                <ChevronDown className="ease-in-out duration-300" />
+              )}
             </div>
             {isResourcesDropdownOpen && (
               <div className="w-max absolute top-[65px] left-0 z-10">
@@ -496,7 +519,7 @@ const Navbar = () => {
                         <li
                           key={index}
                           onClick={toggleResourcesDropdown}
-                          className="pl-6 pr-[88px] hover:bg-[#F1FAFF] rounded-md"
+                          className="pl-6 pr-[88px] p-2 hover:bg-[#F1FAFF] rounded-md"
                         >
                           <Link
                             key={index}
@@ -521,13 +544,46 @@ const Navbar = () => {
           </div>
         </div>
         <div className="lg:flex hidden items-center gap-2 py-2 pl-4">
-          <Link
-            href={"https://app.waverlite.com/create-account"}
-            target="_blank"
-            className="py-[17px] px-[30px] bg-[#101212] text-[#E9EAEA] rounded-[10px]"
-          >
-            Get started
-          </Link>
+          <div className="relative" ref={dropdownDownloadRef}>
+            <button
+              className="flex items-center gap-2.5 py-[17px] px-[30px] bg-[#101212] text-[#E9EAEA] rounded-[10px]"
+              onClick={toggleDownloadDropdown}
+            >
+              Download app{" "}
+              {isDownloadDropdownOpen ? (
+                <Image
+                  className="rotate-180 ease-in-out duration-300"
+                  src={ThickArrow}
+                  alt={""}
+                />
+              ) : (
+                <Image
+                  className="ease-in-out duration-300"
+                  src={ThickArrow}
+                  alt={""}
+                />
+              )}
+            </button>
+            {isDownloadDropdownOpen && (
+              <div className="w-max absolute top-[75px] right-0 z-10">
+                <div className="bg-[#fff] rounded-[6px] shadow-2xl p-4">
+                  <div className="flex justify-center items-center mb-4">
+                    <Image
+                      unoptimized
+                      src={`https://api.qrserver.com/v1/create-qr-code/?data=${domain}/scan&color=000&bgcolor=fff`}
+                      alt="Qr Code"
+                      className="size-[146px]"
+                      width={100}
+                      height={100}
+                    />
+                  </div>
+                  <p className="w-full max-w-[200px] text-center">
+                    Use your phone to scan this QR code and download our app!
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
         <div
           className="flex lg:hidden cursor-pointer"
@@ -546,14 +602,18 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="px-[20px] sm:px-[40px] lg:px-[60px] 2xl:px-[100px] flex flex-col gap-4 lg:hidden absolute top-20 left-0 w-full bg-white text-black"
+              className="px-[20px] sm:px-[40px] lg:px-[60px] 2xl:px-[100px] flex flex-col gap-4 lg:hidden absolute top-[70px] left-0 w-full bg-white text-black"
             >
               <div
                 className="flex mt-4 justify-between items-center cursor-pointer"
                 onClick={() => toggleList("products")}
               >
                 <div className="font-semibold">Products</div>
-                {openList === "products" ? <ChevronUp /> : <ChevronDown />}
+                {openList === "products" ? (
+                  <ChevronDown className="rotate-180 ease-in-out duration-300" />
+                ) : (
+                  <ChevronDown className="ease-in-out duration-300" />
+                )}
               </div>
               {openList === "products" && (
                 <ul className="flex flex-col gap-1 ml-4">
@@ -576,7 +636,11 @@ const Navbar = () => {
                 onClick={() => toggleList("company")}
               >
                 <div className="font-semibold">Company</div>
-                {openList === "company" ? <ChevronUp /> : <ChevronDown />}
+                {openList === "company" ? (
+                  <ChevronDown className="rotate-180 ease-in-out duration-300" />
+                ) : (
+                  <ChevronDown className="ease-in-out duration-300" />
+                )}
               </div>
               {openList === "company" && (
                 <ul className="flex flex-col gap-1 ml-4">
@@ -599,7 +663,11 @@ const Navbar = () => {
                 onClick={() => toggleList("developer")}
               >
                 <div className="font-semibold">Developers</div>
-                {openList === "developer" ? <ChevronUp /> : <ChevronDown />}
+                {openList === "developer" ? (
+                  <ChevronDown className="rotate-180 ease-in-out duration-300" />
+                ) : (
+                  <ChevronDown className="ease-in-out duration-300" />
+                )}
               </div>
               {openList === "developer" && (
                 <ul className="flex flex-col gap-1 ml-4">
@@ -622,7 +690,11 @@ const Navbar = () => {
                 onClick={() => toggleList("legal")}
               >
                 <div className="font-semibold">Legal</div>
-                {openList === "legal" ? <ChevronUp /> : <ChevronDown />}
+                {openList === "legal" ? (
+                  <ChevronDown className="rotate-180 ease-in-out duration-300" />
+                ) : (
+                  <ChevronDown className="ease-in-out duration-300" />
+                )}
               </div>
               {openList === "legal" && (
                 <ul className="flex flex-col gap-1 ml-4">

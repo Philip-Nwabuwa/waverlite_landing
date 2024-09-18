@@ -1,11 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Globe from "@/assets/images/virtual-cards/Side-Globe.png";
-import Reset from "@/assets/images/virtual-cards/Reset.svg";
-import Setting from "@/assets/images/virtual-cards/setting-2.svg";
-import Switch from "@/assets/images/virtual-cards/switch.svg";
-
 const Setup = () => {
   return (
     <section className="container-xl flex flex-col gap-[28px]">
@@ -40,8 +35,13 @@ const Setup = () => {
             Get Dollar Card
           </Link>
           <Image
-            className="rounded-lg mt-12"
-            src={Globe}
+            unoptimized
+            className="w-full rounded-lg mt-12"
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/virtual-cards/Side-Globe.png"
+            }
+            width={100}
+            height={100}
             alt="No hidden charges"
           />
         </div>
@@ -51,7 +51,14 @@ const Setup = () => {
           <div className="bg-[#272A2B] flex flex-col gap-[36px] justify-center items-center p-[28px] rounded-[64px]">
             <div className="w-full bg-[#323435] flex gap-6 px-[30px] py-2.5 rounded-[30px] border border-solid border-[#9c9d9d33]">
               <div className="flex items-center gap-5">
-                <Image src={Reset} alt="" />
+                <Image
+                  src={
+                    "https://res.cloudinary.com/w22/wlt-website/images/virtual-cards/Reset.svg"
+                  }
+                  width={47}
+                  height={47}
+                  alt="Block Card"
+                />
                 <div>
                   <h4 className="text-[34px] text-[#E9EAEA] font-bold">
                     Block Card
@@ -61,11 +68,25 @@ const Setup = () => {
                   </p>
                 </div>
               </div>
-              <Image src={Switch} alt="" />
+              <Image
+                src={
+                  "https://res.cloudinary.com/w22/wlt-website/images/virtual-cards/switch.svg"
+                }
+                width={71}
+                height={71}
+                alt="Block Card"
+              />
             </div>
             <div className="w-full bg-[#323435] flex gap-6 px-[30px] py-2.5 rounded-[30px] border border-solid border-[#9c9d9d33]">
               <div className="flex items-center gap-5">
-                <Image src={Setting} alt="" />
+                <Image
+                  src={
+                    "https://res.cloudinary.com/w22/wlt-website/images/virtual-cards/setting-2.svg"
+                  }
+                  width={47}
+                  height={47}
+                  alt="Manage Card"
+                />
                 <div>
                   <h4 className="text-[34px] text-[#E9EAEA] font-bold">
                     Manage Card

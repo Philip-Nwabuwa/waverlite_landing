@@ -77,7 +77,7 @@ const TeamBuzz = () => {
   return (
     <section>
       <div className="w-full flex justify-center lg:mb-[76px] mb-10">
-        <h4 className="lg:text-[80px] text-[40px] text-center font-bold lg:leading-[80px] leading-[50px]">
+        <h4 className="lg:text-[40px] text-[20px] text-center font-bold lg:leading-[80px] leading-[50px]">
           What Our Team Says{" "}
         </h4>
       </div>

@@ -23,7 +23,15 @@ const Experience = () => {
       <div className="flex flex-col gap-[28px]">
         <div className="bg-[#E9F4FA] scanBg grid lg:grid-cols-2 rounded-[32px]">
           <div className="lg:p-[52px] p-6">
-            <Image src={Icon1} alt="" className="size-[40px] lg:size-[60px]" />
+            <Image
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/icons/main/Icon1.svg"
+              }
+              height={100}
+              width={100}
+              alt=""
+              className="size-[40px] lg:size-[60px]"
+            />
             <h2 className="lg:text-[40px] text-[24px] font-semibold text-[#272A2B] lg:leading-[80px] lg:mt-[55px mt-2.5 lg:mb-4 mb-2.5">
               Scan to Pay
             </h2>
@@ -37,13 +45,30 @@ const Experience = () => {
             </button>
           </div>
           <div className="p-[28px]">
-            <Image src={QrScan} className="w-full" alt={"QrScan"} />
+            <Image
+              unoptimized
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/main/scan-to-pay.png"
+              }
+              height={100}
+              width={100}
+              className="w-full"
+              alt={"QrScan"}
+            />
           </div>
         </div>
 
         <div className="bg-[#FFF8f1] grid lg:grid-cols-10 lg:p-[52px] gap-[28px] p-6 rounded-[32px]">
           <div className="lg:col-span-4 flex flex-col">
-            <Image src={Icon2} alt="" className="size-[40px] lg:size-[60px]" />
+            <Image
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/icons/main/Icon2.svg"
+              }
+              height={100}
+              width={100}
+              alt=""
+              className="size-[40px] lg:size-[60px]"
+            />
             <h2 className="lg:text-[40px] text-[24px] font-semibold text-[#272A2B] lg:leading-[80px] lg:mt-[55px mt-2.5 lg:mb-4 mb-2.5">
               Built for Freelancers
             </h2>
@@ -57,20 +82,64 @@ const Experience = () => {
             </button>
           </div>
           <div className="grid grid-cols-2 lg:hidden gap-[10px] pt-[24px]">
-            <Image src={freelancerSm1} alt="" className="w-full" />
-            <Image src={freelancerSm2} alt="" className="w-full" />
+            <Image
+              unoptimized
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/main/free1.svg"
+              }
+              height={100}
+              width={100}
+              alt=""
+              className="w-full"
+            />
+            <Image
+              unoptimized
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/main/free2.svg"
+              }
+              height={100}
+              width={100}
+              alt=""
+              className="w-full"
+            />
           </div>
           <div className="lg:flex hidden col-span-3">
-            <Image src={freelancers1} alt="freeelancer 1" />
+            <Image
+              unoptimized
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/main/freelancers.png"
+              }
+              className="w-full"
+              height={100}
+              width={100}
+              alt="freeelancer 1"
+            />
           </div>
           <div className="lg:flex hidden col-span-3">
-            <Image src={freelancers2} alt="freeelancer 2" />
+            <Image
+              unoptimized
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/main/freelancers1.png"
+              }
+              className="w-full"
+              height={100}
+              width={100}
+              alt="freeelancer 2"
+            />
           </div>
         </div>
 
         <div className="bg-[#FFFef5] giftCardLogo grid lg:grid-cols-2 lg:p-[52px] lg:gap-[60px] gap-[28px] p-6 rounded-[32px]">
           <div className="flex flex-col">
-            <Image src={Icon3} alt="" className="size-[40px] lg:size-[60px]" />
+            <Image
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/icons/main/Icon3.svg"
+              }
+              height={100}
+              width={100}
+              alt=""
+              className="size-[40px] lg:size-[60px]"
+            />
             <h2 className="lg:text-[40px] text-[24px] font-semibold text-[#272A2B] lg:leading-[80px] lg:mt-[55px mt-2.5 lg:mb-4 mb-2.5">
               Purchase Gift cards{" "}
             </h2>
@@ -84,13 +153,30 @@ const Experience = () => {
             </button>
           </div>
           <div className="gap-[28px] pt-[24px]">
-            <Image src={giftCards} alt="" className="w-full" />
+            <Image
+              unoptimized
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/main/Frame_71.png"
+              }
+              height={100}
+              width={100}
+              alt=""
+              className="w-full"
+            />
           </div>
         </div>
 
         <div className="bg-[#F3F7FF] grid lg:grid-cols-2 lg:p-[52px] lg:gap-[60px] gap-[28px] p-6 rounded-[32px]">
           <div className="flex flex-col">
-            <Image src={Icon4} alt="" className="size-[40px] lg:size-[60px]" />
+            <Image
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/icons/main/Icon4.svg"
+              }
+              height={100}
+              width={100}
+              alt=""
+              className="size-[40px] lg:size-[60px]"
+            />
             <h2 className="lg:text-[40px] text-[24px] font-semibold text-[#272A2B] lg:leading-[80px] lg:mt-[55px mt-2.5 lg:mb-4 mb-2.5">
               Sales Mode
             </h2>
@@ -104,7 +190,16 @@ const Experience = () => {
             </button>
           </div>
           <div className="gap-[28px] pt-[24px]">
-            <Image src={salesMode} alt="" className="w-full" />
+            <Image
+              unoptimized
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/main/sales-mode.png"
+              }
+              height={100}
+              width={100}
+              alt=""
+              className="w-full"
+            />
           </div>
         </div>
       </div>

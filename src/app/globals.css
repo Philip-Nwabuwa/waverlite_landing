@@ -151,20 +151,21 @@ select {
 
 .navbar {
   display: flex;
-  height: 82px;
+  height: 70px;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(10px);
-}
-
-.navbar-scrolled {
-  background-color: white;
   transition: ease-in 0.2s;
 }
 
+@media (min-width: 1024px) {
+  .navbar {
+    height: 82px;
+  }
+}
+
 .pathClip {
-  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/money-transfer/Clip\ path\ group.svg");
+  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/money-transfer/Clip_path_group.svg");
 }
 
 .virtualCardBgLg {
@@ -175,10 +176,17 @@ select {
 }
 
 .aboutUsWave {
-  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/about/wave.svg");
+  background-image: url("../assets/images/about/waveSm.svg");
   width: 100%;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.careerWave {
+  background-image: url("../assets/images/careers/wave.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .giftCardLogo {
@@ -211,6 +219,24 @@ select {
   }
 }
 
+@media (min-width: 1024px) {
+  .aboutUsWave {
+    background-image: url("https://res.cloudinary.com/w22/wlt-website/images/about/wave.svg");
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1024px) {
+  .careerWave {
+    background-image: url("../assets/images/careers/wave.svg");
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
 .careerBg {
   background-image: url("https://res.cloudinary.com/w22/wlt-website/images/careers/HeroImage.png");
   height: 100%;
@@ -225,7 +251,7 @@ select {
   background-repeat: no-repeat;
 }
 .mainBgLg {
-  background-image: url("https://res.cloudinary.com/w22/wlt-website/images/main/main.png");
+  background-image: url("../assets/images/main/main.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -253,7 +279,7 @@ select {
 
 .gridWhy {
   background-image: url("https://res.cloudinary.com/w22/wlt-website/images/money-transfer/grid.svg");
-  height: 504px;
+  height: 380px;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;

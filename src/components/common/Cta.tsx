@@ -3,9 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import AppStore from "@/assets/icons/applestore.png";
-import GooglePlay from "@/assets/icons/playstore.png";
-import Phone from "@/assets/images/cta/Iphone-cta.png";
 import useDomain from "@/hooks/useDomain";
 
 const Cta = () => {
@@ -16,9 +13,14 @@ const Cta = () => {
       <div className="bg-[#004A74] flex lg:flex-row flex-col lg:items-end justify-between items-center lg:gap-[92px] rounded-[30px]">
         <div className="lg:pl-[56px] px-4 lg:px-0 order-last lg:order-first">
           <Image
-            src={Phone}
+            unoptimized
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/cta/Iphone-cta.png"
+            }
+            width={100}
+            height={100}
             alt="Phone"
-            className="rounded-[10px] lg:rounded-none"
+            className="lg:w-[445px] lg:h-[460px] w-full h-full rounded-[10px] lg:rounded-none"
           />
         </div>
         <div className="flex flex-col lg:py-[56px] lg:pr-[56px] py-10 px-5">
@@ -42,6 +44,7 @@ const Cta = () => {
 
           <div className="bg-[#01446A] hidden lg:flex flex-row items-center rounded-[18px] gap-4 px-5 py-[33px]">
             <Image
+              unoptimized
               src={`https://api.qrserver.com/v1/create-qr-code/?data=${domain}/scan&color=fff&bgcolor=01446A`}
               alt="Qr Code"
               className="size-[146px]"
@@ -60,7 +63,15 @@ const Cta = () => {
                   target="_blank"
                   className="flex gap-3 items-center "
                 >
-                  <Image src={GooglePlay} alt="Google Play" />
+                  <Image
+                    src={
+                      "https://res.cloudinary.com/w22/wlt-website/icons/playstore.png"
+                    }
+                    width={100}
+                    height={100}
+                    alt="Google Play"
+                    className="w-fit"
+                  />
                   <p className="text-white font-normal text-[12px]">
                     Play Store
                   </p>
@@ -70,7 +81,15 @@ const Cta = () => {
                   target="_blank"
                   className="flex gap-3 items-center "
                 >
-                  <Image src={AppStore} alt="App Store" />
+                  <Image
+                    src={
+                      "https://res.cloudinary.com/w22/wlt-website/icons/applestore.png"
+                    }
+                    width={100}
+                    height={100}
+                    alt="App Store"
+                    className="w-fit"
+                  />
                   <p className="text-white font-normal text-[12px]">
                     App Store
                   </p>

@@ -1,65 +1,97 @@
 import Image from "next/image";
+import Link from "next/link";
 
-import team1 from "@/assets/images/careers/team.png";
-import team2 from "@/assets/images/careers/team2.png";
-import bulb from "@/assets/images/careers/bulb.png";
-import cash from "@/assets/images/careers/cash.png";
-import colab from "@/assets/images/careers/colab.png";
-import plant from "@/assets/images/careers/plant.png";
+import Empower from "@/assets/images/careers/empower.png";
+import Logo from "@/assets/images/careers/logo.svg";
+import iphone from "@/assets/images/careers/iphone.png";
+import protect from "@/assets/images/careers/protected.png";
+import currency from "@/assets/images/careers/currency.svg";
 
 const Why = () => {
   return (
     <section className="container-xl">
-      <div className="flex flex-col items-center justify-center gap-6 text-center lg:mb-[84px]">
-        <h1 className="text-black lg:text-[60px] text-[40px] font-bold my-6 leading-[94px]">
-          Why Work With Us?{" "}
+      <div className="flex flex-col items-center justify-center gap-6 text-center lg:mb-[56px]">
+        <h1 className="text-black lg:text-[40px] text-[20px] font-bold my-6 leading-[94px]">
+          What we do
         </h1>
-        <p className="w-full text-[#bcbdbd] text-[24px]">
-          At Waverlite, we&apos;re passionate about creating innovative payment
-          solutions that make life easier for everyone. Join us and help shape
-          the future of financial technology.{" "}
-        </p>
       </div>
-      <div className="flex flex-col lg:flex-row justify-between gap-[30px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] lg:gap-[70px] lg:mb-[150px] mb-[50px]">
         <div className="flex flex-col gap-[30px]">
-          <div className="bg-[#272A2B] h-full flex flex-col justify-between p-9 rounded-[44px]">
-            <Image src={bulb} alt="bulb" />
-            <p className="text-[#E9EAEA] text-[40px] font-bold">
-              {" "}
-              Innovative & dynamic work environment.
-            </p>
+          <h3 className="lg:text-[40px] font-medium leading-[65px]">
+            Empower Your Freelance Career with Waverlite
+          </h3>
+          <p className="text-[15px] lg:text-[18px] font-normal leading-[25px]">
+            Our vision is to create a world where financial barriers are
+            removed, enabling everyone to transact and thrive globally with
+            ease.
+          </p>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit py-4 px-[30px] bg-black text-[#E9EAEA] rounded-[8px] font-bold text-[14px] lg:text-[16px]"
+          >
+            Get Started
+          </Link>{" "}
+        </div>
+        <div>
+          <Image src={Empower} alt="Empower" />
+        </div>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] justify-center items-center lg:gap-[70px]">
+        <div className="flex flex-col gap-[30px]">
+          <div className="flex gap-[30px]">
+            <div className="bg-[#F1FAFF] flex flex-col justify-between w-full rounded-[10px] pt-5 pl-5">
+              <div>
+                <h4 className="text-[#1E8DCC] lg:text-[24px] text-[20px] font-bold">
+                  Waverlite
+                </h4>
+                <p className="text-[#424646] lg:text-[18px] text-[15px] font-bold mt-1 mb-4">
+                  We are here
+                </p>
+              </div>
+              <Image src={Logo} alt="Logo" />
+            </div>
+            <div className="bg-[#0773B0] w-full rounded-[10px] pt-5 px-5">
+              <h4 className="text-[#fff] lg:text-[24px] text-[20px] font-bold">
+                Fast and Easy Payments
+              </h4>
+              <div className="flex justify-end items-center mt-2">
+                <Image src={iphone} alt="Logo" />
+              </div>
+            </div>{" "}
           </div>
-          <div>
-            <Image src={team2} alt="team2" className="w-full " />
+          <div className="flex gap-[30px]">
+            <div className="bg-[#0773B0] w-full rounded-[10px] pt-5 px-5">
+              <h4 className="text-[#fff] lg:text-[24px] text-[20px] font-bold">
+                Secure and Reliable{" "}
+              </h4>
+              <div className="mt-2">
+                <Image src={protect} alt="Logo" />
+              </div>
+            </div>{" "}
+            <div className="bg-[#000] w-full flex flex-col justify-between items-start rounded-[10px] p-5">
+              <h4 className="text-[#fff] lg:text-[24px] text-[20px] font-bold">
+                Multiple Currency Support
+              </h4>
+
+              <Image src={currency} alt="Logo" />
+            </div>{" "}
           </div>
         </div>
         <div className="flex flex-col gap-[30px]">
-          <div className="bg-[#E9EAEA] h-full flex flex-col justify-between p-9 rounded-[44px]">
-            <Image src={plant} alt="plant" />
-            <p className="text-black text-[40px] font-bold">
-              {" "}
-              Innovative & dynamic work environment.
-            </p>
-          </div>
-          <div className="bg-[#E9EAEA] h-full flex flex-col justify-between p-9 rounded-[44px]">
-            <Image src={cash} alt="cash" />
-            <p className="text-black text-[40px] font-bold">
-              {" "}
-              Innovative & dynamic work environment.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col gap-[30px]">
-          <div>
-            <Image src={team1} alt="team2" className="w-full" />
-          </div>
-          <div className="bg-[#272A2B] h-[453px] flex flex-col justify-between p-9 rounded-[44px]">
-            <Image src={colab} alt="colab" />
-            <p className="text-[#E9EAEA] text-[40px] font-bold">
-              {" "}
-              Innovative & dynamic work environment.
-            </p>
-          </div>
+          <h3 className="lg:text-[40px] font-medium leading-[65px]">
+            Empower Your Freelance Career with Waverlite
+          </h3>
+          <p className="text-[15px] lg:text-[18px] font-normal leading-[25px]">
+            Our vision is to create a world where financial barriers are
+            removed, enabling everyone to transact and thrive globally with
+            ease.
+          </p>
+          <Link
+            href={"https://app.waverlite.com/create-account"}
+            className="w-fit py-4 px-[30px] bg-black text-[#E9EAEA] rounded-[8px] font-bold text-[14px] lg:text-[16px]"
+          >
+            Get Started
+          </Link>{" "}
         </div>
       </div>
     </section>

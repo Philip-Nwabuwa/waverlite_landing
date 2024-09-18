@@ -1,18 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import fast from "@/assets/images/money-transfer/fast.svg";
-import currencies from "@/assets/images/currency-exchange/Coins-currencies.svg";
-import side from "@/assets/images/currency-exchange/sideImage.png";
-import frame from "@/assets/images/giftCard/Frame-wave.svg";
-
 const Transfers = () => {
   return (
     <section className="container-xl flex flex-col gap-[28px]">
       <div className="flex flex-col gap-[28px]">
         <div className="pathClip bg-[#e9f4fa80] grid lg:grid-cols-2 gap-[28px] lg:p-[52px] p-[30px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div className="h-full lg:h-[680px] bg-[#1B80BA] flex justify-center items-end rounded-[12px] pl-6 pt-6">
-            <Image src={fast} alt={"Send fast"} />
+            <Image
+              unoptimized
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/money-transfer/fast.svg"
+              }
+              alt={"Send fast"}
+              width={100}
+              height={100}
+              className="w-full h-full"
+            />
           </div>
           <div>
             <h3 className="text-[40px] lg:text-[60px] font-bold lg:leading-[70px] mb-6">
@@ -62,15 +66,42 @@ const Transfers = () => {
           >
             Get Started Now
           </Link>
-          <Image src={currencies} alt="No hidden charges" className="mt-12" />
+          <Image
+            unoptimized
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/currency-exchange/Coins-currencies.svg"
+            }
+            alt="No hidden charges"
+            width={100}
+            height={100}
+            className="mt-4 w-full h-[200px]"
+          />
         </div>
       </div>
       <div className="bg-[#e9f4fa80] grid lg:grid-cols-4 gap-[28px] p-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
         <div className="col-span-1">
-          <Image className="w-fit h-full" src={side} alt="" />
+          <Image
+            unoptimized
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/currency-exchange/sideImage.png"
+            }
+            alt="No hidden charges"
+            width={100}
+            height={100}
+            className="w-full h-full"
+          />
         </div>
         <div className="col-span-1 flex items-end justify-center bg-[#272A2B] pl-10 rounded-[36px]">
-          <Image src={frame} alt="frame" />
+          <Image
+            unoptimized
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/giftCard/Frame-wave.svg"
+            }
+            alt="frame"
+            width={100}
+            height={100}
+            className="w-full h-[362px]"
+          />
         </div>
         <div className="col-span-2 bg-[#1E8DCC] lg:p-[52px] p-[30px] rounded-[36px]">
           <h3 className="text-[#E9F4FA] text-[40px] lg:text-[60px] font-bold leading-[80px] mb-6">

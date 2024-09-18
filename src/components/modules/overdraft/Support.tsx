@@ -25,7 +25,16 @@ const Support = () => {
           Get Started Now
         </Link>
         <div className="pt-[64px]">
-          <Image src={Group} alt="group" />
+          <Image
+            unoptimized
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/overdraft/overdraft-group.svg"
+            }
+            width={100}
+            height={100}
+            className="w-full h-full"
+            alt="group"
+          />
         </div>
       </div>
       <div className="grid lg:grid-cols-5 gap-[28px]">
@@ -60,17 +69,40 @@ const Support = () => {
             Get Started Now
           </Link>
           <Image
-            src={HiddenCharges}
+            unoptimized
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/overdraft/overdraft-hidden.png"
+            }
+            width={100}
+            height={100}
+            className="w-full h-[230px] mt-12"
             alt="No hidden charges"
-            className="mt-12"
           />
         </div>
       </div>
       <div>
         <div className="pathClip bg-[#e9f4fa80] grid lg:grid-cols-5 lg:p-[52px] p-[30px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
           <div className="flex lg:col-span-3 items-center gap-4">
-            <Image className="h-fit" src={person1} alt="" />
-            <Image src={person2} alt="" />
+            <Image
+              unoptimized
+              className="h-full lg:h-[370px] w-fit"
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/overdraft/overdraft-person.png"
+              }
+              width={100}
+              height={100}
+              alt=""
+            />
+            <Image
+              unoptimized
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/overdraft/overdraft-person2.png"
+              }
+              width={100}
+              height={100}
+              className="h-full lg:h-[476px] w-fit"
+              alt=""
+            />
           </div>
           <div className="lg:col-span-2">
             <h3 className="lg:text-[60px] text-[40px] font-bold lg:leading-[80px] mb-6">

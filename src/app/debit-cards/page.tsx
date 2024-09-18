@@ -1,8 +1,9 @@
 import Buzz from "@/components/common/Buzz";
 import Footer from "@/components/common/Footer";
 import Join from "@/components/common/Join";
-import Hero from "@/components/modules/virtual-card/Hero";
-import Setup from "@/components/modules/virtual-card/Setup";
+import Hero from "@/components/modules/debit-card/Hero";
+import Setup from "@/components/modules/debit-card/Setup";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

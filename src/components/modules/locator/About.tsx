@@ -16,10 +16,11 @@ const About = () => {
           <p className="text-[24px] text-[#9C9D9D] font-bold">
             Filter results by category, such as dining, shopping, or services.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"/"}
+            className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
           <Image className="mt-[28px]" src={search} alt={"search"} />
         </div>
@@ -31,10 +32,11 @@ const About = () => {
             Search for nearby stores, restaurants, and services that accept
             Waverlite.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"/"}
+            className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
           <Image className="mt-[28px]" src={filter} alt={"filter"} />
         </div>
@@ -47,10 +49,11 @@ const About = () => {
           <p className="text-[24px] text-[#9C9D9D] font-bold">
             Get step-by-step directions to any Waverlite-supported business.
           </p>
-          <Link href={"/"}>
-            <button className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold">
-              Get Started Now
-            </button>
+          <Link
+            href={"/"}
+            className="w-fit mt-12 py-2 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+          >
+            Get Started Now
           </Link>
           <Image className="mt-[64px]" src={map} alt={"filter"} />
         </div>

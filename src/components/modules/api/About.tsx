@@ -1,11 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import lock from "@/assets/images/api/lock.svg";
-import avatars from "@/assets/images/api/avatars.png";
-import Reset from "@/assets/images/api/reset.svg";
-import Switch from "@/assets/images/api/switch.svg";
-
 const About = () => {
   return (
     <section className="container-xl flex flex-col gap-[28px]">
@@ -27,7 +22,16 @@ const About = () => {
           </Link>
         </div>
         <div className="h-full lg:h-[680px] bg-[#1B80BA] flex justify-center items-end rounded-[12px] pl-6 pt-6">
-          <Image src={lock} alt={"Send fast"} />
+          <Image
+            unoptimized
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/api/lock.svg"
+            }
+            width={100}
+            height={100}
+            className="w-full h-full"
+            alt={"Send fast"}
+          />
         </div>
       </div>
       <div className="grid lg:grid-cols-2 gap-[28px]">
@@ -58,25 +62,52 @@ const About = () => {
           </p>
           <Link
             href={"https://app.waverlite.com/create-account"}
-            className="w-fit mb-[60px] py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
+            className="w-fit py-4 px-8 bg-primary text-[#E9EAEA] rounded-[8px] font-semibold"
           >
             Get Started Now
           </Link>
-          <Image src={avatars} alt="No hidden charges" />
+          <Image
+            unoptimized
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/api/avatars.png"
+            }
+            width={100}
+            height={100}
+            className="w-full h-[200px] mt-12"
+            alt="No hidden charges"
+          />
         </div>
       </div>
       <div className="bg-[#e9f4fa80] grid lg:grid-cols-2 gap-[28px] border-2 border-solid border-[#b9dcef80] rounded-[64px]">
         <div className="bg-[#272A2B] flex flex-col gap-[36px] justify-center items-center p-[28px] rounded-[64px]">
           <div className="w-full bg-[#323435] flex gap-6 px-[30px] py-2.5 rounded-[30px] border border-solid border-[#9c9d9d33]">
             <div className="flex items-center gap-5">
-              <Image src={Reset} alt="" />
+              <Image
+                unoptimized
+                src={
+                  "https://res.cloudinary.com/w22/wlt-website/images/api/reset.svg"
+                }
+                width={100}
+                height={100}
+                alt=""
+                className="w-[60px] h-[60px]"
+              />
               <div>
                 <h4 className="text-[34px] text-[#E9EAEA] font-bold">
                   Auto Reversal
                 </h4>
               </div>
             </div>
-            <Image src={Switch} alt="" />
+            <Image
+              unoptimized
+              src={
+                "https://res.cloudinary.com/w22/wlt-website/images/api/switch.svg"
+              }
+              width={100}
+              height={100}
+              className="w-[60px] h-[60px]"
+              alt=""
+            />
           </div>
           <div className="w-full bg-[#323435] flex gap-6 px-[30px] py-2.5 rounded-[30px] border border-solid border-[#9c9d9d33]">
             <div className="flex items-center gap-5">

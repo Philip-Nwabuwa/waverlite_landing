@@ -23,13 +23,11 @@ export default function RootLayout({
       <body
         className={`${nunito.className} w-full bg-[#FDFDFD] flex items-center justify-center `}
       >
-        <ReCaptchaProvider>
-          <div className="max-w-[1440px] flex justify-center">
-            <Navbar />
-            {children}
-          </div>
-          <Toaster />
-        </ReCaptchaProvider>
+        <div className="max-w-[1440px] flex justify-center">
+          <Navbar />
+          {children}
+        </div>
+        <Toaster />
       </body>
     </html>
   );

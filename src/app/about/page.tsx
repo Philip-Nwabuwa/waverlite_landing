@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main className="storyBgLg flex flex-col lg:gap-[184px] gap-[100px]">
+    <main className="storyBgLg flex flex-col lg:gap-[184px] md:gap-[100px] gap-[60px]">
       <Hero />
       <Vision />
       <Story />

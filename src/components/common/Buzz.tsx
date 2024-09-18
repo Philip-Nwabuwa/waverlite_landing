@@ -77,7 +77,7 @@ const Buzz = () => {
   return (
     <section>
       <div className="flex justify-center lg:mb-[76px] mb-10">
-        <h4 className="lg:text-[60px] text-[40px] text-center font-bold lg:leading-[80px] leading-[50px]">
+        <h4 className="lg:text-[40px] text-[20px] text-center font-bold lg:leading-[80px] leading-[30px]">
           Buzz from the <br /> Waverlite Community
         </h4>
       </div>

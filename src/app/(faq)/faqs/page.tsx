@@ -54,8 +54,14 @@ const Faqpage = () => {
                 }`}
               >
                 <Image
-                  src={openIndex === index ? Minus : Plus}
+                  src={
+                    openIndex === index
+                      ? "https://res.cloudinary.com/w22/wlt-website/icons/minus.svg"
+                      : "https://res.cloudinary.com/w22/wlt-website/icons/Plus.svg"
+                  }
                   alt={openIndex === index ? "minus" : "plus"}
+                  width={100}
+                  height={100}
                   className="w-fit"
                 />
               </div>

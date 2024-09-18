@@ -26,7 +26,16 @@ const Hero = () => {
           </Link>
         </div>
         <div>
-          <Image priority src={hero} alt={"Code"} />
+          <Image
+            unoptimized
+            src={
+              "https://res.cloudinary.com/w22/wlt-website/images/api/web_designv2_7_1.png"
+            }
+            width={100}
+            height={100}
+            className="mt-12 lg:mt-0 lg:w-[700px] w-full h-full lg:h-[500px]"
+            alt={"Code"}
+          />
         </div>
       </div>
     </section>

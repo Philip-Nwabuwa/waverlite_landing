@@ -1,8 +1,6 @@
-import Modal from "@/components/common/Modal";
 import Image from "next/image";
+import Modal from "@/components/common/Modal";
 
-import heroImageSm from "@/assets/images/main/mainSm.png";
-import lock from "@/assets/icons/LockKey.svg";
 import Link from "next/link";
 
 const Hero = () => {
@@ -13,7 +11,16 @@ const Hero = () => {
           <div className="mt-[200px]">
             <div className="flex flex-col">
               <p className="w-fit text-[15px] flex items-center gap-2 px-4 mb-4 py-2 bg-[#f0faff] text-[#1B80BA] rounded-[6px] font-semibold">
-                Instant & Secure <Image src={lock} alt={"lock"} />
+                Instant & Secure{" "}
+                <Image
+                  src={
+                    "https://res.cloudinary.com/w22/wlt-website/icons/LockKey.svg"
+                  }
+                  height={100}
+                  width={100}
+                  className="size-[20px]"
+                  alt={"lock"}
+                />
               </p>
               <h1 className="text-white xl:text-[64px] text-[50px] font-bold leading-[50px] lg:leading-[70px] mb-[30px]">
                 Your fastest route to <br /> global payments.
@@ -23,13 +30,13 @@ const Hero = () => {
               Travel the world and spend like a local with instant global <br />
               payments. No spending limits, just freedom.
             </p>
-            <div className="flex flex-col pb-[200px]">
+            <div className="flex flex-col pb-[150px]">
               <div className="flex gap-6 pt-[42px]">
                 <Link
                   href={"https://app.waverlite.com/create-account"}
                   className="py-4 px-[30px] bg-primary text-[#E9EAEA] rounded-[8px] font-bold text-[14px] lg:text-[16px]"
                 >
-                  Download app
+                  Get Started
                 </Link>
                 <Modal />
               </div>
@@ -38,11 +45,29 @@ const Hero = () => {
         </div>
       </div>
       <div className="lg:hidden flex flex-col w-full mt-[82px]">
-        <Image className="w-full" src={heroImageSm} alt="Hero image" />
+        <Image
+          unoptimized
+          className="w-full"
+          src={
+            "https://res.cloudinary.com/w22/wlt-website/images/main/mainSm.png"
+          }
+          alt="Hero image"
+          height={100}
+          width={100}
+        />
         <div className="container-xl mt-5">
           <div className="flex flex-col">
             <p className="w-fit flex items-center gap-2 px-3 py-1 mb-4 bg-[#f0faff] text-[#1B80BA] rounded-[6px] font-semibold">
-              Instant & Secure <Image src={lock} alt={"lock"} />
+              Instant & Secure{" "}
+              <Image
+                src={
+                  "https://res.cloudinary.com/w22/wlt-website/icons/LockKey.svg"
+                }
+                height={100}
+                width={100}
+                className="size-[20px]"
+                alt={"lock"}
+              />
             </p>
             <h1 className="text-[24px] font-bold leading-[40px] mb-[6px]">
               Your fastest route to global payments.
@@ -54,9 +79,12 @@ const Hero = () => {
           </p>
           <div className="flex flex-col">
             <div className="flex gap-6 pt-[30px]">
-              <button className="py-4 px-[30px] bg-primary text-[#E9EAEA] rounded-[8px] font-bold text-[14px] lg:text-[16px]">
-                Download app
-              </button>
+              <Link
+                href={"https://app.waverlite.com/create-account"}
+                className="py-4 px-[30px] bg-primary text-[#E9EAEA] rounded-[8px] font-bold text-[14px] lg:text-[16px]"
+              >
+                Get Started
+              </Link>
               <Modal />
             </div>
           </div>

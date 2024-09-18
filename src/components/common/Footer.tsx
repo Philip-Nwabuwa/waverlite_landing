@@ -1,24 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Logo1 from "@/assets/icons/logo/Group.svg";
-import Waverlite from "@/assets/icons/logo/WaverliteWhite.svg";
-import Mail from "@/assets/icons/footer/mailOutlined.png";
-import X from "@/assets/icons/logo/media/X.png";
-import Facebook from "@/assets/icons/logo/media/Facebook.png";
-import IG from "@/assets/icons/logo/media/Instagram.png";
-import Linkedin from "@/assets/icons/logo/media/Linkedin.png";
-
 const icons = [
-  { src: X, alt: "X", href: "https://x.com/waverlite" },
   {
-    src: Facebook,
+    src: "https://res.cloudinary.com/w22/wlt-website/icons/logo/media/X.png",
+    alt: "X",
+    href: "https://x.com/waverlite",
+  },
+  {
+    src: "https://res.cloudinary.com/w22/wlt-website/icons/logo/media/Facebook.png",
     alt: "Facebook",
     href: "https://web.facebook.com/waverlite",
   },
-  { src: IG, alt: "Instagram", href: "https://www.instagram.com/thewaverlite" },
   {
-    src: Linkedin,
+    src: "https://res.cloudinary.com/w22/wlt-website/icons/logo/media/Instagram.png",
+    alt: "Instagram",
+    href: "https://www.instagram.com/thewaverlite",
+  },
+  {
+    src: "https://res.cloudinary.com/w22/wlt-website/icons/logo/media/Linkedin.png",
     alt: "Linkedin",
     href: "https://www.linkedin.com/showcase/waverlite",
   },
@@ -37,7 +37,6 @@ export const ProductsList = [
 
 export const CompanyList = [
   { text: "About Us", href: "/about" },
-  // { text: "Our Story", href: "/our-story" },
   { text: "Careers", href: "/career" },
 ];
 export const DeveloperList = [
@@ -57,7 +56,16 @@ const Footer = () => {
         <div className="grid lg:grid-cols-2 lg:gap-[120px] gap-[32px]">
           <div className="text-[#E9EAEA] flex flex-col lg:gap-[40px] gap-[32px]">
             <div className="flex lg:gap-[28px] gap-4">
-              <Image src={Mail} alt="Mail" className="lg:size-[60px] size-12" />
+              <Image
+                src={
+                  "https://res.cloudinary.com/w22/wlt-website/icons/footer/mailOutlined.png"
+                }
+                unoptimized
+                height={100}
+                width={100}
+                alt="Mail"
+                className="lg:size-[60px] size-12"
+              />
 
               <div className="flex flex-col items-center lg:gap-[28px] gap-[14px]">
                 <h5 className="lg:text-[42px] text-3xl font-medium lg:leading-[45px]">
@@ -104,13 +112,35 @@ const Footer = () => {
                   href="/"
                   className="flex items-center gap-2"
                 >
-                  <Image src={Logo1} alt={""} />
-                  <Image src={Waverlite} alt={""} />
+                  <Image
+                    src={
+                      "https://res.cloudinary.com/w22/wlt-website/icons/logo/Group.svg"
+                    }
+                    unoptimized
+                    height={100}
+                    width={100}
+                    alt="Waverlite"
+                    className="size-[40px]"
+                  />
+                  <Image
+                    src={
+                      "https://res.cloudinary.com/w22/wlt-website/icons/logo/WaverliteWhite.svg"
+                    }
+                    unoptimized
+                    height={100}
+                    width={100}
+                    alt="Waverlite"
+                  />
                 </Link>
                 <p className="text-[15px] font-semibold">We Are Here</p>
-                <address className="text-[#9C9D9D] text-[13px] font-normal">
-                  325 Front Street West, <br /> Toronto, ON M5V 2Y1, Canada
-                </address>
+                <Link
+                  href={"https://maps.app.goo.gl/aCcdREtCcwQs6CAo8"}
+                  target="_blank"
+                >
+                  <address className="text-[#9C9D9D] text-[13px] font-normal">
+                    325 Front Street West, <br /> Toronto, ON M5V 2Y1, Canada
+                  </address>
+                </Link>
               </div>
             </div>
           </div>
@@ -186,6 +216,8 @@ const Footer = () => {
                   src={icon.src}
                   alt={icon.alt}
                   className="size-[18px] lg:size-[24]"
+                  height={100}
+                  width={100}
                 />
               </Link>
             ))}
@@ -211,7 +243,7 @@ const Footer = () => {
         <p className="text-[#272A2B] lg:text-[20px] text-[13px] font-semibold">
           © 2024 Waverlite, All rights reserved.
         </p>
-        <p className="text-gray-text text-[13px] lg:text-[20px] leading-6">
+        <p className="text-black text-[13px] lg:text-[15px] leading-6">
           Redbiller Technologies Inc. Ontario Canada is registered and
           regularised by the Financial Transactions and Report Analysis Centre
           of Canada (FINTRAC) as a Money Service Business with registration
