@@ -4,7 +4,7 @@ import Link from "next/link";
 import Empower from "@/assets/images/careers/empower.png";
 import Logo from "@/assets/images/careers/logo.svg";
 import iphone from "@/assets/images/careers/iphone.png";
-import protect from "@/assets/images/careers/protected.png";
+import protect from "@/assets/images/careers/Protected.png";
 import currency from "@/assets/images/careers/currency.svg";
 
 const Why = () => {

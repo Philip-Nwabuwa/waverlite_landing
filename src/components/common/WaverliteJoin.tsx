@@ -7,8 +7,8 @@ const WaverliteJoin = () => {
   return (
     <div className="bg-[#004A74]">
       <div className="container-xl grid grid-cols-1 lg:grid-cols-2 lg:gap-[100px] gap-[60px]">
-        <div className="lg:pt-[55px] pt-[30px]">
-          <h4 className="text-white lg:text-[48px] text-[20px] font-bold mb-[18px]">
+        <div className="">
+          <h4 className="text-white lg:text-[48px] text-[20px] lg:pt-[55px] pt-[30px] font-bold mb-[18px]">
             Join the Waverlite Community
           </h4>
           <p className="text-white lg:text-[16px] text-[14px] mb-[40px]">
@@ -23,7 +23,13 @@ const WaverliteJoin = () => {
             Join Us Now{" "}
           </Link>
         </div>
-        <Image src={JoinImage} alt="Join" className="lg:pb-[55px] pb-[30px]" />
+        <div>
+          <Image
+            src={JoinImage}
+            alt="Join"
+            className="lg:my-[55px] my-[30px]"
+          />
+        </div>
       </div>
     </div>
   );
